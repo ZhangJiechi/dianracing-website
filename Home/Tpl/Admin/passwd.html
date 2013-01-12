@@ -1,0 +1,54 @@
+<include file="header" />
+
+<h2>修改密码</h2>
+
+<div id="passwd">
+  <form id="form-passwd" method="post" action="">
+    <p>
+      帐号：{$account}
+    </p>
+    <p>
+      <label for="ori-password">原密码：</label>
+      <input type="password" name="ori-password" id="ori-password"/>
+    </p>
+    <p>
+      <label for="new-password">新密码：</label>
+      <input type="password" name="password" id="new-password"/>
+    </p>
+    <p>
+      <label for="re-password">重复密码：</label>
+      <input type="password" id="re-password"/>
+    </p>
+    <p>
+      <input type="button" id="login-submit" value="修改"/>
+    </p>
+  </form>
+</div>
+
+<include file="footer" />
+<script>
+	var oriPassword = document.getElementById('ori-password'),
+		newPassword = document.getElementById('new-password'),
+		rePassword = document.getElementById('re-password');
+	
+	document.getElementById('login-submit').addEventListener('click', function(){
+		oriPassword.style.border = newPassword.style.border = rePassword.style.border = '1px solid #999';
+		if( oriPassword.value.length == 0 ) {
+				oriPassword.style.border = '1px solid red';
+				return false;
+		}
+		if( newPassword.value.length == 0 ) {
+				newPassword.style.border = '1px solid red';
+				return false;
+		}
+		if( rePassword.value.length == 0 ) {
+				newPassword.style.border = '1px solid red';
+				return false;
+		}
+		if( rePassword.value != newPassword.value ) {
+				rePassword.style.border = rePassword.style.border = '1px solid red';
+				return false;
+		}
+		document.getElementById('form-passwd').submit();
+	}, false);
+</script>

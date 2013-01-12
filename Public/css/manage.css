@@ -1,0 +1,120 @@
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-position: inside;	
+}
+
+#manage-hd {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#manage-hd h1 {
+	font-size: 22px;	
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.notice {
+	font-style: italic;
+	line-height: 1.8em;	
+	color: #666;
+}
+
+#login, #passwd {
+	font-size: 1.1em;
+	line-height: 2em;
+	text-align: center;	
+}
+#login input, #passwd input {
+	font-size: 1.1em;
+}
+#login-submit {
+	width: 3.5em;
+}
+
+#left-sider {
+	padding-top: 10px;
+	width: 15%;
+	border-right: 1px solid #ccc;
+	float: left;
+	min-width: 120px;
+	min-height: 600px;
+}
+#main {
+	width: 84%;
+	min-width: 500px;
+	float: left;
+	clear: right;
+}
+#left-sider ul{
+	margin-left: 30px;
+	line-height: 1.5em;
+	font-size: 1.1em;
+}
+.main-hd {
+	border-bottom: 1px dashed #ddd;
+	padding: 10px;
+}
+.main-hd h2 {
+	font-size: 20px;
+}
+.main-bd {
+	padding: 10px;
+}
+
+#staff-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+#staff-table tr {
+	border: 1px solid #333;
+	line-height: 2.5em;
+}
+#staff-table input[type=button] {
+	padding: 2px 5px;
+}
+.add-btn {
+	padding: 3px 13px;
+}
+
+.popwin {
+	width: 360px;
+	height: 260px;
+	padding: 20px;
+	position: absolute;
+	background-color: white;
+	border: 2px solid #7C1DDB;
+	border-radius: 12px;
+	box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+	display: none;
+	line-height: 1.8em;
+	font-size: 1.1em;
+}
+.popwin input{
+	font-size: 1.1em;	
+}
+.popwin input[type=button]{
+	width: 4em;
+	height: 1.6em;
+	margin-top: 10px;
+}
+
+.file-name {
+	width: 80%;	
+	font-size: 1.1em;
+}
+.file-queue {
+	width: 10%;	
+	font-size: 1.1em;
+}
+
+
+

@@ -1,0 +1,110 @@
+[ 2013-01-12T23:17:08+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010949s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000812s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000808s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000691s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003553s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000970s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2013-01-12T23:35:13+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001244s ]
+INFO: Run CheckLang Behavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002893s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010825s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000796s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000775s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000635s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001221s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2013-01-12T23:35:42+08:00 ] 127.0.0.1 /?l=zh-cn
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001140s ]
+INFO: Run CheckLang Behavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002397s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002278s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001026s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000879s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000670s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003777s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000982s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2013-01-12T23:35:46+08:00 ] 127.0.0.1 /?l=en-us
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000783s ]
+INFO: Run CheckLang Behavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.001442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001574s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000581s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000607s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000475s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002792s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000876s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2013-01-12T23:36:07+08:00 ] 127.0.0.1 /?l=en-us
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000992s ]
+INFO: Run CheckLang Behavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.001715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001847s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000597s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000606s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000568s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001114s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2013-01-12T23:45:39+08:00 ] 127.0.0.1 /?l=en-us
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001171s ]
+INFO: Run CheckLang Behavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002612s ]
+
+[ 2013-01-12T23:47:30+08:00 ] 127.0.0.1 /?l=en-us
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.003349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003632s ]
+
+[ 2013-01-12T23:47:36+08:00 ] 127.0.0.1 /?l=zh-cn
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+
+[ 2013-01-12T23:49:11+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002480s ]
+

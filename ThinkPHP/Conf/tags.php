@@ -39,4 +39,5 @@ return array(
     'view_end'      =>  array(
         'ShowPageTrace', // 页面Trace显示
     ),
+	'app_begin' => array('CheckLang'),
 );

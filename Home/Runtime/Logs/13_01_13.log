@@ -1,0 +1,946 @@
+[ 2013-01-13T00:00:17+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003065s ]
+
+[ 2013-01-13T00:00:24+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+
+[ 2013-01-13T00:00:50+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001432s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001572s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012318s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000766s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000877s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000691s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003528s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001090s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2013-01-13T00:19:51+08:00 ] ERR: (ThinkException) 无法加载模块:admin
+[ 2013-01-13T00:19:59+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001145s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001285s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\086c545c4c7b7284ff985fa99836e8c8.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017154s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001149s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001138s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000789s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004803s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001277s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001462s ]
+
+[ 2013-01-13T00:22:42+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001273s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001063s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\086c545c4c7b7284ff985fa99836e8c8.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010442s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000742s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000748s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000612s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003363s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000967s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2013-01-13T00:23:05+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001492s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001667s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013264s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000680s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000683s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000563s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003065s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000882s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2013-01-13T00:23:41+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000637s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000754s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008723s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000612s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000639s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000493s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002793s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000804s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2013-01-13T00:23:49+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001141s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000915s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\086c545c4c7b7284ff985fa99836e8c8.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010327s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000714s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000659s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000496s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002963s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000826s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2013-01-13T00:25:25+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001017s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000978s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001122s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\086c545c4c7b7284ff985fa99836e8c8.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010599s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000760s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000757s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000617s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003534s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001050s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2013-01-13T01:03:01+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001121s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001295s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009792s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000706s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000748s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003213s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000996s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2013-01-13T01:03:06+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000944s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000974s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012542s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000819s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000852s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000605s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003788s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001113s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2013-01-13T01:03:22+08:00 ] ERR: (ThinkException) 无法加载数据库驱动: DbPdo
+[ 2013-01-13T01:06:38+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT * FROM think_account WHERE ( account="admin" and password="e10adc3949ba59abbe56e057f20f883e" ) 
+[ 2013-01-13T01:07:20+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000999s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001252s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001416s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011446s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000796s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000838s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000681s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003546s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2013-01-13T01:07:26+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT * FROM think_account WHERE ( account="admin" and password="e10adc3949ba59abbe56e057f20f883e" ) 
+[ 2013-01-13T01:08:48+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT * FROM think_account WHERE ( account=admin ) 
+[ 2013-01-13T01:09:18+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT * FROM think_account WHERE ( account=admin ) 
+[ 2013-01-13T01:14:00+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000347s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000190s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001554s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001748s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011494s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001003s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000784s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000808s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004237s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001037s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2013-01-13T01:14:01+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001008s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.069601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069781s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000672s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000745s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000500s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002973s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2013-01-13T01:22:45+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001549s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001168s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001300s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013209s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000754s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000769s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000683s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004811s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002194s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2013-01-13T01:23:03+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001434s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000625s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000750s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010738s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000619s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000622s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000481s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000780s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2013-01-13T01:23:07+08:00 ] ERR: (ThinkException) 模板不存在[./Home/Tpl/Admin/Index.html]
+[ 2013-01-13T01:23:31+08:00 ] ERR: (ThinkException) 模板不存在[./Home/Tpl/Admin/Index.html]
+[ 2013-01-13T01:23:38+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001451s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000635s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000762s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014273s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000613s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000596s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000460s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002686s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001038s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2013-01-13T01:23:42+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001017s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000650s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000773s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010904s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000629s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000631s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000502s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002878s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2013-01-13T01:23:49+08:00 ] ERR: (ThinkException) 非法操作:passwd
+[ 2013-01-13T01:42:43+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001993s ]
+NOTIC: [8] Undefined index: account P:\dianracing\Home\Lib\Action\AdminAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011296s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000939s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001029s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004140s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2013-01-13T01:43:34+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+NOTIC: [8] Undefined index: account P:\dianracing\Home\Lib\Action\AdminAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009255s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000608s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000618s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000617s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003163s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001117s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2013-01-13T01:43:46+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001005s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000920s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001080s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011052s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000674s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000689s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000548s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002963s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2013-01-13T01:43:53+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000343s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000136s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000862s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009423s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000738s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000890s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003770s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001045s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2013-01-13T01:43:55+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001042s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000812s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000936s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011612s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000768s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000642s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000503s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002970s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000848s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2013-01-13T01:43:56+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002007s ]
+NOTIC: [8] Undefined index: account P:\dianracing\Home\Lib\Action\AdminAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000848s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010292s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000866s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000904s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000847s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004358s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000850s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2013-01-13T01:44:47+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002234s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001170s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001296s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012695s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000781s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000788s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000628s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003462s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000953s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2013-01-13T01:44:59+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002591s ]
+
+[ 2013-01-13T01:47:31+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001566s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002765s ]
+
+[ 2013-01-13T01:47:40+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001017s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001095s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001221s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010901s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000800s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000771s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000620s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003385s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000936s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2013-01-13T01:47:41+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+
+[ 2013-01-13T01:48:49+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011517s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000625s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000878s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000640s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003545s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000810s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2013-01-13T01:48:52+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001015s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000807s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010336s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000628s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000715s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000569s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003345s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2013-01-13T01:49:26+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+
+[ 2013-01-13T02:07:33+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT recno, password FROM think_account WHERE ( account="" ) LIMIT 1  
+[ 2013-01-13T02:07:47+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001155s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001280s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013616s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001131s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001148s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000916s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005117s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2013-01-13T02:07:56+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001240s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000329s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000166s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001110s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001323s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010773s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000699s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000752s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000626s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003637s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001232s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2013-01-13T02:07:57+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001035s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000828s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000957s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013292s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000630s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000686s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000475s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002814s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2013-01-13T02:07:59+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001956s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001112s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001338s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010623s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000638s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000704s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000565s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003325s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001115s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2013-01-13T02:08:09+08:00 ] ERR: (ThinkException) 
+ [ SQL语句 ] : SELECT recno, password FROM think_account WHERE ( account="admin" ) LIMIT 1  
+[ 2013-01-13T02:08:29+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000329s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000170s ]
+
+[ 2013-01-13T02:10:51+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000259s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.001360s ]
+
+[ 2013-01-13T02:14:55+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002533s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000290s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: UPDATE think_account SET password='7fef6171469e80d32c0559f88b377245' WHERE ( account="admin" ) [ RunTime:0.414675s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014266s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000794s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000768s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000604s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003724s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2013-01-13T02:14:57+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001013s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002095s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001168s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001319s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010583s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000632s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000703s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000482s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002848s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000810s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2013-01-13T02:15:06+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001034s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000638s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLogin P:\dianracing\Home\Runtime\Cache\ce9286e0bfdd10c91f6b070e08b5749f.php 第 13 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009874s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000661s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000981s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000511s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003205s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000803s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2013-01-13T02:16:55+08:00 ] 127.0.0.1 /index.php/Admin/passwd
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002006s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002165s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000660s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010035s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000621s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000766s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000521s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002980s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000806s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2013-01-13T02:16:57+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000977s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000845s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000969s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009827s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000741s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000745s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000735s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003396s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000904s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2013-01-13T02:17:05+08:00 ] 127.0.0.1 /index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: PRAGMA table_info (think_account)  [ RunTime:0.000352s ]
+SQL: SELECT password FROM think_account WHERE ( account="admin" ) LIMIT 1   [ RunTime:0.000180s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001198s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001418s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011041s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000644s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000709s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000480s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002904s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000844s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2013-01-13T02:17:06+08:00 ] 127.0.0.1 /index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000999s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run CheckLang Behavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000990s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012709s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000655s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000692s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000469s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002979s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000796s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000904s ]
+
