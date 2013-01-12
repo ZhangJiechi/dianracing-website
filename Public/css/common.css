@@ -1,4 +1,27 @@
+@font-face {
+    font-family: "HelveticaNeueCn";
+    src: url("HelveticaNeueLTPro-Cn.otf");
+}
+@font-face {
+    font-family: "HelveticaNeueTh";
+    src: url("HelveticaNeueLTPro-Th.otf");
+}
+
 * {
 	margin: 0;
 	padding: 0;	
 }
+
+body {
+	background-color: black;
+	font-family: HelveticaNeueCn;	
+}
+ul {
+	list-style: none;
+}
+.xblock {
+	width: 800px;
+	height: 404px;
+	margin: 0 auto;
+}
+
