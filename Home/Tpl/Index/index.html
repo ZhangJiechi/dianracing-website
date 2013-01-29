@@ -1,20 +1,31 @@
 <include file="header" />
 <import type="css" file="css.index"/>
+<import type="js" file="js.index"/>
+
 <div id="wrap">
 	<div id="title">
     	<div id="title-content" class="xblock">
         	<div id="title-upcoming">
-            	<p>{:L('upcoming-events')}</p>
+            	<p>Upcoming Events</p>
                 <p id="events-switchs">
                 	<a href="###" class="focus">1</a>
                     <a href="###">2</a>
                     <a href="###">3</a>
                 </p>
-                <div id="event-1">
+                <div id="event-1" class="event-detail" style="display:block;">
                 	<p>26 November – 16 December, 2012</p>
                 	<p class="title-upcoming-name">Vehicle Design Competition</p>
                 </div>
-                <p><a href="###" class="seemore">{:L('see-more')} >></a></p>
+                <div id="event-2" class="event-detail">
+                	<p>25 December, 2012</p>
+                	<p class="title-upcoming-addr">Sino-Finnish Centre</p>
+                	<p class="title-upcoming-name">Christmas Party</p>
+                </div>
+                <div id="event-3" class="event-detail">
+                	<p>2012/11/26 – 2012/12/16</p>
+                	<p class="title-upcoming-name">车身设计大赛</p>
+                </div>
+                <p><a href="###" class="seemore">See More >></a></p>
             </div>
         	<div id="title-logo-wrap">
             	<div id="title-logo">DIAN Racing</div>
@@ -38,7 +49,7 @@
 	<div id="welcome">
     	<div id="welcome-content" class="xblock">
     		<div id="welcome-text">
-            	<h1>Welcome to the home of DIAN Racing!</h1>
+            	<h1 class="uppercase-title">Welcome to the home of DIAN Racing!</h1>
             	<p>We are a passionate and multidisciplinary Formula Student Electric team from Tongji University whose target is to design and fabricate an electric Formula style racecar every year and participate in FSE competition. We strive to combine our enthusiasm for speed and efficiency with our concerns for a sustainable environment.</p>
             </div>
     	</div>
@@ -47,7 +58,7 @@
     <div id="team">
     	<div id="team-content" class="xblock">
     		<div id="team-info">
-            	<h1>The Team</h1>
+            	<h1 class="uppercase-title">The Team</h1>
                 <h2>General information</h2>
             	<div id="team-text">                
                     <p>DIAN Racing is a young and diverse student group. The team is composed of students with various majors from different countries, with strong involvement of Godert van Hardenbroek, an entrepreneur and designer from the Netherlands. With a wide array of expertise, this provides a powerful learning experience and a high quality team. DIAN Racing is aiming at high-standard racecar design and project management.</p>
@@ -64,57 +75,80 @@
     	</div>
     </div>
     
-    <div id="footer">
-    	<div id="footer-content"  class="xblock">
-        	<div id="footer-links">
-            	<div id="footer-sns">
-                	<p class="footer-link-title">FOLLOW US</p>
-                    <a id="footer-renren" href="###">人人</a>
-                    <a id="footer-weibo" href="http://weibo.com/dianracing">微博</a>
+    <div class="member">
+    	<div class="member-content xblock">
+    		<div class="member-text" id="member-star">
+                <div id="the-members" >
+                    <h1 class="uppercase-title">Team Members</h1>
+                    <div class="top">
+                        <div class="left">
+                            <p><img src="/Public/css/img1.jpg" alt="" /></p>
+                            <p class="position">Faculty Advisor:</p>
+                        </div>
+                        <div class="right">
+                            <p>Godert van Hardenbroek, Faculty Advisor to the team, is a sustainability lecturer at Sino-Finnish Centre with a background in design and entrepreneurship. He is the initiator of Dian Racing, Tongji University and brings a unique and relevant experience as the co-founder of Formula Zero, a race class for fuel cell vehicles.</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="bottom">
+                        <ul>
+                            <li>Branding & Sponsoring team</li>
+                            <li>Engineering & Design Team</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="footer-link">
-                	<p class="footer-link-title">LINKS</p>
-                    <a id="footer-tongji" href="http://www.tongji.edu.cn">同济大学</a>
-                    <a id="footer-sfc" href="http://sfc.tongji.edu.cn">中芬中心</a>
-                </div>
-                <div id="footer-down">
-                	<p class="footer-link-title">DOWNLOAD</p>
-                    <p><a href="http://dianracing.com/files/1352750362.pdf">Dian Racing Brochure</a></p>
-                    <p><a href="http://dianracing.com/files/1350611304.docx">Registration Form</a></p>
+                
+                <div id="dianracing-star">
+                    <h1 class="uppercase-title">DIAN Racing Star</h1>
+                    <div class="top">
+                        <div class="left">
+                        	<div class="responsible">HR</div>
+                            <p><img src="/Public/css/img2.jpg" alt="" /></p>
+                            <p class="position">Star of January,2013</p>
+                            <ul>
+                                <li>Name:<br/><span>Vicky</span></li>
+                                <li>Year:<br/><span>2012/ Undergraduate</span></li>
+                                <li>Major:<br/><span>Environmental Science and Engineerning</span></li>
+                                <li>Hobby/Specialty:<br/><span>tennis & travelling</span></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <p>As a freshman in Tongji, I joined the team by chance, but now in charge of HR. Getting to know the team’s operational mode, I found it a fantastic journey to work with so many seniors, and it’ll be amazing if we can achieve our goal - FSE! I’m totally convinced that we’ve got the ability and we’re bound to be successful!</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="bottom">
+                        <div class="other"><p>other stars</p></div>
+                        <div class="face">
+                        	<img src="/Public/css/img4.jpg" alt=""/>
+                        </div>
+                        <div class="face">
+                        	<img src="/Public/css/img5.jpg" alt=""/>
+                        </div>
+                        <div class="slh">···</div>
+                    </div>
                 </div>
             </div>
-            <div id="contact">
-            	Please feel free to contact our team if you have any questions or concerns.
-
-Faculty Advisor
-Godert van Hardenbroek 霍达男爵
-(+86)18601788776
-godert@me.com
-
-Sponsorship inquiries
-郑雷 Zheng Lei 
-(+86)18817308332
-zhenglei@dianracing.com
-
-Membership inquiries
-谢静文 Vicky Xie
-(+86)18817870647
-vicky@dianracing.com
-
-Teaching Facilitator
-蒋丹 Jiang Dan
-(+86)18964213016
-404166120@qq.com
-
-上海市杨浦区彰武路100号
-同济-阿尔托设计工厂
-Aalto-Tongji Design Factory
-No.100 Zhangwu Road, Yangpu District, Shanghai
-
-            </div>
-        </div>
+    	</div>
     </div>
     
-</div>
+	<div class="clear"></div>
+    
+    <div class="member">
+    	<div class="member-content xblock" id="the-car-parent">
+    		<div class="member-text" id="the-car">
+				<div class="left">
+					<h1 class="uppercase-title">The Car</h1>
+    				<p>As a first-year team, we aim at designing and building a car that is realistic, reliable and with relatively high performance. We will be able to apply high level technologies and parts from sponsors in the development of the car. This will provide them a chance to demonstrate their products and brands to both domestic markets as well as abroad, in the context of a zero emission race.</p>
+                </div>
+				<div class="right">
+                	<p><img src="/Public/css/img3.jpg" alt="" /></p>
+                    <p class="description-for-img">Design Philosophy</p>
+                </div>
+            </div>
+    	</div>
+    </div>    
+    
+
 
 <include file="footer" />
