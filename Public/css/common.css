@@ -32,7 +32,16 @@ ul {
 }
 
 
-
+#language {
+	float: right;
+	font-size: .8em;
+	z-index: 9999;
+}
+#language a {
+	color: #ccc;
+	margin-top: 20px;
+	margin-left: 5px;
+}
 
 
 
@@ -158,5 +167,6 @@ ul {
 }
 #map p {
     position: absolute;
-    bottom: 0;    
+    bottom: 0;
+	right: 0;  
 }

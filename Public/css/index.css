@@ -213,8 +213,9 @@
 	margin-left: 1em;
 }
 #dianracing-star li {
-	line-height: 1em;
+	line-height: 1.2em;
 	padding-top: .5em;
+	word-break: break-all;
 }
 #dianracing-star .responsible {
 	background: url(big-triangle.png) no-repeat;

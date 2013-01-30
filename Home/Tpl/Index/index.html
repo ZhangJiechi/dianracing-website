@@ -2,11 +2,16 @@
 <import type="css" file="css.index"/>
 <import type="js" file="js.index"/>
 
+<div id="language">
+	<a href="?l=en-us" target="_self">English</a>
+	<a href="?l=zh-cn" target="_self">简体中文</a>
+</div>
+
 <div id="wrap">
 	<div id="title">
     	<div id="title-content" class="xblock">
         	<div id="title-upcoming">
-            	<p>Upcoming Events</p>
+            	<p>{:L('upcoming-events')}</p>
                 <p id="events-switchs">
                 	<a href="###" class="focus">1</a>
                     <a href="###">2</a>
@@ -25,7 +30,7 @@
                 	<p>2012/11/26 – 2012/12/16</p>
                 	<p class="title-upcoming-name">车身设计大赛</p>
                 </div>
-                <p><a href="###" class="seemore">See More >></a></p>
+                <p><a href="###" class="seemore">{:L('see-more')} >></a></p>
             </div>
         	<div id="title-logo-wrap">
             	<div id="title-logo">DIAN Racing</div>
@@ -36,12 +41,12 @@
 	<div id="nav">
     	<div id="nav-content" class="xblock">
     		<ul>
-            	<li><a href="###" class="focus">HOME</a></li>
-                <li><a href="###">ABOUT US</a></li>
-                <li><a href="###">FSE</a></li>
-                <li><a href="###">BLOG</a></li>
-                <li><a href="###">GALLERY</a></li>
-                <li><a href="###">SPONSORSHIP</a></li>
+            	<li><a href="###" class="focus">{:L('home')}</a></li>
+                <li><a href="###">{:L('aboutus')}</a></li>
+                <li><a href="###">{:L('FSE')}</a></li>
+                <li><a href="###">{:L('blog')}</a></li>
+                <li><a href="###">{:L('gallery')}</a></li>
+                <li><a href="###">{:L('sponsorship')}</a></li>
             </ul>
     	</div>
     </div>
@@ -49,8 +54,8 @@
 	<div id="welcome">
     	<div id="welcome-content" class="xblock">
     		<div id="welcome-text">
-            	<h1 class="uppercase-title">Welcome to the home of DIAN Racing!</h1>
-            	<p>We are a passionate and multidisciplinary Formula Student Electric team from Tongji University whose target is to design and fabricate an electric Formula style racecar every year and participate in FSE competition. We strive to combine our enthusiasm for speed and efficiency with our concerns for a sustainable environment.</p>
+            	<h1 class="uppercase-title">{:L('welcome-title')}</h1>
+            	<p>{:L('welcome-content')}</p>
             </div>
     	</div>
     </div>
@@ -58,19 +63,9 @@
     <div id="team">
     	<div id="team-content" class="xblock">
     		<div id="team-info">
-            	<h1 class="uppercase-title">The Team</h1>
-                <h2>General information</h2>
-            	<div id="team-text">                
-                    <p>DIAN Racing is a young and diverse student group. The team is composed of students with various majors from different countries, with strong involvement of Godert van Hardenbroek, an entrepreneur and designer from the Netherlands. With a wide array of expertise, this provides a powerful learning experience and a high quality team. DIAN Racing is aiming at high-standard racecar design and project management.</p>
-                    <p>The strength of DIAN Racing comes from establishing collaboration between different disciplines that Tongji University has to offer:</p>
-                    <ul>
-                    	<li>School of Automotive Studies</li>
-                        <li>College of Design and Innovation</li>
-                        <li>Sino-German College of Applied Sciences</li>
-                        <li>Clean Energy Automotive Engineering Research Center</li>
-                        <li>Engineering Practice Center</li>
-                    </ul>
-                </div>
+            	<h1 class="uppercase-title">{:L('the-team')}</h1>
+                <h2>{:L('general-info')}</h2>
+            	<div id="team-text">{:L('team-info-text')}</div>
             </div>
     	</div>
     </div>
@@ -79,11 +74,11 @@
     	<div class="member-content xblock">
     		<div class="member-text" id="member-star">
                 <div id="the-members" >
-                    <h1 class="uppercase-title">Team Members</h1>
+                    <h1 class="uppercase-title">{:L('team-member')}</h1>
                     <div class="top">
                         <div class="left">
-                            <p><img src="/Public/css/img1.jpg" alt="" /></p>
-                            <p class="position">Faculty Advisor:</p>
+                            <p><img src="/Public/css/img1.jpg" alt="{:L('faculty-advisor')}" /></p>
+                            <p class="position">{:L('faculty-advisor')}:</p>
                         </div>
                         <div class="right">
                             <p>Godert van Hardenbroek, Faculty Advisor to the team, is a sustainability lecturer at Sino-Finnish Centre with a background in design and entrepreneurship. He is the initiator of Dian Racing, Tongji University and brings a unique and relevant experience as the co-founder of Formula Zero, a race class for fuel cell vehicles.</p>
@@ -92,24 +87,24 @@
                     <div class="clear"></div>
                     <div class="bottom">
                         <ul>
-                            <li>Branding & Sponsoring team</li>
-                            <li>Engineering & Design Team</li>
+                            <li>{:L('bs-team')}</li>
+                            <li>{:L('ed-team')}</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div id="dianracing-star">
-                    <h1 class="uppercase-title">DIAN Racing Star</h1>
+                    <h1 class="uppercase-title">{:L('dr-star')}</h1>
                     <div class="top">
                         <div class="left">
                         	<div class="responsible">HR</div>
-                            <p><img src="/Public/css/img2.jpg" alt="" /></p>
+                            <p><img src="/Public/css/img2.jpg" alt="{:L('dr-star')}" /></p>
                             <p class="position">Star of January,2013</p>
                             <ul>
-                                <li>Name:<br/><span>Vicky</span></li>
-                                <li>Year:<br/><span>2012/ Undergraduate</span></li>
-                                <li>Major:<br/><span>Environmental Science and Engineerning</span></li>
-                                <li>Hobby/Specialty:<br/><span>tennis & travelling</span></li>
+                                <li>{:L('name')}:<br/><span>Vicky</span></li>
+                                <li>{:L('year')}:<br/><span>2012/Undergraduate</span></li>
+                                <li>{:L('major')}:<br/><span>Environmental Science and Engineerning</span></li>
+                                <li>{:L('hobby')}:<br/><span>tennis & travelling</span></li>
                             </ul>
                         </div>
                         <div class="right">
@@ -118,7 +113,7 @@
                     </div>
                     <div class="clear"></div>
                     <div class="bottom">
-                        <div class="other"><p>other stars</p></div>
+                        <div class="other"><p>{:L('see-more')}</p></div>
                         <div class="face">
                         	<img src="/Public/css/img4.jpg" alt=""/>
                         </div>
@@ -138,7 +133,7 @@
     	<div class="member-content xblock" id="the-car-parent">
     		<div class="member-text" id="the-car">
 				<div class="left">
-					<h1 class="uppercase-title">The Car</h1>
+					<h1 class="uppercase-title">{:L('the-car')}</h1>
     				<p>As a first-year team, we aim at designing and building a car that is realistic, reliable and with relatively high performance. We will be able to apply high level technologies and parts from sponsors in the development of the car. This will provide them a chance to demonstrate their products and brands to both domestic markets as well as abroad, in the context of a zero emission race.</p>
                 </div>
 				<div class="right">
