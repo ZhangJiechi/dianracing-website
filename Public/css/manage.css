@@ -116,5 +116,14 @@ ul {
 	font-size: 1.1em;
 }
 
-
-
+#new-activity p {
+	line-height: 2em;
+}
+#new-activity input[type=submit] {
+	width: 60px;
+	height: 30px;
+}
+#activities {
+	margin-top: 10px;
+	line-height: 1.8em;
+}

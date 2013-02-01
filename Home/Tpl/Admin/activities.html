@@ -1,0 +1,62 @@
+<include file="header" />
+<div id="left-sider"><include file="left-sider" /></div>
+<div id="main">
+  <div class="main-hd">
+    <h2>近期活动</h2>
+  </div>
+  <div class="main-bd">
+  <form id="activToDelForm" action="?t=del" method="post" target="_self">
+    <div>
+      <p>
+        <input type="submit" value="删除" />
+        <a href="{:U('Admin/activities')}?t=new">创建活动</a></p>
+    </div>
+    <div>
+      <table width="100%" border="1" id="activities">
+        <tr>
+          <th><input type="checkbox" id="activToDelCtrl"/></th>
+          <th>标题</th>
+          <th>地点</th>
+          <th>时间</th>
+          <th>语言</th>
+        </tr>
+        <volist name="activities" id="activity">
+          <tr>
+            <td class="text-center"><input class="activToDel" type="checkbox" name="activToDel[]" value="{$activity.id}"/></td>
+            <td><a href="?t=edit&id={$activity.id}" target="_self">{$activity.title}</a></td>
+            <td>{$activity.place}</td>
+            <td>{$activity.date_start|date="Y/m/d",###} - {$activity.date_end|date="Y/m/d",###}</td>
+            <td><switch name="activity.lang">
+                <case value="zh-cn">简体中文</case>
+                <case value="en-us">English</case>
+                <default />
+                unknown </switch></td>
+          </tr>
+        </volist>
+      </table>
+    </div>
+    </div>
+    <input name="t" type="hidden" value="del" />
+  </form>
+</div>
+<include file="footer" /> 
+<script type="text/javascript">
+var activToDel = document.querySelectorAll('.activToDel');
+document.getElementById('activToDelCtrl').addEventListener('click',function(){
+		if(this.checked) {
+			for(var i=0; i<activToDel.length; i++) {
+				activToDel[i].checked = true;
+			}
+		} else {
+			for(var i=0; i<activToDel.length; i++) {
+				activToDel[i].checked = false;
+			}
+		}
+}, false);
+
+document.getElementById('activToDelForm').addEventListener('submit',function(){
+		if(!confirm('删除后无法恢复，你是否要继续？')) {
+				return false;
+		}
+}, false);
+</script>

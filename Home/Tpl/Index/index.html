@@ -13,23 +13,23 @@
         	<div id="title-upcoming">
             	<p>{:L('upcoming-events')}</p>
                 <p id="events-switchs">
-                	<a href="###" class="focus">1</a>
-                    <a href="###">2</a>
-                    <a href="###">3</a>
+                    <volist name="activities" id="activity">
+                    	<a href="###" <if condition="$i eq 1">class="focus"</if> >{$i}</a>
+                    </volist>
                 </p>
-                <div id="event-1" class="event-detail" style="display:block;">
-                	<p>26 November – 16 December, 2012</p>
-                	<p class="title-upcoming-name">Vehicle Design Competition</p>
-                </div>
-                <div id="event-2" class="event-detail">
-                	<p>25 December, 2012</p>
-                	<p class="title-upcoming-addr">Sino-Finnish Centre</p>
-                	<p class="title-upcoming-name">Christmas Party</p>
-                </div>
-                <div id="event-3" class="event-detail">
-                	<p>2012/11/26 – 2012/12/16</p>
-                	<p class="title-upcoming-name">车身设计大赛</p>
-                </div>
+                <volist name="activities" id="activity">
+                    <div id="event-{$i}" class="event-detail" <if condition="$i eq 1">style="display:block;"</if>>
+                        <p>
+                        	<if condition="$activity['date_start'] eq $activity['date_end']">
+                                {$activity.date_start|date="d F, Y",###}
+                            <else />
+                            	{$activity.date_start|date="d F, Y",###} - {$activity.date_end|date="d F, Y",###}
+                            </if>
+                        </p>
+                        <p class="title-upcoming-addr">{$activity.place}</p>
+                        <p class="title-upcoming-name">{$activity.title}</p>
+                    </div>
+                </volist>
                 <p><a href="###" class="seemore">{:L('see-more')} >></a></p>
             </div>
         	<div id="title-logo-wrap">

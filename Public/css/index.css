@@ -24,7 +24,7 @@
 	color: white;
 	font-family: HelveticaNeueCn;
 	line-height: 1.7em;
-	width: 200px;
+	width: 340px;
 }
 .title-upcoming-name {
 	color: #e32561;
@@ -46,6 +46,7 @@
 	border-radius: 18px;
 	font-weight: bold;
 	text-decoration: none;
+	margin-right: 5px;
 }
 #events-switchs .focus, #events-switchs a:hover {
 	color: #E32561;

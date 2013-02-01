@@ -1,5 +1,6 @@
 <?php
 return array(
+	'lang' => 'en-us',
 	'home' => 'HOME',
 	'upcoming-events' => 'Upcoming Events',
 	'see-more' => 'See more',

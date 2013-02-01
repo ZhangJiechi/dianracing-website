@@ -1,5 +1,6 @@
 <?php
 return array(
+	'lang' => 'zh-cn',
 	'home' => '首页',
 	'upcoming-events' => '近期活动',
 	'see-more' => '更多',
