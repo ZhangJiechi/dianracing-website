@@ -85,7 +85,6 @@ class AdminAction extends Action {
 						$this->success('添加成功！', 'activities');
 						break;
 					case 'edit':
-						$tpl = 'activity-edit';
 						$tActivities = M('activities');
 						$tActivities->create();
 						$tActivities->date_start = $this->date2timestamp($_POST['date_start']);
@@ -134,4 +133,96 @@ class AdminAction extends Action {
 		return mktime(0, 0, 0, $b[1], $b[2], $b[0]);
 	}
 	
+	//首页资料
+	public function indexinfo() {
+		if($this->checkLogin()){
+			if($this->isPost()){
+				
+			} else {
+				
+				$this->assign(array(
+					'account' => $_SESSION['account'],
+					'isLogin' => true
+				));
+				$this->display();
+			}
+		}
+	}
+	
+	//每月之星
+	public function star() {
+		if($this->checkLogin()){
+			if($this->isPost()){
+				switch(isset($_POST['t'])?$_POST['t']:'') {
+					case 'new':
+						if(empty($_FILES['faceimg']['name'])){
+							$faceimg = 'default.jpg';
+						}else{
+							$info = $this->_uploadFace();
+							$faceimg = $info[0]['savename'];
+						}
+						$tStar = M('star');
+						$tStar->create();
+						$tStar->faceimg = $faceimg;
+						$tStar->add();
+						$this->success('添加成功！', 'star');
+						break;
+					case 'edit':
+						$tStar = M('star');
+						$tStar->create();
+						$tStar->save();
+						$this->success('更新成功！', 'star');
+						break;
+					case 'del':
+						$delRange = implode(',', $_POST['starToDel']);
+						$tStar = M('star');
+						$tStar->where("id IN ({$delRange})")->delete();
+						$this->success('删除成功！', 'star');
+						break;
+				}
+			} else {
+				switch(isset($_GET['t'])?$_GET['t']:'') {
+					case 'new':
+						$tpl = 'star-new';
+						break;
+					case 'edit':
+						$tpl = 'star-edit';
+						$tStar = M('star');
+						$star = $tStar->where("id={$_GET['id']}")->find();
+						$this->assign('star', $star);
+						break;
+					default:
+						$tpl = 'star';
+						$tStar = M('star');
+						$stars = $tStar->order('id DESC')->select();
+						$this->assign('stars', $stars);
+						import('ORG.Util.String');
+						break;
+				}
+				
+				$this->assign(array(
+					'account' => $_SESSION['account'],
+					'isLogin' => true
+				));
+				$this->display($tpl);
+			}
+		}
+	}
+	
+	private function _uploadFace() {
+		import('ORG.Net.UploadFile');
+		$upload = new UploadFile();
+		$upload->maxSize  = 2097152;
+		$upload->allowExts  = array('jpg', 'png', 'jpeg');
+		$upload->allowTypes=array('image/png','image/jpg', 'image/jpeg');
+		$upload->savePath =  './Uploads/faces/';
+		$upload->saveRule = time;
+		
+		if(!$upload->upload()) {
+			$this->error($upload->getErrorMsg());
+			exit();
+		}else{
+			return $upload->getUploadFileInfo();
+		}
+	}
 }

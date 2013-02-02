@@ -11,3 +11,16 @@ CREATE TABLE think_activities (
     date_end TIMESTAMP,
 	lang CHAR(5)
 );
+
+CREATE TABLE think_star (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    year TEXT,
+    major TEXT,
+	hobby TEXT,
+	respon TEXT,
+	intro TEXT,
+	faceimg TEXT,
+	facenote TEXT,
+	lang CHAR(5)
+);

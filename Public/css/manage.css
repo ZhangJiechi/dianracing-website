@@ -116,14 +116,17 @@ ul {
 	font-size: 1.1em;
 }
 
-#new-activity p {
+.new-form p {
 	line-height: 2em;
 }
-#new-activity input[type=submit] {
+.new-form input[type=submit] {
 	width: 60px;
 	height: 30px;
 }
-#activities {
+.table-list {
 	margin-top: 10px;
 	line-height: 1.8em;
+}
+.table-list img {
+	max-height: 80px;
 }

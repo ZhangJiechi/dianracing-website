@@ -21,5 +21,5 @@ function eventLoop($a){
     var count = 1;
     return setInterval(function(){
         $a[count++%3].click();
-    }, 2222);
+    }, 2000);
 }
