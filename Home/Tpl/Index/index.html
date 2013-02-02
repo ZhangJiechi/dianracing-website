@@ -97,29 +97,30 @@
                     <h1 class="uppercase-title">{:L('dr-star')}</h1>
                     <div class="top">
                         <div class="left">
-                        	<div class="responsible">HR</div>
-                            <p><img src="/Public/css/img2.jpg" alt="{:L('dr-star')}" /></p>
-                            <p class="position">Star of January,2013</p>
+                        	<div class="responsible">{$stars[0]['respon']}</div>
+                            <p><img src="/Uploads/faces/{$stars[0]['faceimg']}" alt="{$stars[0]['facenote']}" /></p>
+                            <p class="position">{$stars[0]['facenote']}</p>
                             <ul>
-                                <li>{:L('name')}:<br/><span>Vicky</span></li>
-                                <li>{:L('year')}:<br/><span>2012/Undergraduate</span></li>
-                                <li>{:L('major')}:<br/><span>Environmental Science and Engineerning</span></li>
-                                <li>{:L('hobby')}:<br/><span>tennis & travelling</span></li>
+                                <li>{:L('name')}:<br/><span>{$stars[0]['name']}</span></li>
+                                <li>{:L('year')}:<br/><span>{$stars[0]['year']}</span></li>
+                                <li>{:L('major')}:<br/><span>{$stars[0]['major']}</span></li>
+                                <li>{:L('hobby')}:<br/><span>{$stars[0]['hobby']}</span></li>
                             </ul>
                         </div>
                         <div class="right">
-                            <p>As a freshman in Tongji, I joined the team by chance, but now in charge of HR. Getting to know the team’s operational mode, I found it a fantastic journey to work with so many seniors, and it’ll be amazing if we can achieve our goal - FSE! I’m totally convinced that we’ve got the ability and we’re bound to be successful!</p>
+                            <p>{$stars[0]['intro']}</p>
                         </div>
                     </div>
                     <div class="clear"></div>
                     <div class="bottom">
                         <div class="other"><p>{:L('see-more')}</p></div>
-                        <div class="face">
-                        	<img src="/Public/css/img4.jpg" alt=""/>
-                        </div>
-                        <div class="face">
-                        	<img src="/Public/css/img5.jpg" alt=""/>
-                        </div>
+                        <volist name="stars" id="star">
+                        	<if condition="$i gt 1">
+                            	<div class="face">
+                                    <img src="/Uploads/faces/{$star['faceimg']}" alt="{$star['facenote']}"/>
+                                </div>
+                            </if>
+                        </volist>
                         <div class="slh">···</div>
                     </div>
                 </div>
