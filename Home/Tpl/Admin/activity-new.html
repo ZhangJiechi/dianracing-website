@@ -7,15 +7,15 @@
   <div class="main-bd">
     <form action="?t=new" method="post" id="new-activity" target="_self" class="new-form">
       <p>活动时间:从
-        <input type="date" name="date_start"/>
+        <input type="date" name="date_start" required/>
         到
-        <input type="date" name="date_end"/>
-        格式：年-月-日，如2013-01-17 </p>
+        <input type="date" name="date_end" required/>
+        <br/><span style="color:#777;font-size:.8em;">格式：年-月-日，如2013-01-17，如为单独一天，请设置始末日期为相同</span></p>
       <p>活动地点:
         <input type="text" name="place"/>
       </p>
       <p>活动标题:
-        <input type="text" name="title"/>
+        <input type="text" name="title" required/>
       </p>
       <p>
         <label for="lang">语言:</label>

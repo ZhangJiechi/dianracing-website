@@ -1,80 +1,62 @@
 <include file="header" />
-<include file="left-sider" />
+<div id="left-sider"><include file="left-sider" /></div>
 <div id="main">
-	<div class="main-hd">
-		<h2>职员管理</h2>
-	</div>
-    <div class="main-bd">
-    	<div>
-    		<p><input type="button" class="add-btn" id="staff-add" value="增加"/></p>
-    	</div>
-   	  <table id="staff-table">
-        	<tr>
-                <th>中文名</th>
-                <th>英文名</th>
-                <th>中文职位名</th>
-                <th>英文职位名</th>
-                <th>手机号</th>
-                <th>邮箱</th>
-                <th>排序</th>
-                <th>编辑</th>
-            </tr>
-            <foreach name="staffs" item="staff">
-				<tr>
-                    <td class="text-center">{$staff.cnname}</td>
-                    <td>{$staff.enname}</td>
-                    <td>{$staff.cnposition}</td>
-                    <td>{$staff.enposition}</td>
-                    <td>{$staff.mobile}</td>
-                    <td>{$staff.email}</td>
-                    <td class="text-center">{$staff.queue}</td>
-                    <td class="text-center">
-                    	<input type="button" name="{$staff.id}" class="staff-edit" value="修改"/>
-                        <input type="button" name="{$staff.id}" class="staff-delete" value="删除"/>
-                    </td>
-                </tr>
-			</foreach>
-        </table>
-        <p class="text-right notice">按数字由小到大排序，前3个显示在主页下方</p>
-        <p class="text-right notice">如果需要操作生效，请点击更新首页</p>
+  <div class="main-hd">
+    <h2>职员管理</h2>
   </div>
+  <div class="main-bd">
+  <form id="staffToDelForm" action="?t=del" method="post" target="_self">
+    <div>
+      <p>
+        <input type="submit" value="删除" />
+        <a href="{:U('Admin/staff')}?t=new">新增</a></p>
+    </div>
+    <div>
+      <table width="100%" border="1" class="table-list">
+        <tr>
+          <th><input type="checkbox" id="staffToDelCtrl"/></th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Queue</th>
+          <th>Language</th>
+        </tr>
+        <volist name="staffs" id="staff">
+          <tr>
+            <td><input class="staffToDel" type="checkbox" name="staffToDel[]" value="{$staff.id}"/></td>
+            <td><a href="?t=edit&id={$staff.id}" target="_self">{$staff.name}</a></td>
+            <td>{$staff.position}</td>
+            <td>{$staff.mobile}</td>
+            <td>{$staff.email}</td>
+            <td>{$staff.queue}</td>
+            <td>{$staff.lang}</td>
+          </tr>
+        </volist>
+      </table>
+    </div>
+    </div>
+    <input name="t" type="hidden" value="del" />
+  </form>
 </div>
+<include file="footer" /> 
+<script type="text/javascript">
+var staffToDel = document.querySelectorAll('.staffToDel');
+document.getElementById('staffToDelCtrl').addEventListener('click',function(){
+		if(this.checked) {
+			for(var i=0; i<staffToDel.length; i++) {
+				staffToDel[i].checked = true;
+			}
+		} else {
+			for(var i=0; i<staffToDel.length; i++) {
+				staffToDel[i].checked = false;
+			}
+		}
+}, false);
 
-<div id="popwin" class="popwin text-center">
-    <p>
-        <label for="cnname">中　文　名：</label>
-        <input type="text" id="cnname" />
-    </p>
-    <p>
-        <label for="enname">英　文　名：</label>
-        <input type="text" id="enname" />
-    </p>
-    <p>
-        <label for="cnposition">中文职位名：</label>
-        <input type="text" id="cnposition" />
-    </p>
-    <p>
-        <label for="enposition">英文职位名：</label>
-        <input type="text" id="enposition" />
-    </p>
-    <p>
-        <label for="mobile">手　机　号：</label>
-        <input type="text" id="mobile" />
-    </p>
-    <p>
-        <label for="email">邮　　　箱：</label>
-        <input type="text" id="email" />
-    </p>
-    <p>
-        <label for="queue">排　　　序：</label>
-        <input type="text" id="queue" />
-    </p>
-    <p>
-        <input type="button" id="staff-send" value="保存" />
-        <input type="button" id="staff-cancel" value="取消" />
-    </p>
-</div>
-
-<include file="footer" />
-<js href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>
-<js href="__PUBLIC__/script/staff.js"/>
+document.getElementById('staffToDelForm').addEventListener('submit',function(){
+		if(!confirm('删除后无法恢复，你是否要继续？')) {
+				return false;
+		}
+}, false);
+</script>

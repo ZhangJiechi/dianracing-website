@@ -35,7 +35,7 @@ return array(
 	'links' => '友情链接',
 	'download' => '资料下载',
 	'contact-us' => '联系我们',
-	'contact-notice' => '如果您有任何问题或疑虑，请随时联系我们的团队。',
+	'contact-notice' => '如果您有任何问题或疑虑，请随时联系我们',
 	'address-detail' => '<p>上海市杨浦区彰武路100号<br/>同济-阿尔托设计工厂</p>',
 	
 );

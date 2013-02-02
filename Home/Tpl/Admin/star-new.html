@@ -8,23 +8,23 @@
     <form action="?t=new" method="post" enctype="multipart/form-data" name="star-new" target="_self" class="new-form">
       <p>
         <label for="name">姓名</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required/>
       </p>
       <p>
         <label for="year">年份</label>
-        <input type="text" name="year" id="year" />
+        <input type="text" name="year" id="year" required placeholder="2012/Undergraduate"/>
       </p>
       <p>
         <label for="major">专业</label>
-        <input type="text" name="major" id="major" />
+        <input type="text" name="major" id="major" required/>
       </p>
       <p>
         <label for="hobby">兴趣、特长</label>
-        <input type="text" name="hobby" id="hobby" />
+        <input type="text" name="hobby" id="hobby" required/>
       </p>
       <p>
         <label for="respon">职位</label>
-        <input type="text" name="respon" id="respon" />
+        <input type="text" name="respon" id="respon" required placeholder="尽可能短，如HR"/>
       </p>
       <p>
         <label for="intro">自我介绍</label>
@@ -33,10 +33,11 @@
       <p>
         <label for="faceimg">头像</label>
         <input type="file" name="faceimg" id="faceimg" accept="image/jpeg,image/jpg,image/png"/>
+        <br/><span style="color:#777;font-size:.8em;">图片格式限为PNG、JPEG，建议长宽在100像素左右</span>
       </p>
       <p>
         <label for="facenote">头像注释</label>
-        <input type="text" name="facenote" id="facenote" />
+        <input type="text" name="facenote" id="facenote" placeholder="Star of January,2013"/>
       </p>
       <p>
         <label for="lang">语言:</label>

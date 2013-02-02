@@ -12,6 +12,14 @@ class IndexAction extends Action {
 		$lang = L('lang');
 		$stars = $tStar->where("lang=\"{$lang}\"")->order('id DESC')->limit(3)->select();
 		$this->assign('stars', $stars);
+		
+		//职员
+		$tStaff = M('staff');
+		$lang = L('lang');
+		$staffs = $tStaff->where("lang=\"{$lang}\"")->order('queue ASC')->limit(4)->select();
+		$this->assign('staffs', $staffs);
+		
+		//显示
 		$this->display();
     }
 }

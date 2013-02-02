@@ -209,6 +209,7 @@ class AdminAction extends Action {
 		}
 	}
 	
+	//处理头像上传
 	private function _uploadFace() {
 		import('ORG.Net.UploadFile');
 		$upload = new UploadFile();
@@ -223,6 +224,58 @@ class AdminAction extends Action {
 			exit();
 		}else{
 			return $upload->getUploadFileInfo();
+		}
+	}
+	
+	//职员管理
+	public function staff() {
+		if($this->checkLogin()){
+			if($this->isPost()){
+				switch(isset($_POST['t'])?$_POST['t']:'') {
+					case 'new':
+						$tStaff = M('staff');
+						$tStaff->create();
+						$tStaff->add();
+						$this->success('添加成功！', 'staff');
+						break;
+					case 'edit':
+						$tStaff = M('staff');
+						$tStaff->create();
+						$tStaff->save();
+						$this->success('更新成功！', 'staff');
+						break;
+					case 'del':
+						$delRange = implode(',', $_POST['staffToDel']);
+						$tStaff = M('staff');
+						$tStaff->where("id IN ({$delRange})")->delete();
+						$this->success('删除成功！', 'staff');
+						break;
+				}
+			} else {
+				switch(isset($_GET['t'])?$_GET['t']:'') {
+					case 'new':
+						$tpl = 'staff-new';
+						break;
+					case 'edit':
+						$tpl = 'staff-edit';
+						$tStaff = M('staff');
+						$staff = $tStaff->where("id={$_GET['id']}")->find();
+						$this->assign('staff', $staff);
+						break;
+					default:
+						$tpl = 'staff';
+						$tStaff = M('staff');
+						$staffs = $tStaff->order('queue ASC')->select();
+						$this->assign('staffs', $staffs);
+						break;
+				}
+				
+				$this->assign(array(
+					'account' => $_SESSION['account'],
+					'isLogin' => true
+				));
+				$this->display($tpl);
+			}
 		}
 	}
 }

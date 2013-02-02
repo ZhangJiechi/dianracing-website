@@ -24,3 +24,13 @@ CREATE TABLE think_star (
 	facenote TEXT,
 	lang CHAR(5)
 );
+
+CREATE TABLE think_staff (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    position TEXT,
+	mobile TEXT,
+	email TEXT,
+	queue INTEGER,
+	lang CHAR(5)
+);

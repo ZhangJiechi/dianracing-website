@@ -24,30 +24,14 @@
                         <p>{:L('contact-notice')}</p> 
                     </div>
                     <div>
-                        <div class="staff">
-                            <p class="staff-position">Faculty Advisor</p>
-                            <p class="staff-name">Godert van Hardenbroek</p>
-                            <p class="staff-phone">(+86)18601788776</p>
-                            <p class="staff-mail">godert@me.com</p>
-                        </div>
-                        <div class="staff">
-                            <p class="staff-position">Sponsorship inquiries</p>
-                            <p class="staff-name">Zheng Lei</p>
-                            <p class="staff-phone">(+86)18817308332</p>
-                            <p class="staff-mail">zhenglei@dianracing.com</p>
-                        </div>
-                        <div class="staff">
-                            <p class="staff-position">Membership inquiries</p>
-                            <p class="staff-name">Vicky Xie</p>
-                            <p class="staff-phone">(+86)18817870647</p>
-                            <p class="staff-mail">vicky@dianracing.com</p>
-                        </div>
-                        <div class="staff">
-                            <p class="staff-position">Teaching Facilitator</p>
-                            <p class="staff-name">Jiang Dan</p>
-                            <p class="staff-phone">(+86)18964213016</p>
-                            <p class="staff-mail">404166120@qq.com</p>
-                        </div>
+                        <volist name="staffs" id="staff">
+                        	<div class="staff">
+                                <p class="staff-position">{$staff.position}</p>
+                                <p class="staff-name">{$staff.name}</p>
+                                <p class="staff-phone">{$staff.mobile}</p>
+                                <p class="staff-mail">{$staff.email}</p>
+                            </div>
+                        </volist>
                     </div>
             	</div>
                 <div id="map">{:L('address-detail')}</div>
