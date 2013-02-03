@@ -60,8 +60,9 @@ document.getElementById('starToDelCtrl').addEventListener('click',function(){
 		}
 }, false);
 
-document.getElementById('starToDelForm').addEventListener('submit',function(){
+document.getElementById('starToDelForm').addEventListener('submit',function(e){
 		if(!confirm('删除后无法恢复，你是否要继续？')) {
+				e.preventDefault();
 				return false;
 		}
 }, false);

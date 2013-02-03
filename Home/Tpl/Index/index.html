@@ -55,7 +55,7 @@
     	<div id="welcome-content" class="xblock">
     		<div id="welcome-text">
             	<h1 class="uppercase-title">{:L('welcome-title')}</h1>
-            	<p>{:L('welcome-content')}</p>
+            	{$indexInfoValues['index_welcome']}
             </div>
     	</div>
     </div>
@@ -65,7 +65,7 @@
     		<div id="team-info">
             	<h1 class="uppercase-title">{:L('the-team')}</h1>
                 <h2>{:L('general-info')}</h2>
-            	<div id="team-text">{:L('team-info-text')}</div>
+            	<div id="team-text">{$indexInfoValues['index_team_intro']}</div>
             </div>
     	</div>
     </div>
@@ -107,9 +107,7 @@
                                 <li>{:L('hobby')}:<br/><span>{$stars[0]['hobby']}</span></li>
                             </ul>
                         </div>
-                        <div class="right">
-                            <p>{$stars[0]['intro']}</p>
-                        </div>
+                        <div class="right"><p>{$stars[0]['intro']}</p></div>
                     </div>
                     <div class="clear"></div>
                     <div class="bottom">
@@ -135,11 +133,11 @@
     		<div class="member-text" id="the-car">
 				<div class="left">
 					<h1 class="uppercase-title">{:L('the-car')}</h1>
-    				<p>As a first-year team, we aim at designing and building a car that is realistic, reliable and with relatively high performance. We will be able to apply high level technologies and parts from sponsors in the development of the car. This will provide them a chance to demonstrate their products and brands to both domestic markets as well as abroad, in the context of a zero emission race.</p>
+    				{$indexInfoValues['index_car']}
                 </div>
 				<div class="right">
-                	<p><img src="/Public/css/img3.jpg" alt="" /></p>
-                    <p class="description-for-img">Design Philosophy</p>
+                	<p><img src="/Public/css/img3.jpg" alt="{:L('design-phi')}" /></p>
+                    <p class="description-for-img">{:L('design-phi')}</p>
                 </div>
             </div>
     	</div>

@@ -136,13 +136,35 @@ class AdminAction extends Action {
 	//首页资料
 	public function indexinfo() {
 		if($this->checkLogin()){
+			$indexInfoNames = array(
+				'index_welcome_zh-cn',
+				'index_welcome_en-us',
+				'index_team_intro_zh-cn',
+				'index_team_intro_en-us',
+				'index_car_zh-cn',
+				'index_car_en-us'
+			);
+			$tConfig = M('config');
+			
 			if($this->isPost()){
-				
+				foreach($indexInfoNames as $name) {
+					$tConfig->where("name=\"{$name}\"")->save(array(
+						'value' => $_POST[$name]
+					));
+				}
+				$this->success('更新成功！', 'indexinfo');
 			} else {
-				
+				$indexInfoValues = array();
+				foreach($indexInfoNames as $name) {
+					$tmp = $tConfig->field('value')->where("name=\"{$name}\"")->find();
+					$indexInfoValues[$name] = $tmp['value'];
+				}
+				unset($tConfig);
+				unset($tmp);
 				$this->assign(array(
 					'account' => $_SESSION['account'],
-					'isLogin' => true
+					'isLogin' => true,
+					'indexinfo' => $indexInfoValues
 				));
 				$this->display();
 			}

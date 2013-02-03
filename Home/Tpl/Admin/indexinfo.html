@@ -1,0 +1,65 @@
+<include file="header" />
+<style type="text/css">
+textarea {
+	width: 100%;
+	height: 175px;
+	border: none;
+}
+#submit {
+	text-align: center;
+	padding-top: .5em;
+}
+#submit input{
+	width: 60px;
+	height: 30px;
+}
+</style>
+<div id="left-sider"><include file="left-sider" /></div>
+<div id="main">
+  <div class="main-hd">
+    <h2>首页资料</h2>
+  </div>
+  <div class="main-bd">
+    <form action="?" method="post" id="index-info" target="_self">
+    <table width="100%" border="1">
+      <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">简体中文</th>
+    <th scope="col">English</th>
+  </tr>
+  <tr>
+    <th scope="row">欢迎</th>
+    <td><textarea name="index_welcome_zh-cn">{$indexinfo['index_welcome_zh-cn']}</textarea></td>
+    <td><textarea name="index_welcome_en-us">{$indexinfo['index_welcome_en-us']}</textarea></td>
+  </tr>
+  <tr>
+    <th scope="row">团队介绍</th>
+    <td><textarea name="index_team_intro_zh-cn">{$indexinfo['index_team_intro_zh-cn']}</textarea></td>
+    <td><textarea name="index_team_intro_en-us">{$indexinfo['index_team_intro_en-us']}</textarea></td>
+  </tr>
+  <tr>
+    <th scope="row">The Car</th>
+    <td><textarea name="index_car_zh-cn">{$indexinfo['index_car_zh-cn']}</textarea></td>
+    <td><textarea name="index_car_en-us">{$indexinfo['index_car_en-us']}</textarea></td>
+  </tr>
+</table>
+    <p id="submit">
+    	<span style="color:#888;font-size:.75em;">请务必小心修改！</span><br/>
+    	<input type="submit" value="更新">
+    </p>
+   </form>
+  </div>
+</div>
+<include file="footer" />
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Align,Indent,Outdent,|,Removeformat,Source', width: '100%'});
+
+document.getElementById('index-info').addEventListener('submit',function(e){
+		if(!confirm('你真的要修改吗？')) {
+				e.preventDefault();
+				return false;
+		}
+}, false);
+</script>

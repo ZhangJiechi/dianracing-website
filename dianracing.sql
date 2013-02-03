@@ -34,3 +34,9 @@ CREATE TABLE think_staff (
 	queue INTEGER,
 	lang CHAR(5)
 );
+
+CREATE TABLE think_config (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    value TEXT
+);

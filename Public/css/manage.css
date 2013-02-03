@@ -116,6 +116,9 @@ ul {
 	font-size: 1.1em;
 }
 
+.new-form textarea {
+	height: 200px;
+}
 .new-form p {
 	line-height: 2em;
 }
