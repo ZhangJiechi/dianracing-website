@@ -40,3 +40,22 @@ CREATE TABLE think_config (
     name TEXT,
     value TEXT
 );
+
+CREATE TABLE think_blog (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    author TEXT,
+    createtime TEXT,
+    content TEXT,
+    cover TEXT,
+    lang CHAR(5)
+);
+
+CREATE TABLE think_attachment (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    filename TEXT,
+    filetype TEXT,
+    date TIMESTAMP,
+    filesize INTEGER,
+    filepath TEXT
+);

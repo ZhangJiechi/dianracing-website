@@ -1,0 +1,79 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<div id="main">
+  <div class="main-hd">
+    <h2>每月之星-编辑</h2>
+  </div>
+  <div class="main-bd">
+    <form action="{:U('Star/do_edit')}" method="post" enctype="multipart/form-data" name="star-new" target="_self" class="new-form">
+<style type="text/css">
+	tr {line-height: 2em;}
+</style>
+<table width="100%" border="0">
+    <tr>
+        <th scope="row"><label for="name">姓名</label></th>
+        <td><input type="text" name="name" id="name" value="{$star.name}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="year">年份</label></th>
+        <td><input type="text" name="year" id="year" value="{$star.year}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="major">专业</label></th>
+        <td><input type="text" name="major" id="major" value="{$star.major}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="hobby">兴趣、特长</label></th>
+        <td><input type="text" name="hobby" id="hobby" value="{$star.hobby}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="respon">职位</label></th>
+        <td><input type="text" name="respon" id="respon" value="{$star.respon}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="intro">自我介绍</label></th>
+        <td><textarea name="intro" id="intro" cols="60" rows="6">{$star.intro}</textarea></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="faceimg">头像</label></th>
+        <td>
+            <input type="text" name="faceimg" id="faceimg" value="{$star.faceimg}" readonly="readonly"/>
+            <input id="addFace" type="button" value="上传" />
+            <br />
+            <img src="/Uploads/faces/{$star.faceimg}" alt="{$star.facenote}" style="max-height: 100px;"/>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="facenote">头像注释</label></th>
+        <td><input type="text" name="facenote" id="facenote" value="{$star.facenote}"/></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="lang">语言</label></th>
+        <td>
+        	<select name="lang" id="lang">
+              <option value="zh-cn" <if condition="$star.lang eq 'zh-cn'">selected="selected"</if> >简体中文</option>
+              <option value="en-us" <if condition="$star.lang eq 'en-us'">selected="selected"</if> >English</option>
+            </select>
+        </td>
+    </tr>
+    <tr style="border:none;">
+        <th colspan="2" scope="row">
+            <input type="submit" value="更新" />
+        </th>
+    </tr>
+</table>
+		<input name="id" type="hidden" value="{$star.id}" />
+    </form>
+  </div>
+</div>
+<include file="../footer" />
+
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Align,Indent,Outdent,|,Removeformat,Source'});
+
+document.getElementById('addFace').addEventListener('click',function(){
+	window.open("{:U('Upload/face')}");
+}, false);
+</script>

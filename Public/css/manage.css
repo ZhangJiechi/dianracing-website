@@ -39,7 +39,9 @@ ul {
 #login-submit {
 	width: 3.5em;
 }
-
+#passwd {
+	text-align: left;	
+}
 #left-sider {
 	padding-top: 10px;
 	width: 15%;
@@ -132,4 +134,5 @@ ul {
 }
 .table-list img {
 	max-height: 80px;
+	max-width: 200px;
 }
