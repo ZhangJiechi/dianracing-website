@@ -1,0 +1,59 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<div id="main">
+  <div class="main-hd">
+    <h2>Galleries</h2>
+  </div>
+  <div class="main-bd">
+  <form id="galleryToDelForm" action="remove" method="post" target="_self">
+    <div>
+      <p>
+        <input type="submit" value="删除" />
+        <a href="create">新增</a></p>
+    </div>
+    <div>
+      <table width="100%" border="1" class="table-list">
+        <tr>
+          <th><input type="checkbox" id="galleryToDelCtrl"/></th>
+          <th>Title</th>
+          <th>Create Time</th>
+          <th>Options</th>
+        </tr>
+        <volist name="galleries" id="gallery">
+          <tr>
+            <td class="text-center"><input class="galleryToDel" type="checkbox" name="galleryToDel[]" value="{$gallery.id}"/></td>
+            <td><a href="album/id/{$gallery.id}" target="_self">{$gallery.name}</a></td>
+            <td>{$gallery.createtime|date="Y-m-d H:i:s",###}</td>
+            <td>
+            	<a href="rename/id/{$gallery.id}" target="_self">更名</a>
+            	<a href="upload/id/{$gallery.id}" target="_self">上传</a>
+            </td>
+          </tr>
+        </volist>
+      </table>
+    </div>
+    </div>
+  </form>
+</div>
+<include file="../footer" /> 
+<script type="text/javascript">
+var galleryToDel = document.querySelectorAll('.galleryToDel');
+document.getElementById('galleryToDelCtrl').addEventListener('click',function(){
+		if(this.checked) {
+			for(var i=0; i<galleryToDel.length; i++) {
+				galleryToDel[i].checked = true;
+			}
+		} else {
+			for(var i=0; i<galleryToDel.length; i++) {
+				galleryToDel[i].checked = false;
+			}
+		}
+}, false);
+
+document.getElementById('galleryToDelForm').addEventListener('submit',function(e){
+		if(!confirm('删除后无法恢复，你是否要继续？')) {
+				e.preventDefault();
+				return false;
+		}
+}, false);
+</script>

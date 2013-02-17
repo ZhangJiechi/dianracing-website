@@ -1,0 +1,19 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<div id="main">
+  <div class="main-hd">
+    <h2>Rename the Gallery</h2>
+  </div>
+  <div class="main-bd">
+  <form action="{:U('Gallery/do_rename')}" method="post" target="_self"  class="new-form">
+    <p>
+    	<label for="name">相册名称：</label>
+        <input type="text" name="name" id="name" value="{$gallery.name}" required/>
+    </p>
+    <p>
+      <input id="submit" type="submit" value="添加" />
+      <input type="hidden" name="id" value="{$gallery.id}" />
+    </p>
+  </form>
+</div>
+<include file="../footer" />

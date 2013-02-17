@@ -59,3 +59,16 @@ CREATE TABLE think_attachment (
     filesize INTEGER,
     filepath TEXT
 );
+
+CREATE TABLE think_album (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    createtime TIMESTAMP
+);
+
+CREATE TABLE think_photo (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    filename TEXT,
+    aid INTEGER,
+    createtime TIMESTAMP
+);

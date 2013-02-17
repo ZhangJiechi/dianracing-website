@@ -16,14 +16,20 @@ class UploadAction extends AuthAction {
 		}
 	}
 	
-	private function _uploadImg($path) {
+	private function _uploadImg($path, $maxSize = 2097152, $saveRule = time, $thumb = false) {
 		import('ORG.Net.UploadFile');
 		$upload = new UploadFile();
-		$upload->maxSize  = 2097152;	//2M
+		$upload->maxSize  = $maxSize;
 		$upload->allowExts  = array('jpg', 'png', 'jpeg');
 		$upload->allowTypes=array('image/png','image/jpg', 'image/jpeg');
 		$upload->savePath =  $path;
-		$upload->saveRule = time;
+		$upload->saveRule = $saveRule;
+		
+		if($thumb) {
+			$upload->thumb = true;
+			$upload->thumbMaxWidth = '200';
+			$upload->thumbMaxHeight = '200';	
+		}
 		
 		if(!$upload->upload()) {
 			$this->error($upload->getErrorMsg());
@@ -51,6 +57,23 @@ class UploadAction extends AuthAction {
 				'err' => '上传失败！'
 			));
 		}
+	}
+	//Upload photo to Gallery
+	public function photos(){
+		if(isset($_FILES['photo'])){
+			$photos = $this->_uploadImg('./Uploads/galleries/', 5000000, 'uniqid', true);
+			$tPhoto = M('photo');
+			foreach($photos as $photo) {
+				$tPhoto->add(array(
+					'filename' => $photo['savename'],
+					'aid' => intval($_POST['album_id']),
+					'createtime' => time()
+				));
+			}
+			$this->success('上传成功！', U("Gallery/album?id={$_POST['album_id']}"));
+		} else {
+			$this->error('请选择文件!');
+		}	
 	}
 	
 	//封面
