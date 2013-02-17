@@ -1,0 +1,54 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<style type="text/css">
+.member {margin: 8px;float:left;position:relative;overflow:hidden;}
+.memeber img {width:100%;}
+.memberToDel {position:absolute; top: 5px; left: 5px; opacity: .3;font-size: 3em;}
+.member:hover .memberToDel {opacity: 1;}
+.member:hover {box-shadow: 5px 5px 5px #888;}
+.member .name {position:absolute;right:1px;bottom:1px;color:#fff;font-size:.8em;text-shadow: 1px 1px 2px #000,-1px -1px 2px #000;}
+</style>
+<div id="main">
+  <div class="main-hd">
+    <h2>Members</h2>
+  </div>
+  <div class="main-bd">
+  <form action="remove" method="post" target="_self" id="memberToDelForm">
+  	<div>
+    	<input type="checkbox" id="memberToDelCtrl"/>
+    	<input type="submit" value="删除" />
+    	<a href='create' target="_self">添加</a>
+    </div>
+    <volist name="members" id="member">
+    	<div class="member">
+        	<input type="checkbox" class="memberToDel" name="memberToDel[]" value="{$member.id}"/>
+        	<a href="edit/id/{$member.id}" target="_self">
+            	<img src="/Uploads/faces/{$member.face}" />
+            </a>
+            <p class="name">{$member.name}</p>
+        </div>
+    </volist>
+    </form>
+</div>
+<include file="../footer" /> 
+<script type="text/javascript">
+var memberToDel = document.querySelectorAll('.memberToDel');
+document.getElementById('memberToDelCtrl').addEventListener('click',function(){
+		if(this.checked) {
+			for(var i=0; i<memberToDel.length; i++) {
+				memberToDel[i].checked = true;
+			}
+		} else {
+			for(var i=0; i<memberToDel.length; i++) {
+				memberToDel[i].checked = false;
+			}
+		}
+}, false);
+
+document.getElementById('memberToDelForm').addEventListener('submit',function(e){
+		if(!confirm('删除后无法恢复，你是否要继续？')) {
+				e.preventDefault();
+				return false;
+		}
+}, false);
+</script>

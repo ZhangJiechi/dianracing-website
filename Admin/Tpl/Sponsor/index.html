@@ -1,0 +1,90 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<style type="text/css">
+.main-bd > div {
+	margin-bottom: 30px;
+	padding: 10px;
+	border-bottom: 1px dotted #999;	
+}
+textarea {
+	width: 100%;
+	height: 250px;	
+}
+#brochure {
+	width: 250px;	
+}
+</style>
+<div id="main">
+  <div class="main-hd">
+    <h2>Sponsorship</h2>
+  </div>
+  <div class="main-bd">
+  	<div>
+    	<form method="post" target="_self" action="general">
+        	<h3>简介</h3>
+            <table width="100%" border="0">
+                <tr>
+                    <th scope="col">简体中文</th>
+                    <th scope="col">English</th>
+                </tr>
+                <tr>
+                    <td><textarea name="sponsorship_zh-cn">{$general['zh-cn']}</textarea></td>
+                    <td><textarea name="sponsorship_en-us">{$general['en-us']}</textarea></td>
+                </tr>
+            </table>
+            <p class="text-center"><input type="submit" value="更新"/></p>
+        </form>
+    </div>
+    <div>
+    	<form method="post" target="_self" action="brochure">
+            <h3>小册子</h3>
+            <p>
+                <label for="brochure">Brochure:</label>
+                <input type="text" name="brochure" value="{$brochure}" id="brochure" readonly="readonly"/>
+                <input type="button" id="uploadBtn" value="上传"/>
+                <input type="submit" value="更新"/>
+            </p>
+        </form>
+    </div>
+    <div>
+    	<form method="post" target="_self" action="sponsor">
+        	<h3>赞助商</h3>
+            <table width="100%" border="0">
+                <tr>
+                    <th scope="col" width="10%">&nbsp;</th>
+                    <th scope="col">简体中文</th>
+                    <th scope="col">English</th>
+                </tr>
+                <for start="0" end="4">
+                <tr>
+                    <th scope="row" width="10%">
+                    	<p>{$type[$i]['zh-cn']}</p>
+                        <p>{$type[$i]['en-us']}</p>
+                    </th>
+                    <td width="45%">
+                    	<textarea name="sponsor_{$i}_zh-cn">{$sponsors[$i]['zh-cn']['content']}</textarea>
+                        <input name="sponsor_id_{$i}_zh-cn" type="hidden" value="{$sponsors[$i]['zh-cn']['id']}"/>
+                    </td>
+                    <td width="45%">
+                    	<textarea name="sponsor_{$i}_en-us">{$sponsors[$i]['en-us']['content']}</textarea>
+                        <input name="sponsor_id_{$i}_en-us" type="hidden" value="{$sponsors[$i]['en-us']['id']}"/>
+                    </td>
+                </tr>
+                </for>
+            </table>
+			<p class="text-center"><input type="submit" value="更新"/></p>
+        </form>
+    </div>
+  </div>
+</div>
+<include file="../footer" />
+
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,|,List,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
+
+document.getElementById('uploadBtn').onclick = function(){
+	window.open("{:U('Upload/brochure')}");
+}
+</script>

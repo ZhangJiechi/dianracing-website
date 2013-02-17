@@ -72,3 +72,33 @@ CREATE TABLE think_photo (
     aid INTEGER,
     createtime TIMESTAMP
 );
+
+CREATE TABLE think_content (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    key TEXT,
+    value TEXT
+);
+
+CREATE TABLE think_sponsor (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type INTEGER,
+	content TEXT,
+    lang CHAR(5)
+);
+
+CREATE TABLE think_member (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    gtype INTEGER,
+	name TEXT,
+	face TEXT,
+	text TEXT,
+    lang CHAR(5)
+);
+
+CREATE TABLE think_group (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    gtype INTEGER,
+	name TEXT,
+	children TEXT,
+	lang CHAR(5)
+);

@@ -125,4 +125,29 @@ class UploadAction extends AuthAction {
 	}
 	
 	
+	public function brochure(){
+		$this->display();	
+	}
+	public function do_brochure(){
+		if(isset($_FILES['brochure'])){
+			import('ORG.Net.UploadFile');
+			$upload = new UploadFile();
+			$upload->maxSize  = 20971520;	//20M
+			$upload->allowExts  = explode(',', 'doc,docx,pdf');
+			$upload->savePath =  './Uploads/docs/';
+			$upload->saveRule = time;
+			
+			if(!$upload->upload()) {
+				$this->error($upload->getErrorMsg());
+			}else{
+				$info = $upload->getUploadFileInfo();
+				$this->assign('brochure', $info[0]['savename']);
+				$this->display();
+			}
+		} else {
+			$this->error('上传失败！');
+		}
+	}
+	
+	
 }

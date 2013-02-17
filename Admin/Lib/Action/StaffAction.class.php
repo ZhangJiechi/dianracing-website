@@ -4,7 +4,6 @@ include(APP_PATH.'/Lib/Action/AuthAction.class.php');
 class StaffAction extends AuthAction {
 	
 	public function index(){
-		$tpl = 'staff';
 		$tStaff = M('staff');
 		$staffs = $tStaff->order('queue ASC')->select();
 		$this->assign(array(
