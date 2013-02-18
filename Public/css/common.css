@@ -16,17 +16,6 @@ body {
 	background-color: black;
 	font-family: HelveticaNeueCn;	
 }
-ul {
-	list-style: none;
-}
-.xblock {
-	width: 800px;
-	height: 404px;
-	margin: 0 auto;
-}
-.uppercase-title {
-	text-transform: uppercase;
-}
 .clear {
 	clear: both;
 }
@@ -43,7 +32,128 @@ ul {
 	margin-left: 5px;
 }
 
+#header {
+	width: 800px;
+	margin: 0 auto;
+}
+#header-main {
+	width: 100%;
+	height: 402px;
+	background: url(header-bg.jpg);
+	position: relative;	
+}
+#upcoming-events {
+	position: absolute;
+	top: 155px;
+	left: 71px;
+	font-size: 14px;
+	color: white;
+	font-family: HelveticaNeueCn;
+	line-height: 1.7em;
+	width: 340px;
+}
+.upcoming-event-name {
+	color: #F00;
+	font-size: 30px;
+	padding-bottom: 14px;
+	font-family: HelveticaNeueCn;
+	font-weight: bold;
+	line-height: 1em;
+}
+#events-switchs {
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+#events-switchs a {
+	padding-left: 8px;
+	padding-right: 6px;
+	padding-top: 6px;
+	font-size: 18px;
+	color: #424242;
+	border: 1px solid #424242;
+	border-radius: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 5px;
+}
+#events-switchs .focus, #events-switchs a:hover {
+	color: #F00;
+	border: 1px solid #f00;
+}
+.event-detail {
+    display: none;    
+}
+#upcoming-events .seemore {
+	color: white;
+	text-decoration: none;
+}
 
+#navi-bar-wrap {
+	width: 100%;
+	background-color: white;
+}
+#navi-bar {
+	width: 80%;
+	height: 13px;
+	padding: 12px 0;
+	margin: 0 auto;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.navi-item {
+	float: left;
+	margin: 0 2%;
+	position: relative;
+}
+.navi-item a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.main-link {
+	color: #ff0014;
+	padding: 0 13px;
+}
+.navi-item:first-child .main-link {
+	padding-left: 0;
+}
+.navi-item:last-child .main-link {
+	padding-right: 0;
+}
+.navi-sub-wrap {
+	display: none;
+	padding-top: 11px;
+	position: absolute;
+	top: 14px;
+	left: 7.223%;
+}
+.navi-sub {
+	width: 80px;
+	padding: 4px 8px;
+	background: rgba(0,0,0,.8);
+}
+.sub-link {
+	display: block;
+	margin-top: 5px;
+	font-size: .9em;
+	line-height: 1.4em;
+	color: white;
+}
+.sub-link:hover {
+	text-shadow: 1px 1px 3px white;
+}
+.navi-item:hover .main-link, .navi-item .focus {
+	color: #3f3a39;
+}
+.navi-item:hover .navi-sub-wrap {
+	display: block;
+}
+.main-link, .navi-sub-wrap, .sub-link {
+	/* 过渡动画 */
+	-webkit-transition: color .5s;
+	   -moz-transition: color .5s;
+	     -o-transition: color .5s;
+		    transition: color .5s;
+}
 
 
 #footer {

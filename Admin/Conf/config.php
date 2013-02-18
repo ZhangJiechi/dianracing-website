@@ -1,6 +1,6 @@
 <?php
 return array(
-	'DEFAULT_MODULE'     => 'Index', //默认模块
+	'DEFAULT_MODULE'     => 'Login', //默认模块
     'SESSION_AUTO_START' => true,
 	
 	'DB_TYPE' => 'pdo',

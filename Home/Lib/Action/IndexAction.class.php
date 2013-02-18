@@ -20,24 +20,10 @@ class IndexAction extends Action {
 		$this->assign('staffs', $staffs);
 		
 		
-		//其他信息
-		$indexInfoNames = array(
-			'index_welcome',
-			'index_team_intro',
-			'index_car'
-		);
-		$indexInfoValues = array();
-		$lang = L('lang');
-		$tConfig = M('config');
-		foreach($indexInfoNames as $name) {
-			$tmp = $tConfig->field('value')->where("name=\"{$name}_{$lang}\"")->find();
-			$indexInfoValues[$name] = $tmp['value'];
-		}
-		unset($tConfig);
-		unset($tmp);
-		$this->assign('indexInfoValues', $indexInfoValues);
+	
 		
 		//显示
+		$this->assign('selectedTab', 'index');
 		$this->display();
     }
 }

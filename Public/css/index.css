@@ -1,90 +1,72 @@
-#title-content {
-	position: relative;	
-	background: url(title-bg.jpg);
-}
-#title-logo-wrap {
-	padding: 90px 46px;
-	background: url(title-logo.png) no-repeat -250px 0;
-	position: absolute;
-	top: 55px;
-	right: 70px;
-}
-#title-logo {
-	width: 183px;
-	height: 95px;
-	text-indent: -999em;
-	background: url(title-logo.png) no-repeat;	
-}
-
-#title-upcoming {
-	position: absolute;
-	top: 155px;
-	left: 71px;
-	font-size: 14px;
-	color: white;
-	font-family: HelveticaNeueCn;
-	line-height: 1.7em;
-	width: 340px;
-}
-.title-upcoming-name {
-	color: #e32561;
-	font-size: 30px;
-	padding-bottom: 14px;
-	font-family: HelveticaNeueCn;
-	font-weight: bold;
-	line-height: 1em;
-}
-#events-switchs {
-	padding-top: 15px;
-	padding-bottom: 5px;
-}
-#events-switchs a {
-	padding: 2px 8px;
-	font-size: 18px;
-	color: #424242;
-	border: 1px solid #424242;
-	border-radius: 18px;
-	font-weight: bold;
-	text-decoration: none;
-	margin-right: 5px;
-}
-#events-switchs .focus, #events-switchs a:hover {
-	color: #E32561;
-	border: 1px solid #E32561;
-}
-.event-detail {
-    display: none;    
-}
-#title-upcoming .seemore {
-	color: white;
-	text-decoration: none;
-}
-
-#nav-content {
-	background-color: white;
-	height: 36px;
-}
-#nav-content a {
-	line-height: 36px;
-	color: #e32561;
-	text-shadow: 1px 1px 2px #e32561;
-	text-decoration: none;
-}
-#nav-content .focus, #nav-content a:hover {
-	color: #3f3a39;
-	text-shadow: 1px 1px 2px #3f3a39;
-}
-#nav-content ul {
-	display: table;
+#welcome-wrap {
+	width: 800px;
 	margin: 0 auto;
-	width: 80%;
+	background: #ae0202 url(dots.jpg);
 }
-#nav-content li {
-	display: table-cell;
-	width: 16.6%;
-	text-align: center;
+#welcome {
+	width: 76%;
+	margin: 0 auto;
+	padding: 37px 2% 32px 2%;
+	color: white;
+}
+#welcome-hd {
+	text-transform: uppercase;
+}
+#welcome-bd {
+	font-family: HelveticaNeueTh;
+	padding-top: .6em;
+	line-height: 1.2em;
 }
 
+#team-wrap {
+	width: 800px;
+	height: 302px;
+	margin: 0 auto;
+	background: url(team-bg.jpg) no-repeat;
+}
+#team {
+	width: 76%;
+	margin: 0 auto;
+	padding: 30px 2% 45px 2%;
+}
+#team-hd {
+	color: #ff0014;
+	text-transform: uppercase;
+}
+#team-hd h2 {
+	font-size: .92em;
+	padding-top: .6em;
+}
+#team-bd {
+	color: white;
+	font-family: HelveticaNeueTh;
+	line-height: 1.18em;
+	/* 分栏 */
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	     -o-column-count: 2;
+	        column-count: 2;
+}
+#team-bd ul {
+	color: #ff0014;
+	font-size: .95em;
+	margin-left: 1.2em;
+	margin-top: .7em;
+}
+
+#member {
+	width: 640px;
+	margin: -20px auto 0 auto;
+	padding: 60px 30px 25px 30px;
+	background-color: #1c1b1b;
+	border-bottom: 1px solid #ff0014;
+}
+
+
+
+
+
+/*
 #welcome-content {
 	padding-top: 35px;
 	padding-bottom: 16px;
@@ -294,7 +276,7 @@
 	padding-top: .2em;
 	font-style: italic;
 }
-
+*/
 
 
 
