@@ -1,5 +1,7 @@
 <?php
-class IndexAction extends Action {
+include(APP_PATH.'/Lib/Action/GlobalAction.class.php');
+
+class IndexAction extends GlobalAction {
     public function index(){
 		//近期活动
 		$tActivities = M('activities');

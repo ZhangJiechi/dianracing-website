@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+	<if condition="$lang eq 'zh-cn'">
+		请升级您的浏览器！
+	<else/>
+		Please update your web browser!
+	</if>
+</title>
+</head>
+
+<body>
+<if condition="$lang eq 'zh-cn'">
+	<h1>请升级您的浏览器！</h1>
+	<p>因为您当前的浏览器不支持本页中HTML5内容。</p>
+	<p>我们推荐您使用以下浏览器：</p>
+	<ul>
+		<li><a href="http://www.google.com/chrome" target="_blank">谷歌浏览器</a></li>
+		<li><a href="http://www.apple.com/safari/" target="_blank">Safari浏览器</a></li>
+		<li><a href="http://firefox.com" target="_blank">火狐浏览器</a></li>
+		<li><a href="http://www.opera.com" target="_blank">Opera浏览器</a></li>
+	</ul>
+	<p>以<big>不兼容</big>的方式<a id="continueBtn" href="{$continue}" target="_self">继续访问</a>。</p>
+<else/>
+	<h1>Please update your web browser!</h1>
+	<p>Because the web browser you are using doesn't support HTML5.</p>
+	<p>Browsers we recommend are following:</p>
+	<ul>
+		<li><a href="http://www.google.com/chrome" target="_blank">Google Chrome</a></li>
+		<li><a href="http://www.apple.com/safari/" target="_blank">Safari</a></li>
+		<li><a href="http://firefox.com" target="_blank">Friefox</a></li>
+		<li><a href="http://www.opera.com" target="_blank">Opera</a></li>
+	</ul>
+	<p>To ignore this message and continue surfing in an incompatible manner, please <a id="continueBtn" href="{$continue}" target="_self">click here</a>.</p>
+</if>
+</body>
+</html>
+<script type="text/javascript">
+var msg = "<if condition="$lang eq 'zh-cn'">请注意，您接下来看到的页面并不是总是它本该有的样子。<else/>Attention！What you will see aren't always looks that they should be.</if>";
+document.getElementById('continueBtn').onclick = function(){
+	if(!confirm(msg)) {
+		return false;
+	}
+};
+</script>

@@ -17,7 +17,6 @@
 	padding-top: .6em;
 	line-height: 1.2em;
 }
-
 #team-wrap {
 	width: 800px;
 	height: 302px;
@@ -43,9 +42,9 @@
 	line-height: 1.18em;
 	/* 分栏 */
 	-webkit-column-count: 2;
-	   -moz-column-count: 2;
-	     -o-column-count: 2;
-	        column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
 }
 #team-bd ul {
 	color: #ff0014;
@@ -53,7 +52,6 @@
 	margin-left: 1.2em;
 	margin-top: .7em;
 }
-
 #member {
 	width: 640px;
 	margin: -20px auto 0 auto;
@@ -277,6 +275,3 @@
 	font-style: italic;
 }
 */
-
-
-

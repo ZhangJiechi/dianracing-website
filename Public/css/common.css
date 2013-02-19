@@ -1,29 +1,27 @@
 @font-face {
-    font-family: "HelveticaNeueCn";
-    src: url("HelveticaNeueLTPro-Cn.otf");
+	font-family: "HelveticaNeueCn";
+	src: url("HelveticaNeueLTPro-Cn.otf");
 }
 @font-face {
-    font-family: "HelveticaNeueTh";
-    src: url("HelveticaNeueLTPro-Th.otf");
+	font-family: "HelveticaNeueTh";
+	src: url("HelveticaNeueLTPro-Th.otf");
 }
-
 * {
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
-
 body {
 	background-color: black;
-	font-family: HelveticaNeueCn;	
+	font-family: HelveticaNeueCn;
 }
 .clear {
 	clear: both;
 }
-
-
 #language {
-	float: right;
 	font-size: .8em;
+	position: absolute;
+	top: 0;
+	right: 0;
 	z-index: 9999;
 }
 #language a {
@@ -31,7 +29,6 @@ body {
 	margin-top: 20px;
 	margin-left: 5px;
 }
-
 #header {
 	width: 800px;
 	margin: 0 auto;
@@ -40,7 +37,7 @@ body {
 	width: 100%;
 	height: 402px;
 	background: url(header-bg.jpg);
-	position: relative;	
+	position: relative;
 }
 #upcoming-events {
 	position: absolute;
@@ -81,13 +78,12 @@ body {
 	border: 1px solid #f00;
 }
 .event-detail {
-    display: none;    
+	display: none;
 }
 #upcoming-events .seemore {
 	color: white;
 	text-decoration: none;
 }
-
 #navi-bar-wrap {
 	width: 100%;
 	background-color: white;
@@ -150,15 +146,13 @@ body {
 .main-link, .navi-sub-wrap, .sub-link {
 	/* 过渡动画 */
 	-webkit-transition: color .5s;
-	   -moz-transition: color .5s;
-	     -o-transition: color .5s;
-		    transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
 }
-
-
 #footer {
 	background: url(footer-bg.jpg);
-	height: 400px;	
+	height: 400px;
 }
 #footer-links {
 	height: 45px;
@@ -167,10 +161,10 @@ body {
 	border-bottom: 1px solid #373737;
 }
 .footer-link-title {
-	color: 	#e32561;
+	color: #e32561;
 	font-family: HelveticaNeueCn;
 	font-weight: bold;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	text-align: center;
 	margin-top: -20px;
 	margin-bottom: 10px;
@@ -223,60 +217,59 @@ body {
 	width: 182px;
 }
 #footer-down a {
-	color: #6a6966;	
+	color: #6a6966;
 	font-size: .88em;
 }
 #contact {
-	margin-top: 1.4em;	
+	margin-top: 1.4em;
 }
 #staffs {
-    width: 450px;
-    float: left; 
+	width: 450px;
+	float: left;
 }
 #contact-us {
-    margin-bottom: 1.3em;
+	margin-bottom: 1.3em;
 }
 #contact-us p {
-    color: #fe9cbd;
-    font-style: italic;
+	color: #fe9cbd;
+	font-style: italic;
 }
 #contact-us h1 {
-    font-size: 1.2em;
-    color: #e32561;
+	font-size: 1.2em;
+	color: #e32561;
 }
 .staff {
-    width: 220px;
-    margin-bottom: 1.3em;
-    color: #6B6A6A;
-    float: left;
+	width: 220px;
+	margin-bottom: 1.3em;
+	color: #6B6A6A;
+	float: left;
 }
 .staff-position {
-    color: #e32561;
+	color: #e32561;
 }
 .staff-phone, .staff-mail {
-    text-indent: 1.6em;
-    background: url(icon.png) no-repeat 0 0;
-    line-height: 1.4em;
+	text-indent: 1.6em;
+	background: url(icon.png) no-repeat 0 0;
+	line-height: 1.4em;
 }
 .staff-mail {
-    background-position: 0 -50px;    
+	background-position: 0 -50px;
 }
 .staff-name {
-    padding-bottom: .6em;    
+	padding-bottom: .6em;
 }
-
 #map {
-    width: 340px;
-    height: 240px;
-    margin-top: 40px;
-    float: right;
-    color: #F091A6;
-    text-align: right;
-    position: relative;
-    background: url(map.png) no-repeat center 0;
+	width: 340px;
+	height: 240px;
+	margin-top: 40px;
+	float: right;
+	color: #F091A6;
+	text-align: right;
+	position: relative;
+	background: url(map.png) no-repeat center 0;
 }
 #map p {
-    position: absolute;
-    bottom: 0;
-	right: 0;  
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
