@@ -4,6 +4,8 @@ return array(
 	'home' => '首页',
 	'upcoming-events' => '近期活动',
 	'see-more' => '更多',
+	'read-more' => '阅读更多',
+	'more-blog' => '更多新闻',
 	'aboutus' => '关于我们',
 	'ourteam' => '我们的团队',
 	'ourcar' => '我们的赛车',
@@ -35,4 +37,5 @@ return array(
 	'sfc' => '中芬中心',
 	'renren' => '人人网',
 	'weibo' => '微博',
+	'fromtheblog' => '近期新闻',
 );

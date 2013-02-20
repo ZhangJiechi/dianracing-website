@@ -72,6 +72,12 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 	margin-right: 5px;
+	/* Animate */
+	-webkit-transition: all .7s;
+	   -moz-transition: all .7s;
+	    -ms-transition: all .7s;
+	     -o-transition: all .7s;
+	        transition: all .7s;
 }
 #events-switchs .focus, #events-switchs a:hover {
 	color: #F00;
@@ -145,11 +151,50 @@ body {
 }
 .main-link, .navi-sub-wrap, .sub-link {
 	/* 过渡动画 */
-	-webkit-transition: color .5s;
-	-moz-transition: color .5s;
-	-o-transition: color .5s;
-	transition: color .5s;
+	-webkit-transition: color .6s;
+	   -moz-transition: color .6s;
+	    -ms-transition: color .6s;
+	     -o-transition: color .6s;
+	        transition: color .6s;
 }
+
+
+
+.bbww {
+	width: 640px;
+	margin: 0 auto;
+	padding: 60px 30px 25px 30px;
+	background-color: #1c1b1b;
+	border-bottom: 1px solid #ff0014;
+	color: white;
+}
+.bbww .hd {
+	color: #ff0014;
+	padding-bottom: .4em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.bbww .bd {
+	font-family: HelveticaNeueTh;
+}
+.bbww .hd h2 {
+	font-size: .92em;
+	padding-top: .6em;
+}
+.bbww table {
+	width: 100%;
+	border: none;
+	margin-top: .2em;
+	margin-bottom: .8em;
+	border-collapse:collapse;
+}
+.bbww td {
+	vertical-align: top;
+}
+
+
+
+
 #footer {
 	background: url(footer-bg.jpg);
 	height: 400px;

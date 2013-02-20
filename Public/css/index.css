@@ -1,3 +1,5 @@
+@import "blog.css";
+
 #welcome-wrap {
 	width: 800px;
 	margin: 0 auto;
@@ -54,12 +56,7 @@
 }
 
 #member-star {
-	width: 640px;
-	margin: -20px auto 0 auto;
-	padding: 60px 30px 25px 30px;
-	background-color: #1c1b1b;
-	border-bottom: 1px solid #ff0014;
-	color: white;
+	margin-top: -20px;
 }
 #member-star > section {
 	float: left;
@@ -69,14 +66,7 @@
 	margin-left: 2%;
 }
 #member-star table {
-	border: none;
 	width: 96%;
-	margin-top: .2em;
-	margin-bottom: .8em;
-	border-collapse:collapse;
-}
-#member-star td {
-	vertical-align: top;
 }
 #member-star .left {
 	padding-right: 4%;
@@ -86,15 +76,6 @@
 }
 #star .right {
 	padding-right: 0;
-}
-#member-star .hd {
-	color: #ff0014;
-	padding-bottom: .4em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-#member-star .bd {
-	font-family: HelveticaNeueTh;
 }
 #member .position {
 	text-indent: .8em;
@@ -188,156 +169,15 @@
 	color: #ff0014;
 }
 
-/*
-.member-content {
-    width: 578px;
-    height: auto;
-    background-color: #1c1b1b;
-	overflow: auto;
-	padding: 40px 40px 0 40px;
+#car .more {
+	margin-top: .8em;
 }
-.member-text {
-	overflow: auto;
-	padding-bottom: 40px;
-	font-family: HelveticaNeueCn;
-	color: #e32561;
-	border-bottom: 1px solid #e32561;
+#car .more a {
+	color: #ff0014;
 }
-.member-text h1 {
-	font-size: 24px;
-	padding-bottom: 20px;
+#car .right img {
+	max-width: 250px;
+	margin-left: 15px;
 }
 
-#member-star > div {
-	float: left;
-	width: 49%;
-}
-#the-members {
-	margin-right: 2%;
-}
-.member-text ul {
-	list-style-position: inside;
-	list-style-image: url('triangle.png');	
-}
-.member-text li {
-	line-height: 1.5em;
-}
-.member-text li span {
-	color: white;
-	font-family: HelveticaNeueTh;
-}
-.member-text .top {
-	margin-bottom: 1em;	
-}
-.member-text .top > div {
-	float: left;
-}
-.member-text .left {
-	width: 37%;
-	margin-right: 4%;
-}
-.member-text .right {
-	width: 59%;
-	color: white;
-	font-size: .9em;
-	font-family: HelveticaNeueTh;
-	line-height: 1.3em;
-}
-.member-text .left img {
-	width: 96%;
-	border: 3px solid #e32561;
-}
-.member-text .position {
-	text-align: right;
-	padding-top: .3em;
-}
-.member-text .bottom {
-	margin-top: 1.5em;	
-}
-#dianracing-star ul {
-	font-size: .9em;
-	list-style-position: outside;
-	margin-left: 1em;
-}
-#dianracing-star li {
-	line-height: 1.2em;
-	padding-top: .5em;
-	word-break: break-all;
-}
-#dianracing-star .responsible {
-	background: url(big-triangle.png) no-repeat;
-	width: 41px;
-	height: 40px;
-	color: white;
-	position: absolute;
-	padding: 3px;
-	font-weight: bold;
-}
-#dianracing-star .left img {
-	width: 96%;
-	border: 3px solid white;
-}
-#dianracing-star .position {
-	font-size: .6em;
-	color: #6a6966;
-}
-#dianracing-star .bottom > div {
-	width: 44px;
-	height: 44px;
-	border: 2px solid #e32561;
-	overflow: hidden;
-	text-align: center;
-	margin-right: 10px;
-	float: left;
-}
-#dianracing-star .bottom .other {
-	background-color: #e32561;
-	color: white;
-}
-#dianracing-star .bottom .other p {
-	padding-top: 4px;
-}
-#dianracing-star .bottom .face img {
-	width: 100%;
-}
-#dianracing-star .bottom .slh {
-	border: none;
-	color: #e32561;
-	font-size: 3em;
-	font-weight: bold;
-	line-height: 44px;
-}
 
-#the-car-parent {
-	padding-top: 20px;
-	padding-bottom: 33px;
-}
-#the-car {
-	border-bottom: none;
-	color: white;
-	font-family: HelveticaNeueTh;
-}
-#the-car h1 {
-	padding-bottom: 10px;
-	color: #e32561;
-	font-family: HelveticaNeueCn;
-}
-#the-car > div {
-	width: 49%;
-	float: left;
-}
-#the-car .left {
-	margin-right: 2%;
-}
-#the-car .right img {
-	width: 88%;
-	border: 3px solid white;
-	margin-top: 12px;	
-}
-#the-car .description-for-img {
-	color: #6a6966;
-	font-size: .8em;
-	padding-top: .2em;
-	font-style: italic;
-}
-*/

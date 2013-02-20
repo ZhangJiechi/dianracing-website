@@ -16,7 +16,7 @@ class UploadAction extends AuthAction {
 		}
 	}
 	
-	private function _uploadImg($path, $maxSize = 2097152, $saveRule = time, $thumb = false) {
+	private function _uploadImg($path, $maxSize = 2097152, $saveRule = time, $thumb = false, $thumbRemoveOrigin = false) {
 		import('ORG.Net.UploadFile');
 		$upload = new UploadFile();
 		$upload->maxSize  = $maxSize;
@@ -29,6 +29,10 @@ class UploadAction extends AuthAction {
 			$upload->thumb = true;
 			$upload->thumbMaxWidth = '200';
 			$upload->thumbMaxHeight = '200';	
+		}
+		
+		if($thumbRemoveOrigin) {
+			$upload->thumbRemoveOrigin = true;
 		}
 		
 		if(!$upload->upload()) {
@@ -82,7 +86,7 @@ class UploadAction extends AuthAction {
 	}
 	public function do_cover(){
 		if(!empty($_FILES['cover']['name'])){
-			$info = $this->_uploadImg('./Uploads/cover/');
+			$info = $this->_uploadImg('./Uploads/cover/', 5000000, 'time', true, true);
 			$this->assign('cover', $info[0]['savename']);
 			$this->display();
 		} else {

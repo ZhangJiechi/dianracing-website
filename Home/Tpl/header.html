@@ -16,7 +16,7 @@
 	<a href="?l=zh-cn" target="_self">简体中文</a>
 </div>
 
-<div id="header">
+<header id="header">
 	<div id="header-main">
     	<div id="upcoming-events">
         	<p>{:L('upcoming-events')}</p>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div id="navi-bar-wrap">
-    	<div id="navi-bar">
+    	<nav id="navi-bar">
         	<div class="navi-item">
             	<a class="main-link <eq name="selectedTab" value="index">focus</eq>" href="{:U('Index/index')}">{:L('home')}</a>
             </div>
@@ -67,6 +67,6 @@
             <div class="navi-item">
             	<a class="main-link <eq name="selectedTab" value="sponsor">focus</eq>" href="{:U('Sponsor/index')}">{:L('sponsorship')}</a>
             </div>
-        </div>
+        </nav>
     </div>
-</div>
+</header>

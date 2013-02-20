@@ -4,6 +4,8 @@ return array(
 	'home' => 'HOME',
 	'upcoming-events' => 'Upcoming Events',
 	'see-more' => 'See more',
+	'read-more' => 'Read More',
+	'more-blog' => 'More blog posts',
 	'aboutus' => 'ABOUT US',
 	'ourteam' => 'OUR TEAM',
 	'ourcar' => 'OUR CAR',
@@ -35,4 +37,5 @@ return array(
 	'sfc' => 'Sino-Finnish Centre',
 	'renren' => 'Renren',
 	'weibo' => 'Weibo',
+	'fromtheblog' => 'From The Blog',
 );
