@@ -29,125 +29,72 @@
 		</div>
 	</section>
 </div>
-<div id="member">
-	
+<div id="member-star">
+	<section id="member">
+		<hgroup class="hd">
+			<h1>{:L('the-member')}</h1>
+		</hgroup>
+		<div class="bd">
+			<table>
+				<tr>
+					<td class="left"><p><img class="face" src="/Uploads/faces/{$member['face']}" alt="{:L('faculty-advisor')}" /></p>
+						<p class="position">{:L('faculty-advisor')}:</p></td>
+					<td class="right">{$member['text']}</td>
+				</tr>
+			</table>
+			<ul>
+				<volist name="teams" id="team">
+					<li><a href="{:U('About/team')}#t{$team['gtype']}">{$team['name']}</a></li>
+				</volist>
+			</ul>
+		</div>
+	</section>
+	<section id="star">
+		<hgroup class="hd">
+			<h1>{:L('dr-star')}</h1>
+		</hgroup>
+		<div class="bd">
+			<table width="100%" border="0">
+				<tr>
+					<td class="left"><div class="responsible">{$stars[0]['respon']}</div>
+						<p><img class="face" src="/Uploads/faces/{$stars[0]['faceimg']}" alt="{$stars[0]['facenote']}" /></p>
+						<p class="position">{$stars[0]['facenote']}</p>
+						<ul>
+							<li>{:L('name')}:<br/>
+								<span>{$stars[0]['name']}</span></li>
+							<li>{:L('year')}:<br/>
+								<span>{$stars[0]['year']}</span></li>
+							<li>{:L('major')}:<br/>
+								<span>{$stars[0]['major']}</span></li>
+							<li>{:L('hobby')}:<br/>
+								<span>{$stars[0]['hobby']}</span></li>
+						</ul></td>
+					<td class="right"> {$stars[0]['intro']} </td>
+				</tr>
+			</table>
+			<div id="more-star">
+				<div class="other">
+					<a href="{:U('About/team')}#star">{:L('see-more')}</a>
+				</div>
+				<volist name="stars" id="star">
+					<if condition="$i gt 1">
+						<div class="mini-face"> <img src="/Uploads/faces/{$star['faceimg']}" alt="{$star['facenote']}"/> </div>
+					</if>
+				</volist>
+				<div class="slh">
+					<a href="{:U('About/team')}#star">···</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clear"></div>
 </div>
 
 <!--div id="wrap">
-	<div id="title">
-    	<div id="title-content" class="xblock">
-        	<div id="title-upcoming">
-            	<p>{:L('upcoming-events')}</p>
-                <p id="events-switchs">
-                    <volist name="activities" id="activity">
-                    	<a href="###" <if condition="$i eq 1">class="focus"</if> >{$i}</a>
-                    </volist>
-                </p>
-                <volist name="activities" id="activity">
-                    <div id="event-{$i}" class="event-detail" <if condition="$i eq 1">style="display:block;"</if>>
-                        <p>
-                        	<if condition="$activity['date_start'] eq $activity['date_end']">
-                                {$activity.date_start|date="d F, Y",###}
-                            <else />
-                            	{$activity.date_start|date="d F, Y",###} - {$activity.date_end|date="d F, Y",###}
-                            </if>
-                        </p>
-                        <p class="title-upcoming-addr">{$activity.place}</p>
-                        <p class="title-upcoming-name">{$activity.title}</p>
-                    </div>
-                </volist>
-                <p><a href="###" class="seemore">{:L('see-more')} >></a></p>
-            </div>
-        	<div id="title-logo-wrap">
-            	<div id="title-logo">DIAN Racing</div>
-            </div>
-        </div>
-    </div>
-
-	<div id="nav">
-    	<div id="nav-content" class="xblock">
-    		<ul>
-            	<li><a href="###" class="focus">{:L('home')}</a></li>
-                <li><a href="###">{:L('aboutus')}</a></li>
-                <li><a href="###">{:L('FSE')}</a></li>
-                <li><a href="###">{:L('blog')}</a></li>
-                <li><a href="###">{:L('gallery')}</a></li>
-                <li><a href="###">{:L('sponsorship')}</a></li>
-            </ul>
-    	</div>
-    </div>
-
-	<div id="welcome">
-    	<div id="welcome-content" class="xblock">
-    		<div id="welcome-text">
-            	<h1 class="uppercase-title">{:L('welcome-title')}</h1>
-            	{$indexInfoValues['index_welcome']}
-            </div>
-    	</div>
-    </div>
-    
-    <div id="team">
-    	<div id="team-content" class="xblock">
-    		<div id="team-info">
-            	<h1 class="uppercase-title">{:L('the-team')}</h1>
-                <h2>{:L('general-info')}</h2>
-            	<div id="team-text">{$indexInfoValues['index_team_intro']}</div>
-            </div>
-    	</div>
-    </div>
-    
     <div class="member">
     	<div class="member-content xblock">
     		<div class="member-text" id="member-star">
-                <div id="the-members" >
-                    <h1 class="uppercase-title">{:L('team-member')}</h1>
-                    <div class="top">
-                        <div class="left">
-                            <p><img src="/Public/css/img1.jpg" alt="{:L('faculty-advisor')}" /></p>
-                            <p class="position">{:L('faculty-advisor')}:</p>
-                        </div>
-                        <div class="right">
-                            <p>Godert van Hardenbroek, Faculty Advisor to the team, is a sustainability lecturer at Sino-Finnish Centre with a background in design and entrepreneurship. He is the initiator of Dian Racing, Tongji University and brings a unique and relevant experience as the co-founder of Formula Zero, a race class for fuel cell vehicles.</p>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="bottom">
-                        <ul>
-                            <li>{:L('bs-team')}</li>
-                            <li>{:L('ed-team')}</li>
-                        </ul>
-                    </div>
-                </div>
                 
-                <div id="dianracing-star">
-                    <h1 class="uppercase-title">{:L('dr-star')}</h1>
-                    <div class="top">
-                        <div class="left">
-                        	<div class="responsible">{$stars[0]['respon']}</div>
-                            <p><img src="/Uploads/faces/{$stars[0]['faceimg']}" alt="{$stars[0]['facenote']}" /></p>
-                            <p class="position">{$stars[0]['facenote']}</p>
-                            <ul>
-                                <li>{:L('name')}:<br/><span>{$stars[0]['name']}</span></li>
-                                <li>{:L('year')}:<br/><span>{$stars[0]['year']}</span></li>
-                                <li>{:L('major')}:<br/><span>{$stars[0]['major']}</span></li>
-                                <li>{:L('hobby')}:<br/><span>{$stars[0]['hobby']}</span></li>
-                            </ul>
-                        </div>
-                        <div class="right"><p>{$stars[0]['intro']}</p></div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="bottom">
-                        <div class="other"><p>{:L('see-more')}</p></div>
-                        <volist name="stars" id="star">
-                        	<if condition="$i gt 1">
-                            	<div class="face">
-                                    <img src="/Uploads/faces/{$star['faceimg']}" alt="{$star['facenote']}"/>
-                                </div>
-                            </if>
-                        </volist>
-                        <div class="slh">···</div>
-                    </div>
-                </div>
             </div>
     	</div>
     </div>

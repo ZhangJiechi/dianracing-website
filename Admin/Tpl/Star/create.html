@@ -50,6 +50,10 @@
         <input type="submit" value="添加" />
       </p>
     </form>
+	<div id="sample">
+		<button id="closeSampleBtn">X 关闭</button>
+		<img src="__PUBLIC__/sample/star.jpg" />
+	</div>
   </div>
 </div>
 <include file="../footer" />
@@ -57,9 +61,13 @@
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">
-$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Align,Indent,Outdent,|,Removeformat,Source'});
+$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Fontface,FontSize,FontColor,|,Removeformat,Source'});
 
 document.getElementById('addFace').addEventListener('click',function(){
 	window.open("{:U('Upload/face')}");
+}, false);
+
+document.getElementById('closeSampleBtn').addEventListener('click',function(){
+	document.getElementById('sample').style.display = 'none';
 }, false);
 </script>

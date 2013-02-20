@@ -70,6 +70,7 @@ ul {
 }
 .main-bd {
 	padding: 10px;
+	position: relative;
 }
 
 #staff-table {
@@ -135,4 +136,15 @@ ul {
 .table-list img {
 	max-height: 80px;
 	max-width: 200px;
+}
+
+#sample {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#closeSampleBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
