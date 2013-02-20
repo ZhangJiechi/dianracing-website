@@ -17,18 +17,16 @@ body {
 .clear {
 	clear: both;
 }
-#language {
-	font-size: .8em;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 9999;
+
+/* Animate */
+#events-switchs a, #language a, .main-link, .navi-sub-wrap, .sub-link {
+	-webkit-transition: all .66s;
+	   -moz-transition: all .66s;
+	    -ms-transition: all .66s;
+	     -o-transition: all .66s;
+	        transition: all .66s;
 }
-#language a {
-	color: #ccc;
-	margin-top: 20px;
-	margin-left: 5px;
-}
+
 #header {
 	width: 800px;
 	margin: 0 auto;
@@ -38,6 +36,22 @@ body {
 	height: 402px;
 	background: url(header-bg.jpg);
 	position: relative;
+}
+#language {
+	font-size: .8em;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	z-index: 99;
+	opacity: .4;
+}
+#language:hover {
+	opacity: 1;
+}
+#language a {
+	color: #ccc;
+	margin-top: 20px;
+	margin-left: 5px;
 }
 #upcoming-events {
 	position: absolute;
@@ -72,12 +86,6 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 	margin-right: 5px;
-	/* Animate */
-	-webkit-transition: all .7s;
-	   -moz-transition: all .7s;
-	    -ms-transition: all .7s;
-	     -o-transition: all .7s;
-	        transition: all .7s;
 }
 #events-switchs .focus, #events-switchs a:hover {
 	color: #F00;
@@ -149,16 +157,6 @@ body {
 .navi-item:hover .navi-sub-wrap {
 	display: block;
 }
-.main-link, .navi-sub-wrap, .sub-link {
-	/* 过渡动画 */
-	-webkit-transition: color .6s;
-	   -moz-transition: color .6s;
-	    -ms-transition: color .6s;
-	     -o-transition: color .6s;
-	        transition: color .6s;
-}
-
-
 
 .bbww {
 	width: 640px;
