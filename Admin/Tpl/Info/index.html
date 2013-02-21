@@ -1,0 +1,79 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<style type="text/css">
+.main-bd > div {
+	margin-bottom: 30px;
+	padding: 10px;
+	border-bottom: 1px dotted #999;	
+}
+textarea {
+	width: 100%;
+	height: 90px;	
+}
+.filename {
+	width: 200px;
+}
+.filepath {
+	width: 400px;
+}
+</style>
+<div id="main">
+  <div class="main-hd">
+    <h2>Sponsorship</h2>
+  </div>
+  <div class="main-bd">
+  	<div>
+        	<h3>Welcome to the home of Dian Racing!</h3>
+            <table width="100%" border="0">
+                <tr>
+					<form method="post" target="_self" action="welcome">
+						<th scope="col">简体中文</th>
+						<td><textarea name="value">{$welcome_cn['value']}</textarea></td>
+						<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$welcome_cn['id']}" /></td>
+					</form>
+                </tr>
+                <tr>
+					<form method="post" target="_self" action="welcome">
+						<th scope="col">English</th>
+						<td><textarea name="value">{$welcome_en['value']}</textarea></td>
+						<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$welcome_en['id']}" /></td>
+					</form>
+                </tr>
+            </table>
+    </div>
+    <div>
+    	<form method="post" target="_self" action="downloads">
+            <h3>下载项</h3>
+			<table>
+				<tr>
+					<th>显示名称</th>
+					<th>文档地址</th>
+					<th>-</th>
+				</tr>
+				<volist name="downloads" id="dl">
+				<tr>
+					<td><input class="filename" type="text" name="filename[]" value="{$dl['name']}"/></td>
+					<td><input id="path-{$i}" class="filepath" type="text" name="filepath[]" value="{$dl['path']}"/></td>
+					<td><input class="uploadBtn" type="button" value="上传" lang="path-{$i}"/></td>
+				</tr>
+				</volist>
+			</table>
+			<input type="submit" value="更新"/>
+        </form>
+    </div>
+    <div>
+	
+    </div>
+  </div>
+</div>
+<include file="../footer" />
+
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
+
+$('.uploadBtn').click(function(){
+	window.open("{:U('Upload/brochure')}?prefix=/Uploads/docs/&cbi="+this.lang);
+});
+</script>

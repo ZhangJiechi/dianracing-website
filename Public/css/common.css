@@ -191,78 +191,62 @@ body {
 }
 
 
-
-
-#footer {
+#footer-wrap {
 	background: url(footer-bg.jpg);
-	height: 400px;
 }
-#footer-links {
-	height: 45px;
-	padding: 10px 0;
-	border-top: 1px solid #373737;
-	border-bottom: 1px solid #373737;
+#footer {
+	width: 700px;
+	margin: 0 auto;
 }
-.footer-link-title {
-	color: #e32561;
-	font-family: HelveticaNeueCn;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: -20px;
-	margin-bottom: 10px;
+#footer .upper {
+	border-top: 1px solid rgba(132, 131, 131, .35);
+	border-bottom: 1px solid rgba(132, 131, 131, .35);
 }
-#footer-links div {
-	float: left;
-	height: 45px;
+#footer .upper table {
+	width: 100%;
+	border: none;
+	border-collapse:collapse;
+}
+#footer .upper td {
+	vertical-align: top;
 	text-align: center;
 }
-#footer-sns {
-	width: 190px;
-	border-right: 1px solid #5e5d5d;
+#footer .upper td.left {
+	width: 30%;
 }
-#footer-sns a {
-	display: inline-block;
-	background: url(snsicon.png) no-repeat 0 0;
-	text-indent: -999em;
+#footer .upper td.middle {
+	width: 40%;
 }
-#footer-renren {
-	width: 58px;
-	height: 33px;
-	margin-right: 20px;
+#footer .upper .left a {
+	margin: 0 12px;
 }
-#footer-weibo {
-	width: 43px;
-	height: 35px;
-	background-position: -80px 0 !important;
+#footer .upper .middle a {
+	margin: 0 5px;
 }
-#footer-link {
-	width: 426px;
-	border-right: 1px solid #5e5d5d;
+#footer .upper .title {
+	color: #ff0014;
+	text-align: center;
+	margin-top: -.5em;
+	overflow: hidden;
 }
-#footer-link a {
-	display: inline-block;
-	background: url(snsicon.png) no-repeat;
-	text-indent: -999em;
+#footer .upper .icon-links {
+	border-right: 1px solid rgba(132, 131, 131, .35);
+	margin-bottom: 8px;
 }
-#footer-tongji {
-	width: 114px;
-	height: 44px;
-	background-position: 0 -60px !important;
-	margin-right: 40px;
+#footer .upper .icon-links a {
+	text-decoration: none;
 }
-#footer-sfc {
-	width: 106px;
-	height: 34px;
-	background-position: 0 -130px !important;
-}
-#footer-down {
-	width: 182px;
-}
-#footer-down a {
+#footer .upper .txt-links a {
 	color: #6a6966;
-	font-size: .88em;
+	font-size: .8em;
 }
+
+#footer .sponsor {
+	height: 100px;
+}
+
+
+/*
 #contact {
 	margin-top: 1.4em;
 }
@@ -316,3 +300,4 @@ body {
 	bottom: 0;
 	right: 0;
 }
+*/

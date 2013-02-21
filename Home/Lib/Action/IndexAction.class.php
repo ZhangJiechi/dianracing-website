@@ -3,6 +3,12 @@ include(APP_PATH.'/Lib/Action/GlobalAction.class.php');
 
 class IndexAction extends GlobalAction {
     public function index(){
+		//Welcome
+		$tContent = M('content');
+		$ret = $tContent->field('value')->where("key=\"welcome_{$this->lang}\"")->find();
+		$this->assign('welcome', $ret['value']);
+		unset($tContent);
+		
 		//member
 		$tMember = M('member');
 		$ret = $tMember->field('face,text')->where("lang=\"{$this->lang}\" AND gtype=0")->find();
@@ -15,9 +21,10 @@ class IndexAction extends GlobalAction {
 		unset($tTeam);
 		unset($ret);
 		
-		//每月之星，新闻
+		//每月之星，新闻，下载
 		$this->assignStar();
 		$this->assignBlogs(5);
+		$this->assignDownload();
 		
 		//显示
 		$this->assign('selectedTab', 'index');

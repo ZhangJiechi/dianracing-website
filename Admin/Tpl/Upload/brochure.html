@@ -1,8 +1,10 @@
-<h2>Brochure</h2>
+<h2>上传文档</h2>
 <form method="post" enctype="multipart/form-data" action="do_brochure" target="_self">
     <p>
-        <input type="file" name="brochure" id="brochure" accept="application/msword,application/pdf,text/rtf"/>
+        <input type="file" name="file" id="file" accept="application/msword,application/pdf,text/rtf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,application/vnd.ms-powerpoint"/>
         <input type="submit" value="上传" />
+		<input type="hidden" name="callbackid" value="{$callbackId}"/>
+		<input type="hidden" name="prefix" value="{$prefix}"/>
     </p>
-    <p style="color:#777;font-size:.8em;">仅限Word、PDF，20M以下</p>
+    <p style="color:#777;font-size:.8em;">仅限Word、PPT、XLS和PDF，20M以下</p>
 </form>

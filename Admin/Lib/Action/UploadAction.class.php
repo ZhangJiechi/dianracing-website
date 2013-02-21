@@ -130,10 +130,12 @@ class UploadAction extends AuthAction {
 	
 	
 	public function brochure(){
+		$this->assign('prefix', isset($_GET['prefix'])?$_GET['prefix']:'');
+		$this->assign('callbackId', isset($_GET['cbi'])?$_GET['cbi']:'filepath');
 		$this->display();	
 	}
 	public function do_brochure(){
-		if(isset($_FILES['brochure'])){
+		if(isset($_FILES['file'])){
 			import('ORG.Net.UploadFile');
 			$upload = new UploadFile();
 			$upload->maxSize  = 20971520;	//20M
@@ -145,7 +147,9 @@ class UploadAction extends AuthAction {
 				$this->error($upload->getErrorMsg());
 			}else{
 				$info = $upload->getUploadFileInfo();
-				$this->assign('brochure', $info[0]['savename']);
+				$this->assign('callbackid', $_POST['callbackid']);
+				$this->assign('prefix', $_POST['prefix']);
+				$this->assign('filepath', $info[0]['savename']);
 				$this->display();
 			}
 		} else {
