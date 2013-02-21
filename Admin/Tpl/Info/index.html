@@ -16,10 +16,14 @@ textarea {
 .filepath {
 	width: 400px;
 }
+#sponsor_logo {
+	width: 65%;
+	height: 150px;
+}
 </style>
 <div id="main">
   <div class="main-hd">
-    <h2>Sponsorship</h2>
+    <h2>首页和底部信息设置</h2>
   </div>
   <div class="main-bd">
   	<div>
@@ -57,12 +61,24 @@ textarea {
 					<td><input class="uploadBtn" type="button" value="上传" lang="path-{$i}"/></td>
 				</tr>
 				</volist>
+				<!--for start="0" end="3">
+				<tr>
+					<td><input class="filename" type="text" name="filename[]"/></td>
+					<td><input id="path-{$i}" class="filepath" type="text" name="filepath[]"/></td>
+					<td><input class="uploadBtn" type="button" value="上传" lang="path-{$i}"/></td>
+				</tr>
+				</for-->
 			</table>
 			<input type="submit" value="更新"/>
         </form>
     </div>
     <div>
-	
+		<form method="post" target="_self" action="sponsor">
+			<h3>赞助商LOGO</h3>
+			<p>Logo图片地址，一行一个</p>
+			<p><textarea id="sponsor_logo" name="sponsor_logo">{$sponsor}</textarea>
+			<input type="submit" value="Update" /></p>
+		</form>
     </div>
   </div>
 </div>
@@ -71,7 +87,7 @@ textarea {
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">
-$('textarea').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
+$('textarea[name=value]').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
 
 $('.uploadBtn').click(function(){
 	window.open("{:U('Upload/brochure')}?prefix=/Uploads/docs/&cbi="+this.lang);

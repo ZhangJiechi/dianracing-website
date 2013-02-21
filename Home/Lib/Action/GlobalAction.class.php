@@ -69,11 +69,13 @@ class GlobalAction extends Action {
 		$this->assign('stars', $ret);
 	}
 	
-	//文件下载
+	//下载&赞助商
 	protected function assignDownload(){
 		$tContent = M('content');
 		$ret = $tContent->field('value')->where('key="index_downloads"')->find();
 		$this->assign('downloads', unserialize($ret['value']));
+		$ret = $tContent->field('value')->where('key="index_sponsor"')->find();
+		$this->assign('sponsors', explode("\n", $ret['value']));
 	}
 	
 	

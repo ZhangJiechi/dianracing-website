@@ -238,13 +238,79 @@ body {
 }
 #footer .upper .txt-links a {
 	color: #6a6966;
-	font-size: .8em;
+	font-size: .9em;
+	line-height: 1.5em;
 }
 
+#footer .sponsor table {
+	width: 100%;
+	border: none;
+	border-collapse:collapse;
+}
+#footer .sponsor td {
+	text-align: center;
+}
 #footer .sponsor {
-	height: 100px;
+	padding: .8em;
+	border-bottom: 1px solid rgba(132, 131, 131, .35);
 }
 
+#footer .contact {
+	padding: 1.2em 0;
+}
+#footer .contact table {
+	width: 100%;
+	border: none;
+	border-collapse:collapse;
+}
+#footer .contact td {
+	width: 50%;
+}
+#footer .contact .hd h1 {
+	font-size: 1.3em;
+	color: #ff0014;
+}
+#footer .contact .hd p {
+	color: #fe9c9c;
+	font-size: 1.07em;
+	font-style: italic;
+}
+#footer .contact .bd {
+	font-family: HelveticaNeueTh;
+	color: #6b6a6a;
+}
+#footer .contact .bd .staff {
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+	margin-top: 1.5em;
+	font-size: .95em;
+}
+#footer .contact .bd .staff .position {
+	color: #ff0014;
+	font-size: 1em;
+}
+#footer .contact .phone, #footer .contact .mail {
+	text-indent: 1.4em;
+	background: url(icon.png) no-repeat 0 1px;
+	line-height: 1.4em;
+}
+#footer .contact .mail {
+	background-position: 0 -32px;
+}
+#footer .contact .name {
+	padding-bottom: .4em;
+}
+#footer .contact .right .map {
+	color: #fe9c9c;
+	text-align: right;
+	text-decoration: none;
+}
+#footer .copyright {
+	color: #6b6a6a;
+	font-size: .9em;
+	padding: .6em 0 1em 0;
+}
 
 /*
 #contact {

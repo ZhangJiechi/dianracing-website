@@ -39,53 +39,51 @@
 			</table>
 		</div>
 		<div class="sponsor">
-			
+			<table>
+				<tr>
+					<volist name="sponsors" id="sponsor">
+						<td><img src="{$sponsor}"/></td>
+					</volist>
+				</tr>
+			</table>
+		</div>
+		<div class="contact">
+			<table>
+				<tr>
+					<td class="left">
+						<div class="hd">
+							<h1>{:L('contact-us')}</h1>
+							<p>{:L('contact-notice')}</p>
+						</div>
+						<div class="bd">
+							<volist name="staffs" id="staff">
+								<div class="staff">
+									<p class="position">{$staff.position}</p>
+									<p class="name">{$staff.name}</p>
+									<p class="phone">{$staff.mobile}</p>
+									<p class="mail">{$staff.email}</p>
+								</div>
+							</volist>
+						</div>
+					</td>
+					<td class="right">
+						<div class="map">
+							<p><img src="/Public/css/map.png" /></p>
+							{:L('address-detail')}
+						</div>
+						<div>
+							
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<p>Copyright 2013 Dian Racing, Tongji University</p>
 		</div>
 	</footer>
 </div>
-
-    <!--div id="footer">
-    	<div id="footer-content"  class="xblock">
-        	<div id="footer-links">
-            	<div id="footer-sns">
-                	<p class="footer-link-title uppercase-title">{:L('follow-us')}</p>
-                    <a id="footer-renren" href="http://page.renren.com/601406213?id=601406213" title="{:L('renren')}">{:L('renren')}</a>
-                    <a id="footer-weibo" href="http://weibo.com/dianracing" title="{:L('weibo')}">{:L('weibo')}</a>
-                </div>
-                <div id="footer-link">
-                	<p class="footer-link-title uppercase-title">{:L('links')}</p>
-                    <a id="footer-tongji" href="http://www.tongji.edu.cn" title="{:L('tongji-uni')}">{:L('tongji-uni')}</a>
-                    <a id="footer-sfc" href="http://sfc.tongji.edu.cn" title="{:L('sfc')}">{:L('sfc')}</a>
-                </div>
-                <div id="footer-down">
-                	<p class="footer-link-title uppercase-title">{:L('download')}</p>
-                    <p><a href="http://dianracing.com/files/1352750362.pdf">Dian Racing Brochure</a></p>
-                    <p><a href="http://dianracing.com/files/1350611304.docx">Registration Form</a></p>
-                </div>
-            </div>
-            <div id="contact">
-            	<div id="staffs">
-                    <div id="contact-us">
-                        <h1 class="uppercase-title">{:L('contact-us')}</h1>
-                        <p>{:L('contact-notice')}</p> 
-                    </div>
-                    <div>
-                        <volist name="staffs" id="staff">
-                        	<div class="staff">
-                                <p class="staff-position">{$staff.position}</p>
-                                <p class="staff-name">{$staff.name}</p>
-                                <p class="staff-phone">{$staff.mobile}</p>
-                                <p class="staff-mail">{$staff.email}</p>
-                            </div>
-                        </volist>
-                    </div>
-            	</div>
-                <div id="map">{:L('address-detail')}</div>
-            </div>
-        </div>
-    </div>
-    
-</div-->
 
 </body>
 </html>
