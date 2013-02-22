@@ -13,7 +13,7 @@
 						<td class="left"><img class="cover" src="/Uploads/cover/thumb_{$blog['cover']}" /></td>
 						<td class="right"><h2>{$blog['title']}</h2>
 							<p class="author">By {$blog['author']} - {$blog['createtime|date="d F, Y",###']}</p>
-							<p class="summary"> {$blog['content']|strip_tags|String::msubstr=0,100,"utf-8",true} <a class="more" href="{$blog['url']}">&gt;&gt; {:L('read-more')}</a> </p></td>
+							<p class="summary"> {$blog['content']|strip_tags|String::msubstr=0,80,"utf-8",true} <a class="more" href="{$blog['url']}">&gt;&gt; {:L('read-more')}</a> </p></td>
 					</tr>
 				</table>
 			</div>

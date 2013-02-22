@@ -1,0 +1,40 @@
+<include file="../header" title="sponsor" />
+
+<section id="sponsor" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('sponsorship')}</h1>
+	</hgroup>
+	<article class="bd">
+		<div class="general">
+			<h2>{:L('general-info')}</h2>
+			<div>{$general}</div>
+		</div>
+	</article>
+	<div class="brochure">
+		<table width="100%" border="0">
+			<tr>
+				<td class="hr"><div>&#160;</div></td>
+				<td><div class="downloadBtn {$lang}"><a href="/Uploads/docs/{$brochure}">{:L('become')}</a></div></td>
+				<td class="hr"><div>&#160;</div></td>
+			</tr>
+		</table>
+	</div>
+</section>
+
+<section id="slist" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('oursponsors')}</h1>
+	</hgroup>
+	<div class="bd">
+		<volist name="sponsors" id="sponsor">
+			<div class="type">
+				<h2>{$sponsor['type']}</h2>
+				<volist name="sponsor['content']" id="content">
+					<div class="sponsor">{$content['content']}</div>
+				</volist>
+			</div>
+		</volist>
+	</div>
+</section>
+
+<include file="../footer" />

@@ -1,0 +1,51 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<div id="main">
+	<div class="main-hd">
+		<h2>编辑赞助商</h2>
+	</div>
+	<div class="main-bd">
+		<form action="{:U('Sponsor/do_edit')}" method="post" target="_self" class="new-form">
+			<p>
+				<label for="type">类型</label>
+				<select name="gtype" id="type">
+					<volist name="sponsortype" id="st"> <option 
+						<if condition="($i-1) eq $sponsor['gtype']">selected</if>
+						 value="{$i-1}">{$st['zh-cn']} ({$st['en-us']})
+						</option>
+					</volist>
+				</select>
+			</p>
+			<p>
+				<textarea name="content">{$sponsor['content']}</textarea>
+			</p>
+			<p>
+				<label for="lang">语言</label>
+				<select name="lang" id="lang">
+					<option value="zh-cn" 
+					<if condition="$sponsor['lang'] eq 'zh-cn'">selected="selected"</if>
+					>简体中文
+					</option>
+					<option value="en-us" 
+					<if condition="$sponsor['lang'] eq 'en-us'">selected="selected"</if>
+					>English
+					</option>
+				</select>
+			</p>
+			<p>
+				<input type="submit" value="添加" />
+				<input type="hidden" name="id" value="{$sponsor['id']}"/>
+			</p>
+		</form>
+	</div>
+</div>
+<include file="../footer" />
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Fontface,FontSize,FontColor,|,Removeformat,Source', width: '80%', height: '400px'});
+
+document.getElementById('addFace').addEventListener('click',function(){
+	window.open("{:U('Upload/face')}");
+}, false);
+</script>

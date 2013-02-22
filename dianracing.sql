@@ -81,7 +81,7 @@ CREATE TABLE think_content (
 
 CREATE TABLE think_sponsor (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    type INTEGER,
+    gtype INTEGER,
 	content TEXT,
     lang CHAR(5)
 );

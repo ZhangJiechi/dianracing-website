@@ -38,4 +38,6 @@ return array(
 	'renren' => '人人网',
 	'weibo' => '微博',
 	'fromtheblog' => '近期新闻',
+	'become' => '成为<br/>赞助商',
+	'oursponsors' => '我们的赞助商',
 );

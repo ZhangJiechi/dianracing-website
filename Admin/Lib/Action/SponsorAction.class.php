@@ -32,14 +32,10 @@ class SponsorAction extends AuthAction {
 		$info = $tContent->field('value')->where("key=\"brochure\"")->find();
 		$brochure = $info['value'];
 		
-		$sponsors = array();
 		$tSponsor = M('sponsor');
-		foreach($this->sponsorType as $a => $t) {
-			$sponsors[$a] = array();
-			foreach($this->lang as $l) {
-				$info = $tSponsor->where("type={$a} AND lang=\"{$l}\"")->find();
-				$sponsors[$a][$l] = $info;	
-			}
+		$sponsors = $tSponsor->select();
+		foreach($sponsors as $i => $sponsor) {
+			$sponsors[$i]['type'] = $this->sponsorType[$sponsor['gtype']]['zh-cn'];
 		}
 		
 		$this->assign(array(
@@ -51,6 +47,7 @@ class SponsorAction extends AuthAction {
 			'type' => $this->sponsorType,
 			'lang' => $this->lang
 		));
+		import('ORG.Util.String');
 		$this->display();
 	}
 	
@@ -80,18 +77,45 @@ class SponsorAction extends AuthAction {
 		}
 	}
 	
-	public function sponsor(){
+	
+	public function create(){
+		$this->assign('sponsortype', $this->sponsorType);
+		$this->display();
+	}
+	
+	public function do_create(){
 		if($this->isPost()){
 			$tSponsor = M('sponsor');
-			foreach($this->sponsorType as $a => $t) {
-				foreach($this->lang as $l) {
-					$id = $_POST["sponsor_id_{$a}_{$l}"];
-					$tSponsor->where("id={$id}")->save(array(
-						'content' => $_POST["sponsor_{$a}_{$l}"]
-					));
-				}
-			}
-			$this->success('更新成功!');
+			$tSponsor->create();
+			$tSponsor->add();
+			$this->success('添加成功!', U('Sponsor/index'));
 		}
 	}
+	
+	public function edit(){
+		$tSponsor = M('sponsor');
+		$ret = $tSponsor->where("id={$_GET['id']}")->find();
+		$this->assign('sponsor', $ret);
+		$this->assign('sponsortype', $this->sponsorType);
+		$this->display();
+	}
+	
+	public function do_edit(){
+		if($this->isPost()){
+			$tSponsor = M('sponsor');
+			$tSponsor->create();
+			$tSponsor->save();
+			$this->success('添加成功!');
+		}
+	}
+	
+	public function remove(){
+		if($this->isPost()){
+			$delRange = implode(',', $_POST['sponsorToDel']);
+			$tSponsor = M('sponsor');
+			$tSponsor->where("id IN ({$delRange})")->delete();
+			$this->success('删除成功！', U('Sponsor/index'));
+		}
+	}
+	
 }

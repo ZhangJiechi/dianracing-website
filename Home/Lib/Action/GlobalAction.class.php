@@ -64,7 +64,7 @@ class GlobalAction extends Action {
 		$ret = $tContent->field('value')->where('key="index_downloads"')->find();
 		$this->assign('downloads', unserialize($ret['value']));
 		$ret = $tContent->field('value')->where('key="index_sponsor"')->find();
-		$this->assign('sponsors', explode("\n", $ret['value']));
+		$this->assign('sponsorslogo', explode("\n", $ret['value']));
 	}
 	
 	

@@ -38,4 +38,6 @@ return array(
 	'renren' => 'Renren',
 	'weibo' => 'Weibo',
 	'fromtheblog' => 'From The Blog',
+	'become' => 'Become<br/>a<br/>Sponsor!',
+	'oursponsors' => 'our sponsors',
 );

@@ -1,63 +1,61 @@
 <include file="../header" />
 <div id="left-sider"><include file="../left-sider" /></div>
 <div id="main">
-  <div class="main-hd">
-    <h2>每月之星-新增</h2>
-  </div>
-  <div class="main-bd">
-    <form action="do_create" method="post" enctype="multipart/form-data" name="star-new" target="_self" class="new-form">
-      <p>
-        <label for="name">姓名</label>
-        <input type="text" name="name" id="name" required/>
-      </p>
-      <p>
-        <label for="year">年份</label>
-        <input type="text" name="year" id="year" required placeholder="2012/Undergraduate"/>
-      </p>
-      <p>
-        <label for="major">专业</label>
-        <input type="text" name="major" id="major" required/>
-      </p>
-      <p>
-        <label for="hobby">兴趣、特长</label>
-        <input type="text" name="hobby" id="hobby" required/>
-      </p>
-      <p>
-        <label for="respon">职位</label>
-        <input type="text" name="respon" id="respon" required placeholder="尽可能短，如HR"/>
-      </p>
-      <p>
-        <label for="intro">自我介绍</label>
-        <textarea name="intro" id="intro" cols="60" rows="6"></textarea>
-      </p>
-      <p>
-        <label for="faceimg">头像</label>
-        <input type="text" name="faceimg" id="faceimg" value="default.jpg" readonly="readonly"/>
-        <input id="addFace" type="button" value="上传" />
-      </p>
-      <p>
-        <label for="facenote">头像注释</label>
-        <input type="text" name="facenote" id="facenote" placeholder="Star of January,2013"/>
-      </p>
-      <p>
-        <label for="lang">语言</label>
-        <select name="lang" id="lang">
-          <option value="zh-cn">简体中文</option>
-          <option value="en-us" selected="selected">English</option>
-        </select>
-      </p>
-      <p>
-        <input type="submit" value="添加" />
-      </p>
-    </form>
-	<div id="sample">
-		<button id="closeSampleBtn">X 关闭</button>
-		<img src="__PUBLIC__/sample/star.jpg" />
+	<div class="main-hd">
+		<h2>每月之星-新增</h2>
 	</div>
-  </div>
+	<div class="main-bd">
+		<form action="do_create" method="post" enctype="multipart/form-data" name="star-new" target="_self" class="new-form">
+			<p>
+				<label for="name">姓名</label>
+				<input type="text" name="name" id="name" required/>
+			</p>
+			<p>
+				<label for="year">年份</label>
+				<input type="text" name="year" id="year" required placeholder="2012/Undergraduate"/>
+			</p>
+			<p>
+				<label for="major">专业</label>
+				<input type="text" name="major" id="major" required/>
+			</p>
+			<p>
+				<label for="hobby">兴趣、特长</label>
+				<input type="text" name="hobby" id="hobby" required/>
+			</p>
+			<p>
+				<label for="respon">职位</label>
+				<input type="text" name="respon" id="respon" required placeholder="尽可能短，如HR"/>
+			</p>
+			<p>
+				<label for="intro">自我介绍</label>
+				<textarea name="intro" id="intro" cols="60" rows="6"></textarea>
+			</p>
+			<p>
+				<label for="faceimg">头像</label>
+				<input type="text" name="faceimg" id="faceimg" value="default.jpg" readonly="readonly"/>
+				<input id="addFace" type="button" value="上传" />
+			</p>
+			<p>
+				<label for="facenote">头像注释</label>
+				<input type="text" name="facenote" id="facenote" placeholder="Star of January,2013"/>
+			</p>
+			<p>
+				<label for="lang">语言</label>
+				<select name="lang" id="lang">
+					<option value="zh-cn">简体中文</option>
+					<option value="en-us" selected="selected">English</option>
+				</select>
+			</p>
+			<p>
+				<input type="submit" value="添加" />
+			</p>
+		</form>
+		<div id="sample">
+			<button id="closeSampleBtn">X 关闭</button>
+			<img src="__PUBLIC__/sample/star.jpg" /> </div>
+	</div>
 </div>
 <include file="../footer" />
-
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">

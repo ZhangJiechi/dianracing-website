@@ -10,13 +10,13 @@
 				<a href="{$prevPage}" target="_self">Back to listing</a>
 			</span>
 		</div>
-		<div class="blog">
-			<div>
+		<article class="blog">
+			<header>
 				<h2>{$blog['title']}</h2>
 				<p class="author">By {$blog['author']} - {$blog['createtime|date="d F, Y",###']}</p>
-			</div>
+			</header>
 			<div class="content {$lang}">{$blog['content']}</div>
-		</div>
+		</article>
 	</div>
 </section>
 
