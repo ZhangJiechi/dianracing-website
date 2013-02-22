@@ -19,12 +19,21 @@ class IndexAction extends GlobalAction {
 		$ret = $tTeam->field('gtype,name')->where("lang=\"{$this->lang}\" AND gtype>0 AND children<>'-'")->order('gtype ASC')->select();
 		$this->assign('teams', $ret);
 		unset($tTeam);
+		//News
+		$tBlog = M('blog');
+		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->limit($n)->select();
+		foreach($ret as $a => $b) {
+			$ret[$a]['url'] = U('Blog/view', array(
+				'id' => $b['id']
+			));
+		}
+		$this->assign('blogs', $ret);
+		unset($tBlog);
+		
 		unset($ret);
 		
-		//每月之星，新闻，下载
+		//每月之星
 		$this->assignStar();
-		$this->assignBlogs(5);
-		$this->assignDownload();
 		
 		//显示
 		$this->assign('selectedTab', 'index');

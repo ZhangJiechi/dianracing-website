@@ -1,0 +1,22 @@
+#fse {
+	border-bottom: none;
+}
+.fse {
+	padding-top: 1.3em;
+	padding-bottom: 1.8em;
+	border-bottom: 1px solid rgba(130, 128, 128, .6);
+}
+.fse:last-child {
+	border-bottom: none;
+}
+.fse h4 {
+	text-indent: .8em;
+	background: url(triangle.png) no-repeat 0 .2em;
+	color: #ff0014;
+}
+.fse p {
+	padding-top: .8em;
+}
+.fse a {
+	color: #fe9c9c;
+}

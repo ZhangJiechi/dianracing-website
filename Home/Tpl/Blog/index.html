@@ -2,11 +2,12 @@
 
 <section id="blogs" class="bbww">
 	<hgroup class="hd">
-		<h1>{:L('fromtheblog')}</h1>
+		<h1>{:L('blog')}</h1>
 	</hgroup>
 	<div class="bd">
+		<div class="page">{$page}</div>
 		<volist name="blogs" id="blog">
-			<div class="blog">
+			<div class="blog <if condition="$i eq 1">top</if>">
 				<table>
 					<tr>
 						<td class="left"><img class="cover" src="/Uploads/cover/thumb_{$blog['cover']}" /></td>
@@ -17,6 +18,7 @@
 				</table>
 			</div>
 		</volist>
+		<div class="page bottom">{$page}</div>
 	</div>
 </section>
 

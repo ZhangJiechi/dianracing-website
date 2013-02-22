@@ -9,6 +9,7 @@ class GlobalAction extends Action {
 		/* 头部与尾部数据查询 */
 		$this->assignActiv();
 		$this->assignStaff();
+		$this->assignDownload();
 	}
 	
 	//是否IE6,7,8
@@ -48,18 +49,6 @@ class GlobalAction extends Action {
 		$tStaff = M('staff');
 		$ret = $tStaff->where("lang=\"{$this->lang}\"")->order('queue ASC')->limit($n)->select();
 		$this->assign('staffs', $ret);
-	}
-	
-	//Blog
-	protected function assignBlogs($n = 6){
-		$tBlog = M('blog');
-		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->limit($n)->select();
-		foreach($ret as $a => $b) {
-			$ret[$a]['url'] = U('Blog/view', array(
-				'id' => $b['id']
-			));
-		}
-		$this->assign('blogs', $ret);
 	}
 	
 	//每月之星

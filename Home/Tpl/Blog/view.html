@@ -1,0 +1,23 @@
+<include file="../header" title="blog" />
+
+<section id="blog" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('blog')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="page">
+			<span class="nav">
+				<a href="{$prevPage}" target="_self">Back to listing</a>
+			</span>
+		</div>
+		<div class="blog">
+			<div>
+				<h2>{$blog['title']}</h2>
+				<p class="author">By {$blog['author']} - {$blog['createtime|date="d F, Y",###']}</p>
+			</div>
+			<div class="content {$lang}">{$blog['content']}</div>
+		</div>
+	</div>
+</section>
+
+<include file="../footer" />

@@ -1,25 +1,31 @@
-#blogs {
-	border-bottom: none;
+.hd {
+	padding-bottom: 0 !important;
 }
+.bbww {
+	border-bottom: none;
+	padding-bottom: 55px;
+}
+
+
 #blogs table {
 	margin: 0;
 }
 #blogs .blog {
 	padding: 10px 0;
-	border-bottom: 1px solid #828080;
+	border-top: 1px solid rgba(130, 128, 128, .6);
 }
-#blogs .blog:last-child {
-	border-bottom: none;
+#blogs .blog.top {
+	border-top: none;
 }
 #blogs .cover {
 	width: 138px;
 	margin-right: 15px;
 }
-#blogs .blog h2 {
+.blog h2 {
 	color: #ff0014;
 	font-size: 1.16em;
 }
-#blogs .blog .author {
+.blog .author {
 	color: #4d4c4c;
 	font-style: italic;
 	font-size: .7em;
@@ -42,5 +48,40 @@
 	font-size: 1.1em;
 }
 
+.page {
+	padding: .3em;
+	margin-bottom: .4em;
+	border-bottom: 1px dashed rgba(130, 128, 128, .6);
+	text-align: right;
+}
+.page.bottom {
+	border-bottom: none;
+	border-top: 1px dashed rgba(130, 128, 128, .6);
+}
+.page a {
+	text-decoration: none;
+}
+.page .current{
+	color: #ff0014;
+}
+.page .nav a {
+	color: #ff0014;
+	color: rgba(255, 0, 20, .7);
+}
+.page .num a {
+	color: #828080;
+}
 
-
+#blog .content {
+	line-height: 1.8em;
+	font-size: .92em;
+}
+#blog .content.zh-cn p{
+	text-indent: 2em;
+}
+#blog .content a {
+	color: #fe9c9c;
+}
+#blog .content img {
+	max-width: 100%;
+}
