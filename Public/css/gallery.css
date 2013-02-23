@@ -22,7 +22,7 @@
 	display: inline-block;
 	width: 96px;
 	height: 72px;
-	margin-right: 8px;
+	margin-right: 6px;
 	margin-bottom: 10px;
 	border: 2px solid white;
 	overflow: hidden;
@@ -52,6 +52,9 @@
 	font-size: .9em;
 }
 
+#photo {
+	padding-bottom: 55px;
+}
 #photo .navi td {
 	width: 33.3%;
 }

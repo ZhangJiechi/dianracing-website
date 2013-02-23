@@ -99,6 +99,14 @@
 #member ul {
 	list-style-position: inside;
 }
+#member ul.group {
+	margin-left: 1.1em;
+	font-size: .92em;
+	list-style-image: url(pink-triangle.png);
+}
+#member ul.group a {
+	color: #fe9c9c;
+}
 
 #star .left {
 	position: relative;

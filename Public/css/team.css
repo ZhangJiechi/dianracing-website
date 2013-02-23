@@ -1,0 +1,83 @@
+.bbww {
+	border-bottom: 1px solid #828080;
+	padding-bottom: 50px;
+}
+
+.bbww h2{
+	color: #ff0014;
+	text-indent: .8em;
+	font-size: 1em;
+	background: url(triangle.png) no-repeat 0 .3em;
+	color: #ff0014;
+	text-transform: uppercase;
+	margin-top: .6em;
+}
+.general {
+	font-size: .95em;
+	line-height: 1.2em;
+}
+.general ul{
+	list-style-position: inside;
+	margin-top: .5em;
+}
+.general p {
+	padding-top: .6em;
+}
+.general a, .general ul {
+	color: #fe9c9c;
+}
+
+.advisor, .team {
+	margin-bottom: 2em;
+}
+.advisor td img {
+	width: 115px;
+	border: 3px solid white;
+}
+.advisor .right {
+	padding-left: 1em;
+}
+
+#team-general h2 {
+	text-indent: 0;
+	background: none;
+}
+
+
+#team-member {
+	border-bottom: none;
+}
+.member {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 14px;
+	width: 115px;
+}
+.member .face {
+	width: 115px;
+	height: 115px;
+	overflow: hidden;
+}
+.member .face img {
+	width: 100%;
+}
+.member .name {
+	text-align: center;
+	color: white;
+	background-color: #ff0014;
+	font-size: .9em;
+	line-height: 23px;
+	height: 20px;
+	overflow: hidden;
+}
+.group {
+	margin-left: 1.1em;
+}
+h3 {
+	text-indent: .8em;
+	background: url(pink-triangle.png) no-repeat 0 .2em;
+	color: #fe9c9c;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-top: .4em;
+}

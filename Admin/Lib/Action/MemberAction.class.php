@@ -4,6 +4,13 @@ include(APP_PATH.'/Lib/Action/AuthAction.class.php');
 class MemberAction extends AuthAction {
 	
 	public function index(){
+		$tContent = M('content');
+		$ret = $tContent->where('key="team_zh-cn"')->find();
+		$this->assign('team_cn', $ret);
+		$ret = $tContent->where('key="team_en-us"')->find();
+		$this->assign('team_en', $ret);
+		unset($tContent);
+		
 		$tMember = M('member');
 		$members = $tMember->order('id DESC')->select();
 		$this->assign(array(
@@ -88,4 +95,14 @@ class MemberAction extends AuthAction {
 		}
 		return $list;
 	}
+	
+	public function general() {
+		if($this->isPost()){
+			$tContent = M('content');
+			$tContent->create();
+			$tContent->save();
+			$this->success('保存成功!');
+		}
+	}
+
 }

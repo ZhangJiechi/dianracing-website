@@ -8,14 +8,14 @@
 		<div class="navi">
 			<table width="100%" border="0">
 				<tr>
-					<td><a href="/Uploads/galleries/{$photo_src}" target="_blank">{:L('ori-size')}</a></td>
+					<td><a href="{$back_href}">{:L('back-to-album')}</a></td>
 					<td class="middle">
-						<if condition="$prev_page"><a href="{$prev_page}#photo"><</a></if>
+						<if condition="$prev_page"><a href="{$prev_page}#photo" title="{:L('prev-page')}"><</a></if>
 						&#160;&#160;
-						<if condition="$next_page"><a href="{$next_page}#photo">></a></if>
+						<if condition="$next_page"><a href="{$next_page}#photo" title="{:L('next-page')}">></a></if>
 					</td>
 					<td class="right">
-						<a href="{$back_href}">Back to Gallery</a>
+						<a href="/Uploads/galleries/{$photo_src}" target="_blank">{:L('ori-size')}</a>
 					</td>
 				</tr>
 			</table>

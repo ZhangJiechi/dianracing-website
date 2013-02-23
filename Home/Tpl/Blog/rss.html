@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<rss version="2.0">  
+<channel>  
+    <title>Blogs in Dian Racing</title>  
+    <link>http://{$domain}/index.php/Blog/</link>  
+    <description>We are a passionate and multidisciplinary Formula Student Electric team from Tongji University whose target is to design and fabricate an electric Formula style racecar every year and participate in FSE competition. We strive to combine our enthusiasm for speed and efficiency with our concerns for a sustainable environment.</description>  
+    <language>en-us</language>  
+    <copyright>Copyright {$year} Dian Racing, Tongji University</copyright>
+<volist name="blogs" id="blog">
+    <item>  
+    <title>{$blog['title']}</title>  
+    <link>http://{$domain}/index.php/Blog/view/id/{$blog['id']}</link>  
+    <description>{$blog['content']|strip_tags|String::msubstr=0,200,"utf-8",true}</description>  
+    <author>{$blog['author']}</author>  
+    <pubDate>{$blog['createtime']|date='r',###}</pubDate>  
+    </item>  
+</volist>
+</channel>  
+</rss> 

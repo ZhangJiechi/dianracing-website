@@ -41,4 +41,10 @@ return array(
 	'become' => '成为<br/>赞助商',
 	'oursponsors' => '我们的赞助商',
 	'ori-size' => '原始尺寸',
+	'back-to-gallery' => '回到画廊',
+	'back-to-list' => '回到列表',
+	'back-to-album' => '回到相册',
+	'prev-page' => '上一页',
+	'next-page' => '下一页',
+	'ourstar' => '每月之星',
 );

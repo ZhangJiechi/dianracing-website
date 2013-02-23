@@ -56,4 +56,19 @@ class BlogAction extends GlobalAction {
 		$this->assign('lang', $this->lang);
 		$this->display();
 	}
+	
+	//rss
+	public function rss(){
+		$tBlog = M('blog');
+		$ret = $tBlog->where('lang="en-us"')->order('createtime DESC')->limit(10)->select();
+		$this->assign('blogs', $ret);
+		unset($tBlog);
+		
+		$this->assign('domain', $_SERVER['HTTP_HOST']);
+		$this->assign('year', date('Y'));
+		
+		import('ORG.Util.String');
+		header('Content-type: application/xml');
+		$this->display();
+	}
 }

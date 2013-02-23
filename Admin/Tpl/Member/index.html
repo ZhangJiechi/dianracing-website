@@ -7,12 +7,41 @@
 .member:hover .memberToDel {opacity: 1;}
 .member:hover {box-shadow: 5px 5px 5px #888;}
 .member .name {position:absolute;right:1px;bottom:1px;color:#fff;font-size:.8em;text-shadow: 1px 1px 2px #000,-1px -1px 2px #000;}
+.main-bd > div {
+	margin-bottom: 30px;
+	padding: 10px;
+	border-bottom: 1px dotted #999;	
+}
+textarea {
+	width: 100%;
+	height: 90px;	
+}
 </style>
 <div id="main">
   <div class="main-hd">
     <h2>Members</h2>
   </div>
   <div class="main-bd">
+  <div>
+        	<h3>General Information</h3>
+            <table width="100%" border="0">
+                <tr>
+					<form method="post" target="_self" action="general">
+						<th scope="col">简体中文</th>
+						<td><textarea name="value">{$team_cn['value']}</textarea></td>
+						<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$team_cn['id']}" /></td>
+					</form>
+                </tr>
+                <tr>
+					<form method="post" target="_self" action="general">
+						<th scope="col">English</th>
+						<td><textarea name="value">{$team_en['value']}</textarea></td>
+						<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$team_en['id']}" /></td>
+					</form>
+                </tr>
+            </table>
+    </div>
+  <div>
   <form action="remove" method="post" target="_self" id="memberToDelForm">
   	<div>
     	<input type="checkbox" id="memberToDelCtrl"/>
@@ -29,9 +58,14 @@
         </div>
     </volist>
     </form>
+	</div>
 </div>
 <include file="../footer" /> 
+
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
 <script type="text/javascript">
+$('textarea[name=value]').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
 var memberToDel = document.querySelectorAll('.memberToDel');
 document.getElementById('memberToDelCtrl').addEventListener('click',function(){
 		if(this.checked) {

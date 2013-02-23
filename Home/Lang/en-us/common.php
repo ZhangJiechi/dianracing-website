@@ -41,4 +41,10 @@ return array(
 	'become' => 'Become<br/>a<br/>Sponsor!',
 	'oursponsors' => 'our sponsors',
 	'ori-size' => 'Original Size',
+	'back-to-gallery' => 'Back to Gallery',
+	'back-to-list' => 'Back to List',
+	'back-to-album' => 'Back to Album',
+	'prev-page' => 'Previous Page',
+	'next-page' => 'Next Page',
+	'ourstar' => 'OUR STAR',
 );

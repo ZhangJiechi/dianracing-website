@@ -15,18 +15,7 @@
 			<h1>{:L('the-team')}</h1>
 			<h2>{:L('general-info')}</h2>
 		</hgroup>
-		<div id="team-bd">
-			<p>DIAN Racing is a young and diverse student group. The team is composed of students with various majors from different countries, with strong involvement of Godert van Hardenbroek, an entrepreneur and designer from the Netherlands. With a wide array of expertise, this provides a powerful learning experience and a high quality team.</p>
-			<p>DIAN Racing is aiming at high-standard racecar design and project management.</p>
-			<p>The strength of DIAN Racing comes from establishing collaboration between different disciplines that Tongji University has to offer:</p>
-			<ul>
-				<li>School of Automotive Studies</li>
-				<li>College of Design and Innovation</li>
-				<li>Sino-German College of Applied Sciences</li>
-				<li>Clean Energy Automotive Engineering Research Center</li>
-				<li>Engineering Practice Center</li>
-			</ul>
-		</div>
+		<div id="team-bd">{$teamgeneral}</div>
 	</section>
 </div>
 <div id="member-star" class="bbww">
@@ -44,7 +33,15 @@
 			</table>
 			<ul>
 				<volist name="teams" id="team">
-					<li><a href="{:U('About/team')}#t{$team['gtype']}">{$team['name']}</a></li>
+					<li><a href="{:U('About/team')}#t{$team['gtype']}">{$team['name']}</a>
+						<if condition="$team['child']">
+							<ul class="group">
+								<volist name="team['child']" id="group">
+									<li><a href="{:U('About/team')}#t{$group['gtype']}">{$group['name']}</a></li>
+								</volist>
+							</ul>
+						</if>
+					</li>
 				</volist>
 			</ul>
 		</div>

@@ -1,0 +1,61 @@
+<include file="../header" title="team" />
+
+<section id="team-general" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('the-team')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="general">
+			<h2>{:L('general-info')}</h2>
+			<div>{$general}</div>
+		</div>
+	</div>
+</section>
+
+<section id="team-member" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('the-member')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="advisor">
+			<h2>{$advisorTitle}</h2>
+			<table width="100%" border="0">
+				<tr>
+					<td><img src="/Uploads/faces/{$advisor['face']}" /></td>
+					<td class="right">{$advisor['text']}</td>
+				</tr>
+			</table>
+		</div>
+		<volist name="teams" id="team">
+		<div class="team">
+			<h2>{$team['name']}</h2>
+			<div class="members">
+				<volist name="team['members']" id="member">
+					<div class="member">
+						<div class="face"><img src="/Uploads/faces/{$member['face']}" alt="{$member['name']}"/></div>
+						<div class="name">{$member['name']}</div>
+					</div>
+				</volist>
+			</div>
+			<if condition="$team['child']">
+				<volist name="team['child']" id="group">
+					<div class="group">
+						<h3>{$group['name']}</h3>
+						<div class="members">
+							<volist name="group['members']" id="gm">
+								<div class="member">
+									<div class="face"><img src="/Uploads/faces/{$gm['face']}" alt="{$gm['name']}"/></div>
+									<div class="name">{$gm['name']}</div>
+								</div>
+							</volist>
+						</div>
+					</div>
+				</volist>
+			</if>
+		</div>
+		</volist>
+	</div>
+</section>
+
+
+<include file="../footer" />

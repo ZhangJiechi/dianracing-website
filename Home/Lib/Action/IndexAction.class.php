@@ -7,6 +7,8 @@ class IndexAction extends GlobalAction {
 		$tContent = M('content');
 		$ret = $tContent->field('value')->where("key=\"welcome_{$this->lang}\"")->find();
 		$this->assign('welcome', $ret['value']);
+		$ret = $tContent->field('value')->where("key=\"team_{$this->lang}\"")->find();
+		$this->assign('teamgeneral', $ret['value']);
 		unset($tContent);
 		
 		//member
@@ -16,9 +18,27 @@ class IndexAction extends GlobalAction {
 		unset($tMember);
 		//team
 		$tTeam = M('group');
-		$ret = $tTeam->field('gtype,name')->where("lang=\"{$this->lang}\" AND gtype>0 AND children<>'-'")->order('gtype ASC')->select();
-		$this->assign('teams', $ret);
+		$teams = array();
+		$ret = $tTeam->where("lang=\"{$this->lang}\" AND gtype>0 AND children<>'-'")->order('gtype ASC')->select();
+		foreach($ret as $key => $value) {
+			$teams[$key] = array(
+				'name' => $value['name'],
+				'group' => $value['gtype']
+			);
+			if(!empty($value['children'])) {
+				$gg = $tTeam->where("lang=\"{$this->lang}\" AND gtype in ({$value['children']})")->order('gtype ASC')->select();
+				$teams[$key]['child'] = array();
+				foreach($gg as $g) {
+					$teams[$key]['child'][] = array(
+						'name' => $g['name'],
+						'group' => $g['gtype']
+					);	
+				}
+			}
+		}
+		$this->assign('teams', $teams);
 		unset($tTeam);
+		unset($teams);
 		//News
 		$tBlog = M('blog');
 		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->limit($n)->select();

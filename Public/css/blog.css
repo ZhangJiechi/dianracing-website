@@ -1,11 +1,10 @@
-.hd {
+#blogs .hd, #blog .hd {
 	padding-bottom: 0 !important;
 }
-.bbww {
+#blogs.bbww, #blogs .bbww, #blog .bbww {
 	border-bottom: none;
 	padding-bottom: 55px;
 }
-
 
 #blogs table {
 	margin: 0;
