@@ -1,0 +1,26 @@
+<include file="../header" title="gallery" />
+
+<section id="galleries" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('gallery')}</h1>
+	</hgroup>
+	<div class="bd">
+		<volist name="albums" id="album">
+			<div class="gallery">
+				<h2>{$album['name']}</h2>
+				<div class="photos">
+					<volist name="album['photos']" id="photo">
+						<a class="photo" href="{$photo['href']}">
+							<img src="/Uploads/galleries/thumb_{$photo['path']}" />
+						</a>
+					</volist>
+					<a class="photo more" href="{$album['href']}">
+						<img src="/Public/css/slh.png" alt="see more" />
+					</a>
+				</div>
+			</div>
+		</volist>
+	</div>
+</section>
+
+<include file="../footer" />

@@ -1,0 +1,75 @@
+.bbww {
+	border-bottom: none;
+}
+
+.bbww h2{
+	color: #ff0014;
+	font-size: 1.02em;
+	text-indent: .8em;
+	background: url(triangle.png) no-repeat 0 .3em;
+	color: #ff0014;
+	text-transform: uppercase;
+	margin-top: .8em;
+}
+
+.gallery {
+	margin-bottom: 1.8em;
+}
+.photos {
+	margin-top: .8em;
+}
+.photo {
+	display: inline-block;
+	width: 96px;
+	height: 72px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	border: 2px solid white;
+	overflow: hidden;
+	text-decoration: none;
+}
+.photo img {
+	height: 72px;
+}
+
+.more {
+	border: none;
+}
+
+#gallery {
+	padding-bottom: 55px;
+}
+#gallery .photos {
+	padding-top: 10px;
+}
+#gallery .back-btn {
+	text-align: right;
+	border-bottom: 1px dashed rgba(130, 128, 128, .6);
+}
+#gallery .back-btn a {
+	text-decoration: none;
+	color: #ff0014;
+	font-size: .9em;
+}
+
+#photo .navi td {
+	width: 33.3%;
+}
+#photo .navi td.middle {
+	text-align: center;
+}
+#photo .navi td.right {
+	text-align: right;
+}
+#photo .navi {
+	height: 1.3em;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed rgba(130, 128, 128, .6);
+}
+#photo .navi a {
+	color: #ff0014;
+	text-decoration: none;
+}
+#photo .main img {
+	width: 100%;
+}

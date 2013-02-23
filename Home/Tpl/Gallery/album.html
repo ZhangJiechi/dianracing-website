@@ -1,0 +1,21 @@
+<include file="../header" title="gallery" />
+
+<section id="gallery" class="bbww">
+	<hgroup class="hd">
+		<h1>{$albumname}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="back-btn">
+			<a href="{:U('Gallery/index')}" target="_self">Back to Gallery</a>
+		</div>
+		<div class="photos">
+			<volist name="photos" id="photo">
+				<a class="photo" href="{$photo['href']}">
+					<img src="/Uploads/galleries/thumb_{$photo['path']}" />
+				</a>
+			</volist>
+		</div>	
+	</div>
+</section>
+
+<include file="../footer" />

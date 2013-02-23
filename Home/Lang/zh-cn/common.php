@@ -40,4 +40,5 @@ return array(
 	'fromtheblog' => '近期新闻',
 	'become' => '成为<br/>赞助商',
 	'oursponsors' => '我们的赞助商',
+	'ori-size' => '原始尺寸',
 );

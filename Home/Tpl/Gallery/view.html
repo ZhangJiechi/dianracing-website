@@ -1,0 +1,29 @@
+<include file="../header" title="gallery" />
+
+<section id="photo" class="bbww">
+	<hgroup class="hd">
+		<h1>{$albumname}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="navi">
+			<table width="100%" border="0">
+				<tr>
+					<td><a href="/Uploads/galleries/{$photo_src}" target="_blank">{:L('ori-size')}</a></td>
+					<td class="middle">
+						<if condition="$prev_page"><a href="{$prev_page}#photo"><</a></if>
+						&#160;&#160;
+						<if condition="$next_page"><a href="{$next_page}#photo">></a></if>
+					</td>
+					<td class="right">
+						<a href="{$back_href}">Back to Gallery</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="main">
+			<img src="/Uploads/galleries/{$photo_src}" />
+		</div>	
+	</div>
+</section>
+
+<include file="../footer" />

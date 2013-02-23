@@ -40,4 +40,5 @@ return array(
 	'fromtheblog' => 'From The Blog',
 	'become' => 'Become<br/>a<br/>Sponsor!',
 	'oursponsors' => 'our sponsors',
+	'ori-size' => 'Original Size',
 );
