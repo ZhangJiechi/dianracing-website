@@ -1,0 +1,50 @@
+<include file="../header" title="about" />
+
+<section id="car" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('ourcar')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div>
+			{$car}
+		</div>
+		<div class="more">
+			<a href="{:U('About/car')}">{:L('see-more')} >></a>
+		</div>
+	</div>
+</section>
+
+<section id="team" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('ourteam')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div>
+			{$team}
+		</div>
+		<div class="more">
+			<a href="{:U('About/team')}">{:L('see-more')} >></a>
+		</div>
+	</div>
+</section>
+
+<section id="star" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('dr-star')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div>
+			<volist name="stars" id="star">
+				<a class="star" href="{$star['href']}" title="{$star['name']}">
+					<img src="/Uploads/faces/{$star['face']}" alt="{$star['name']}" />
+				</a>
+			</volist>
+		</div>
+		<div class="clear"></div>
+		<div class="more">
+			<a href="{:U('About/star')}">{:L('see-more')} >></a>
+		</div>
+	</div>
+</section>
+
+<include file="../footer" />

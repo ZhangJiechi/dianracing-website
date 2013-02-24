@@ -1,0 +1,39 @@
+.bbww {
+	border-bottom: 1px solid rgba(255, 0, 20, .35);
+	padding-bottom: 50px;
+}
+
+.bbww h2{
+	color: #ff0014;
+	font-size: 1em;
+	color: #ff0014;
+	text-transform: uppercase;
+	margin-top: .6em;
+}
+
+#car-general {
+	padding-bottom: 25px;
+}
+
+#car-general a {
+	color: #fe9c9c;
+	font-size: .9em;
+	line-height: 2.5em;
+}
+
+#car-addition {
+	padding-top: 0;
+	border-bottom: none;
+}
+
+#car-addition ul {
+	color: #fe9c9c;
+	list-style-type: none;
+}
+#car-addition .note {
+	color: #6a6966;
+}
+#car-addition h3 {
+	margin-top: .9em;
+	color: #ff0014;
+}

@@ -28,6 +28,15 @@
         <input type="submit" value="创建" />
       </p>
     </form>
+	<div id="sample">
+			<button id="closeSampleBtn">X 关闭</button>
+			<img src="__PUBLIC__/sample/activity.jpg" /> </div>
   </div>
 </div>
 <include file="../footer" />
+
+<script type="text/javascript">
+document.getElementById('closeSampleBtn').addEventListener('click',function(){
+	document.getElementById('sample').style.display = 'none';
+}, false);
+</script>

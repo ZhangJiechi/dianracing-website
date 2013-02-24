@@ -21,7 +21,13 @@
 			</table>
 		</div>
 		<div class="main">
-			<img src="/Uploads/galleries/{$photo_src}" />
+			<if condition="$next_page">
+				<a href="{$next_page}#photo">
+					<img src="/Uploads/galleries/{$photo_src}" />
+				</a>
+			<else/>
+				<img src="/Uploads/galleries/{$photo_src}" />
+			</if>
 		</div>	
 	</div>
 </section>

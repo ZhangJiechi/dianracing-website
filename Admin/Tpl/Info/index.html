@@ -28,6 +28,7 @@ textarea {
   <div class="main-bd">
   	<div>
         	<h3>Welcome to the home of Dian Racing!</h3>
+			<p class="help">请在下方的文本框中编辑首页上的欢迎辞</p>
             <table width="100%" border="0">
                 <tr>
 					<form method="post" target="_self" action="welcome">
@@ -48,6 +49,7 @@ textarea {
     <div>
     	<form method="post" target="_self" action="downloads">
             <h3>下载项</h3>
+			<p class="help">下载项将被显示在页面下方的“下载”中。<br/>点击上传按钮，在新窗口中选择并上传文件，上传成功后会自动关闭窗口和填写文件地址，点击更新即可保存。<br/>如要删除，则直接删空一行上的两个文本框。</p>
 			<table>
 				<tr>
 					<th>显示名称</th>
@@ -75,7 +77,7 @@ textarea {
     <div>
 		<form method="post" target="_self" action="sponsor">
 			<h3>赞助商LOGO</h3>
-			<p>Logo图片地址，一行一个</p>
+			<p class="help">LOGO将被显示在页面下方，一行一个图片地址，过多将影响显示效果。<br/>图片可上传至Sponsor相册，然后在相册中获取图片原始地址。</p>
 			<p><textarea id="sponsor_logo" name="sponsor_logo">{$sponsor}</textarea>
 			<input type="submit" value="Update" /></p>
 		</form>

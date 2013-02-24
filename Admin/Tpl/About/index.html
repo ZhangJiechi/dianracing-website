@@ -1,0 +1,73 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<style type="text/css">
+.main-bd > div {
+	margin-bottom: 30px;
+	padding: 10px;
+	border-bottom: 1px dotted #999;	
+}
+textarea {
+	width: 100%;
+}
+</style>
+<div id="main">
+  <div class="main-hd">
+    <h2>Our Car</h2>
+  </div>
+  <div class="main-bd">
+  	<div>
+		<h3>General Information</h3>
+		<p class="help">Our Car页面开始的基本信息(General Information)</p>
+		<table width="100%" border="0">
+			<tr>
+				<form method="post" target="_self" action="save">
+					<th scope="col">简体中文</th>
+					<td><textarea class="general" name="value">{$general['zh-cn']['value']}</textarea></td>
+					<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$general['zh-cn']['id']}" /></td>
+				</form>
+			</tr>
+			<tr>
+				<form method="post" target="_self" action="save">
+					<th scope="col">English</th>
+					<td><textarea class="general" name="value">{$general['en-us']['value']}</textarea></td>
+					<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$general['en-us']['id']}" /></td>
+				</form>
+			</tr>
+		</table>
+    </div>
+	<div>
+		<h3>Competition</h3>
+		<p class="help">赛车设计大赛专题(点击编辑器上的全屏按钮进入全屏模式以方便编辑)</p>
+		<table width="100%" border="0">
+			<tr>
+				<form method="post" target="_self" action="save">
+					<th scope="col">简体中文</th>
+					<td><textarea class="addition" name="value">{$addition['zh-cn']['value']}</textarea></td>
+					<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$addition['zh-cn']['id']}" /></td>
+				</form>
+			</tr>
+			<tr>
+				<form method="post" target="_self" action="save">
+					<th scope="col">English</th>
+					<td><textarea class="addition" name="value">{$addition['en-us']['value']}</textarea></td>
+					<td><input type="submit" value="更新"/><input type="hidden" name="id" value="{$addition['en-us']['id']}" /></td>
+				</form>
+			</tr>
+		</table>
+	</div>
+  </div>
+</div>
+<include file="../footer" />
+
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+var editorConfig = {tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source,|,Fullscreen', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%', height: '100px'};
+$('.general').xheditor(editorConfig);
+editorConfig.height = '400px';
+$('.addition').xheditor(editorConfig);
+
+$('.uploadBtn').click(function(){
+	window.open("{:U('Upload/brochure')}?prefix=/Uploads/docs/&cbi="+this.lang);
+});
+</script>

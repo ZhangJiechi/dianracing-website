@@ -3,7 +3,32 @@ include(APP_PATH.'/Lib/Action/GlobalAction.class.php');
 
 class AboutAction extends GlobalAction {
 	public function index() {
-		$this->car();
+		$tContent = M('content');
+		$ret = $tContent->where("key=\"team_{$this->lang}\"")->find();
+		$this->assign('team', $ret['value']);
+		
+		$ret = $tContent->where("key=\"car_general_{$this->lang}\"")->find();
+		$this->assign('car', $ret['value']);
+		
+		unset($tContent);
+		
+		$tStar = M('star');
+		$ret = $tStar->where("lang=\"{$this->lang}\"")->order('id DESC')->limit(6)->select();
+		foreach($ret as $star) {
+			$stars[] = array(
+				'iscurrent' => $star['id'] == $id,
+				'name' => $star['name'],
+				'face' => $star['faceimg'],
+				'href' => U('About/star', array(
+					'id' => $star['id']
+				))
+			);
+		}
+		$this->assign('stars', $stars);
+		unset($ret);
+		unset($stars);
+		
+		$this->display();
 	}
 	
 	public function team() {
@@ -80,6 +105,20 @@ class AboutAction extends GlobalAction {
 		$this->assign('stars', $stars);
 		unset($ret);
 		unset($stars);
+		
+		$this->display();
+	}
+	
+	public function car() {
+		$tContent = M('content');
+		$ret = $tContent->where("key=\"car_general_{$this->lang}\"")->find();
+		$this->assign('general', $ret['value']);
+		
+		$ret = $tContent->where("key=\"car_addition_{$this->lang}\"")->find();
+		$this->assign('addition', $ret['value']);
+		
+		unset($ret);
+		unset($tContent);
 		
 		$this->display();
 	}

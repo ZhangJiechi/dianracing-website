@@ -27,6 +27,11 @@ ul {
 	line-height: 1.8em;	
 	color: #666;
 }
+.help {
+	font-size: .8em;
+	line-height: 1.2em;
+	color: #666;
+}
 
 #login, #passwd {
 	font-size: 1.1em;

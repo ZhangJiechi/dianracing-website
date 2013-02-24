@@ -1,0 +1,49 @@
+.bbww {
+	border-bottom: 1px solid rgba(255, 0, 20, .35);
+	padding-bottom: 25px;
+	padding-top: 30px;
+}
+
+.bbww h2{
+	color: #ff0014;
+	font-size: 1em;
+	color: #ff0014;
+	text-transform: uppercase;
+	margin-top: .6em;
+}
+
+#star {
+	border-bottom: none;
+	padding-bottom: 55px;
+}
+
+.bbww ul {
+	color: #fe9c9c;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.bbww .more {
+	margin-top: 1em;
+	text-align: right;
+}
+.bbww .more a {
+	color: white;
+	color: #fe9c9c;
+}
+
+.star {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	text-decoration: none;
+	margin-right: 10px;
+	margin-bottom: 12px;
+	border: 2px solid white;
+	overflow: hidden;
+}
+.star img {
+	max-width: 80px;
+	min-height: 80px;
+}

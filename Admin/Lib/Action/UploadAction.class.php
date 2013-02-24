@@ -74,7 +74,7 @@ class UploadAction extends AuthAction {
 					'createtime' => time()
 				));
 			}
-			$this->success('上传成功！', U("Gallery/album?id={$_POST['album_id']}"));
+			$this->success('上传成功！', U("Gallery/album", array('id' => $_POST['album_id'])));
 		} else {
 			$this->error('请选择文件!');
 		}	

@@ -22,6 +22,7 @@ textarea {
 		<div>
 			<form method="post" target="_self" action="general">
 				<h3>简介</h3>
+				<p class="help">赞助商页面开始的基本信息(General Information)</p>
 				<table width="100%" border="0">
 					<tr>
 						<th scope="col">简体中文</th>
@@ -40,6 +41,9 @@ textarea {
 		<div>
 			<form method="post" target="_self" action="brochure">
 				<h3>小册子</h3>
+				<p class="help">
+					点击“Become a Sponsor”时下载的文件
+				</p>
 				<p>
 					<label for="brochure">Brochure:</label>
 					<input type="text" name="brochure" value="{$brochure}" id="filepath" readonly="readonly"/>
@@ -51,6 +55,7 @@ textarea {
 		<div>
 		<form id="sponsorToDelForm" action="remove" method="post" target="_self">
 			<h3>赞助商列表</h3>
+			<p class="help">显示在赞助商页面后半部分</p>
 			<div>
 				<p>
 					<input type="submit" value="删除" />
@@ -86,7 +91,7 @@ textarea {
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">
-$('textarea').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
+$('textarea').xheditor({tools:'Bold,Italic,|,List,Fontface,FontSize,FontColor,Img,|,Removeformat,Source,|,Fullscreen', upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false, width: '100%'});
 
 var sponsorToDel = document.querySelectorAll('.sponsorToDel');
 document.getElementById('sponsorToDelCtrl').addEventListener('click',function(){
