@@ -11,6 +11,11 @@
 	text-transform: uppercase;
 	margin-top: .6em;
 }
+.bbww a {
+	color: #fe9c9c;
+	font-size: .9em;
+	line-height: 2em;
+}
 
 #star {
 	border-bottom: none;
@@ -24,12 +29,7 @@
 }
 
 .bbww .more {
-	margin-top: 1em;
 	text-align: right;
-}
-.bbww .more a {
-	color: white;
-	color: #fe9c9c;
 }
 
 .star {

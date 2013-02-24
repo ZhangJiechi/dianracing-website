@@ -1,4 +1,4 @@
-﻿<Files dr.sqlite>
- order deny,allow
- deny from all
+<Files dr.sqlite>
+order deny,allow
+deny from all
 </Files>

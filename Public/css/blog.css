@@ -84,3 +84,6 @@
 #blog .content img {
 	max-width: 100%;
 }
+#blog.view {
+	border-bottom: none;
+}
