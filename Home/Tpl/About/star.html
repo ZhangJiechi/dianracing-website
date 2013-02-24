@@ -1,0 +1,50 @@
+<include file="../header" title="star" />
+
+<section id="star" class="bbww">
+	<hgroup class="hd">
+		<h1>{:L('dr-star')}</h1>
+	</hgroup>
+	<div class="bd">
+		<div class="current-star">
+			<div>
+				<table width="100%" border="0">
+					<tr>
+						<td class="left"><div class="responsible">{$currentstar['respon']}</div>
+							<p><img class="face" src="/Uploads/faces/{$currentstar['faceimg']}" alt="{$currentstar['facenote']}" /></p>
+							<p class="position">{$currentstar['facenote']}</p>
+						</td>
+						<td class="middle">
+							<ul>
+								<li>{:L('name')}:<br/>
+									<span>{$currentstar['name']}</span></li>
+								<li>{:L('year')}:<br/>
+									<span>{$currentstar['year']}</span></li>
+								<li>{:L('major')}:<br/>
+									<span>{$currentstar['major']}</span></li>
+								<li>{:L('hobby')}:<br/>
+									<span>{$currentstar['hobby']}</span></li>
+							</ul>
+						</td>
+						<td class="right"> {$currentstar['intro']} </td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="star-list">
+			<h2>{:L('past-star')}</h2>
+			<div class="stars">
+				<volist name="stars" id="star">
+					<a class="star <if condition="$star['iscurrent']">focus</if>" href="{$star['href']}" title="{$star['name']}">
+						<img src="/Uploads/faces/{$star['face']}" alt="{$star['name']}" />
+					</a>
+				</volist>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<include file="../footer" />

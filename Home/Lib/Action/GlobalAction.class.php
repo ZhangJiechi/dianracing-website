@@ -51,13 +51,6 @@ class GlobalAction extends Action {
 		$this->assign('staffs', $ret);
 	}
 	
-	//每月之星
-	protected function assignStar($n = 3){
-		$tStar = M('star');
-		$ret = $tStar->where("lang=\"{$this->lang}\"")->order('id DESC')->limit($n)->select();
-		$this->assign('stars', $ret);
-	}
-	
 	//下载&赞助商
 	protected function assignDownload(){
 		$tContent = M('content');

@@ -54,7 +54,33 @@ class AboutAction extends GlobalAction {
 		$this->display();
 	}
 	
-	public function car() {
+	public function star() {
+		$tStar = M('star');
+		if(isset($_GET['id'])) {
+			$id = intval($_GET['id']);
+			$ret= $tStar->where("id={$id}")->find();
+		} else {
+			$ret= $tStar->where("lang=\"{$this->lang}\"")->order('id DESC')->find();
+			$id = $ret['id'];
+		}
+		$this->assign('currentstar', $ret);
 		
+		$stars = array();
+		$ret = $tStar->where("lang=\"{$this->lang}\"")->order('id DESC')->select();
+		foreach($ret as $star) {
+			$stars[] = array(
+				'iscurrent' => $star['id'] == $id,
+				'name' => $star['name'],
+				'face' => $star['faceimg'],
+				'href' => U('About/star', array(
+					'id' => $star['id']
+				))
+			);
+		}
+		$this->assign('stars', $stars);
+		unset($ret);
+		unset($stars);
+		
+		$this->display();
 	}
 }

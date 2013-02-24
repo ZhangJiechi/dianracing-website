@@ -21,6 +21,7 @@ return array(
 	'bs-team' => '项目管理团队',
 	'ed-team' => '工程设计团队',
 	'dr-star' => '每月之星',
+	'past-star' => '往期每月之星',
 	'name' => '姓名',
 	'year' => '年份',
 	'major' => '专业',

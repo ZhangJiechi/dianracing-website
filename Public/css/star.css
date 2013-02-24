@@ -1,0 +1,78 @@
+.bbww {
+	border-bottom: none;
+	padding-bottom: 50px;
+}
+
+.bbww h2{
+	text-indent: .8em;
+	background: url(pink-triangle.png) no-repeat 0 .2em;
+	color: #fe9c9c;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.current-star .left {
+	position: relative;
+}
+.current-star .middle {
+	width: 100px;
+	padding-right: 1.2em;
+}
+.current-star .middle ul {
+	font-size: .9em;
+	margin-left: 2em;
+	list-style-image: url(triangle.png);
+}
+.current-star .middle li {
+	line-height: 1.2em;
+	padding-top: .5em;
+	word-break: break-all;
+	color: #ff0014;
+}
+.current-star .middle li span {
+	color: white;
+}
+.current-star .responsible {
+	background: url(big-triangle.png) no-repeat;
+	background-size: 100%;
+	width: 64px;
+	height: 64px;
+	color: white;
+	position: absolute;
+	padding: 8px;
+	font-weight: bold;
+}
+.current-star .face {
+	width: 180px;
+	border: 2px solid #ff0014;;
+}
+.current-star .position {
+	text-align: right;
+	font-size: .8em;
+	margin-top: .2em;
+	color: #6a6966;
+}
+
+
+.star-list {
+	margin-top: 30px;
+}
+
+.star-list .star {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	text-decoration: none;
+	margin-right: 10px;
+	margin-bottom: 12px;
+	border: 2px solid white;
+	overflow: hidden;
+}
+.star-list .star.focus {
+	border-color: #ff0014;
+}
+.star-list .star img {
+	max-width: 80px;
+	min-height: 80px;
+}

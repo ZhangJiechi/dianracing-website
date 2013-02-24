@@ -21,6 +21,7 @@ return array(
 	'bs-team' => 'Branding & Sponsoring team',
 	'ed-team' => 'Engineering & Design Team',
 	'dr-star' => 'DIAN Racing Star',
+	'past-star' => 'Past DIAN Racing Star',
 	'name' => 'Name',
 	'year' => 'Year',
 	'major' => 'Major',

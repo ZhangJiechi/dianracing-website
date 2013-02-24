@@ -50,10 +50,13 @@ class IndexAction extends GlobalAction {
 		$this->assign('blogs', $ret);
 		unset($tBlog);
 		
-		unset($ret);
-		
 		//每月之星
-		$this->assignStar();
+		$tStar = M('star');
+		$ret = $tStar->where("lang=\"{$this->lang}\"")->order('id DESC')->limit(4)->select();
+		$this->assign('stars', $ret);
+		unset($tStar);
+		
+		unset($ret);
 		
 		//显示
 		$this->assign('selectedTab', 'index');
