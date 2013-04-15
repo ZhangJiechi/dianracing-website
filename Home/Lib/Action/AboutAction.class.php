@@ -71,7 +71,7 @@ class AboutAction extends GlobalAction {
 		$ret = $tTeam->field('name')->where("lang=\"{$this->lang}\" AND gtype=0")->find();
 		$this->assign('advisorTitle', $ret['name']);
 		
-		$ret = $tMember->where("lang=\"{$this->lang}\" AND gtype=0")->find();
+		$ret = $tMember->where("lang=\"{$this->lang}\" AND gtype=0")->select();
 		$this->assign('advisor', $ret);
 		unset($tTeam);
 		unset($tMember);

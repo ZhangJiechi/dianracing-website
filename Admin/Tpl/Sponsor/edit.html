@@ -33,7 +33,7 @@
 				</select>
 			</p>
 			<p>
-				<input type="submit" value="添加" />
+				<input type="submit" value="更新" />
 				<input type="hidden" name="id" value="{$sponsor['id']}"/>
 			</p>
 		</form>
@@ -43,7 +43,7 @@
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">
-$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Fontface,FontSize,FontColor,|,Removeformat,Source', width: '80%', height: '400px'});
+$('textarea').xheditor({tools:'Cut,Copy,Paste,|,SelectAll,Removeformat,|,Blocktag,Fontface,FontSize,FontColor,BackColor,|,Bold,Italic,Underline,|,Align,List,Outdent,Indent,|,Link,Unlink,Img,|,Source,Fullscreen',upImgUrl:"/admin.php/Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false,upLinkUrl:'../Upload/ajax_doc',upLinkExt:'zip,rar,7z,txt,doc,xls,ppt,pdf,docx,xlsx,pptx,psd', width: '80%', height: '400px'});
 
 document.getElementById('addFace').addEventListener('click',function(){
 	window.open("{:U('Upload/face')}");

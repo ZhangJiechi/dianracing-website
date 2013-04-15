@@ -26,7 +26,7 @@ textarea {width:100%;}
             </td>
             <td>
                 <label for="createtime">日期:</label>
-                <input type="date" name="createtime" id="createtime" placeholder="{:date('Y-m-d')}" required="required"/>
+                <input type="date" name="createtime" id="createtime" value="{:date('Y-m-d')}" readonly="readonly"/>
             </td>
             <td>
                 <label for="lang">语言:</label>
@@ -48,7 +48,7 @@ textarea {width:100%;}
 <import type="js" file="js.jquery"/>
 <import type="js" file="js.xheditor"/>
 <script type="text/javascript">
-$('#content').xheditor({tools:'Cut,Copy,Paste,Pastetext,|,SelectAll,Removeformat,|,Blocktag,Fontface,FontSize,FontColor,BackColor,|,Bold,Italic,Underline,|,Align,List,Outdent,Indent,|,Link,Unlink,Img,|,Source,Fullscreen',upImgUrl:"../Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false,upLinkUrl:'../Upload/ajax_doc',upLinkExt:'zip,rar,7z,txt,doc,xls,ppt,pdf,docx,xlsx,pptx,psd'});
+$('#content').xheditor({tools:'Cut,Copy,Paste,Pastetext,|,SelectAll,Removeformat,|,Blocktag,Fontface,FontSize,FontColor,BackColor,|,Bold,Italic,Underline,|,Align,List,Outdent,Indent,|,Link,Unlink,Img,|,Source,Fullscreen',upImgUrl:"/admin.php/Upload/ajax_pic",upImgExt:"jpg,jpeg,gif,png",html5Upload:false,upLinkUrl:'../Upload/ajax_doc',upLinkExt:'zip,rar,7z,txt,doc,xls,ppt,pdf,docx,xlsx,pptx,psd'});
 
 document.getElementById('addCover').addEventListener('click',function(){
 	window.open("{:U('Upload/cover')}");

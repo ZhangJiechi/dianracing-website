@@ -63,7 +63,8 @@ CREATE TABLE think_attachment (
 CREATE TABLE think_album (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
-    createtime TIMESTAMP
+    createtime TIMESTAMP,
+    hide INTEGER DEFAULT 0
 );
 
 CREATE TABLE think_photo (

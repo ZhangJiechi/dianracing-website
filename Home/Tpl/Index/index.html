@@ -15,20 +15,29 @@
 			<h1>{:L('the-team')}</h1>
 			<h2>{:L('general-info')}</h2>
 		</hgroup>
-		<div id="team-bd">{$teamgeneral}</div>
+		<div id="team-bd" class="{$lang}">{$teamgeneral}</div>
 	</section>
 </div>
-<div id="member-star" class="bbww">
-	<section id="member">
+<div id="members" class="bbww">
+	<section class="member">
 		<hgroup class="hd">
 			<h1>{:L('the-member')}</h1>
 		</hgroup>
 		<div class="bd">
 			<table>
+			    <tr>
+			        <td colspan="5"><p class="position">{:L('faculty-advisor')}</p></td>
+			    </tr>
 				<tr>
-					<td class="left"><p><img class="face" src="/Uploads/faces/{$member['face']}" alt="{:L('faculty-advisor')}" /></p>
-						<p class="position">{:L('faculty-advisor')}:</p></td>
-					<td class="right">{$member['text']}</td>
+				    <td class="left">
+				        <p><img class="face" src="/Uploads/faces/{$member[1]['face']}" alt="{:L('faculty-advisor')}" /></p>
+                    </td>
+                    <td class="right">{$member[1]['text']}</td>
+                    <td class="center"> </td>
+					<td class="left">
+					    <p><img class="face" src="/Uploads/faces/{$member[0]['face']}" alt="{:L('faculty-advisor')}" /></p>
+					</td>
+					<td class="right">{$member[0]['text']}</td>
 				</tr>
 			</table>
 			<ul>
@@ -46,50 +55,30 @@
 			</ul>
 		</div>
 	</section>
-	<section id="star">
-		<hgroup class="hd">
-			<h1>{:L('dr-star')}</h1>
-		</hgroup>
-		<div class="bd">
-			<table width="100%" border="0">
-				<tr>
-					<td class="left"><div class="responsible">{$stars[0]['respon']}</div>
-						<p>
-							<a href="{:U('About/star')}">
-								<img class="face" src="/Uploads/faces/{$stars[0]['faceimg']}" alt="{$stars[0]['facenote']}" />
-							</a>	
-						</p>
-						<p class="position">{$stars[0]['facenote']}</p>
-						<ul>
-							<li>{:L('name')}:<br/>
-								<span>{$stars[0]['name']}</span></li>
-							<li>{:L('year')}:<br/>
-								<span>{$stars[0]['year']}</span></li>
-							<li>{:L('major')}:<br/>
-								<span>{$stars[0]['major']}</span></li>
-							<li>{:L('hobby')}:<br/>
-								<span>{$stars[0]['hobby']}</span></li>
-						</ul></td>
-					<td class="right"> {$stars[0]['intro']} </td>
-				</tr>
-			</table>
-			<div id="more-star">
-				<div class="other"> <a href="{:U('About/star')}">{:L('see-more')}</a> </div>
-				<volist name="stars" id="star">
-					<if condition="$i gt 1">
-						<div class="mini-face">
-							<a href="{:U('About/star', array('id'=>$star['id']))}">
-								<img src="/Uploads/faces/{$star['faceimg']}" alt="{$star['facenote']}"/>
-							</a>	
-						</div>
-					</if>
-				</volist>
-				<div class="slh"> <a href="{:U('About/star')}#star">···</a> </div>
-			</div>
-		</div>
-	</section>
+	
 	<div class="clear">&#160;</div>
 </div>
+
+<section id="star" class="bbww">
+    <hgroup class="hd">
+        <h1>{:L('dr-star')}</h1>
+    </hgroup>
+    <div class="bd">
+        <div id="more-star">
+            <volist name="stars" id="star">
+                <if condition="$i gt 1">
+                    <div class="mini-face">
+                        <a href="{:U('About/star', array('id'=>$star['id']))}">
+                            <img src="/Uploads/faces/{$star['faceimg']}" alt="{$star['facenote']}"/>
+                        </a>    
+                    </div>
+                </if>
+            </volist>
+            <a class="more" href="{:U('About/star')}#star">···</a>
+        </div>
+    </div>
+</section>        
+
 <section id="car" class="bbww">
 	<hgroup class="hd">
 		<h1>{:L('the-car')}</h1>
@@ -98,11 +87,9 @@
 	<div class="bd">
 		<table>
 			<tr>
-				<td class="left"><div>
-						<p>As a first-year team, we aim at designing and building a car that is realistic, reliable and with relatively high performance. We will be able to apply high level technologies and parts from sponsors in the development of the car. This will provide them a chance to demonstrate their products and brands to both domestic markets as well as abroad, in the context of a zero emission race.</p>
-					</div>
+				<td class="left"><div class="general-info">{$car}</div>
 					<div class="more"> <a href="{:U('About/car')}">{:L('read-more')} >></a> </div></td>
-				<td class="right"><img src="/Uploads/faces/1361349783.jpg"/></td>
+				<td class="right"><img src="/Uploads/cover/thumb_1361717331.png"/></td>
 			</tr>
 		</table>
 	</div>

@@ -13,7 +13,7 @@ class IndexAction extends GlobalAction {
 		
 		//member
 		$tMember = M('member');
-		$ret = $tMember->field('face,text')->where("lang=\"{$this->lang}\" AND gtype=0")->find();
+		$ret = $tMember->field('face,text')->where("lang=\"{$this->lang}\" AND gtype=0")->select();
 		$this->assign('member', $ret);
 		unset($tMember);
 		//team
@@ -56,6 +56,10 @@ class IndexAction extends GlobalAction {
 		$this->assign('stars', $ret);
 		unset($tStar);
 		
+		$tContent = M('content');
+		$ret = $tContent->where("key=\"car_general_{$this->lang}\"")->find();
+		$this->assign('car', $ret['value']);
+		unset($tStar);
 		unset($ret);
 		
 		//显示

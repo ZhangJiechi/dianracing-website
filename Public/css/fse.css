@@ -1,6 +1,14 @@
 #fse {
 	border-bottom: none;
 }
+
+.bd img {
+    padding: 5px;
+}
+.bd p {
+    line-height: 22px;
+}
+
 .fse {
 	padding-top: 1.3em;
 	padding-bottom: 1.8em;
@@ -11,7 +19,7 @@
 }
 .fse h4 {
 	text-indent: .8em;
-	background: url(triangle.png) no-repeat 0 .2em;
+	background: url(triangle.png) no-repeat 0 .4em;
 	color: #ff0014;
 }
 .fse p {

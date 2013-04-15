@@ -105,7 +105,7 @@ class SponsorAction extends AuthAction {
 			$tSponsor = M('sponsor');
 			$tSponsor->create();
 			$tSponsor->save();
-			$this->success('添加成功!');
+			$this->success('更新成功!');
 		}
 	}
 	

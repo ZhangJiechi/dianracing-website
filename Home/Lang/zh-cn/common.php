@@ -33,13 +33,13 @@ return array(
 	'download' => '资料下载',
 	'contact-us' => '联系我们',
 	'contact-notice' => '如果您有任何问题或疑虑，请随时联系我们',
-	'address-detail' => '<p>上海市杨浦区彰武路100号<br/>同济-阿尔托设计工厂</p>',
+	'address-detail' => '<p>中国上海市嘉定区曹安路4800号<br/>同济大学汽车学院</p><p>上海市杨浦区彰武路100号<br/>同济-阿尔托设计工厂</p>',
 	'tongji-uni' => '同济大学',
 	'sfc' => '中芬中心',
 	'renren' => '人人网',
 	'weibo' => '微博',
 	'fromtheblog' => '近期新闻',
-	'become' => '成为<br/>赞助商',
+	'become' => '成为赞助商',
 	'oursponsors' => '我们的赞助商',
 	'ori-size' => '原始尺寸',
 	'back-to-gallery' => '回到画廊',
@@ -48,4 +48,5 @@ return array(
 	'prev-page' => '上一页',
 	'next-page' => '下一页',
 	'ourstar' => '每月之星',
+	'auto-institut' => '同济大学汽车学院'
 );

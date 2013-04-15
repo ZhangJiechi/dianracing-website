@@ -17,13 +17,27 @@
           <th><input type="checkbox" id="galleryToDelCtrl"/></th>
           <th>Title</th>
           <th>Create Time</th>
+          <th>Is Hidden</th>
           <th>Options</th>
         </tr>
         <volist name="galleries" id="gallery">
           <tr>
-            <td class="text-center"><input class="galleryToDel" type="checkbox" name="galleryToDel[]" value="{$gallery.id}"/></td>
+            <td class="text-center">
+                <if condition="$gallery.hide eq 0">
+                    <input class="galleryToDel" type="checkbox" name="galleryToDel[]" value="{$gallery.id}"/>
+                <else/>
+                    <input type="checkbox" disabled="disabled"/>
+                </if>
+            </td>
             <td><a href="album/id/{$gallery.id}" target="_self">{$gallery.name}</a></td>
             <td>{$gallery.createtime|date="Y-m-d H:i:s",###}</td>
+            <td>
+                <if condition="$gallery.hide eq 1">
+                    Yes
+                <else/>
+                    No
+                </if>
+            </td>
             <td>
             	<a href="rename/id/{$gallery.id}" target="_self">更名</a>
             	<a href="upload/id/{$gallery.id}" target="_self">上传</a>

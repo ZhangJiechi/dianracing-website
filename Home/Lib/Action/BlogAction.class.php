@@ -9,7 +9,7 @@ class BlogAction extends GlobalAction {
 		
 		//读取数据
 		$tBlog = M('blog');
-		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime')->page("{$currentPage},{$numPerPage}")->select();
+		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->page("{$currentPage},{$numPerPage}")->select();
 		
 		//生成URL
 		foreach($ret as $a => $b) {

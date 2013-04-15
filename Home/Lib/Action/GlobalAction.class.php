@@ -17,7 +17,7 @@ class GlobalAction extends Action {
 		preg_match('/MSIE (.*?);/', $_SERVER['HTTP_USER_AGENT'], $matches);
 		if (count($matches)>1){
 			$version = $matches[1];
-			return $version<=8? true : false;
+			return $version<=9? true : false;
 		}
 	}
 	
@@ -35,6 +35,7 @@ class GlobalAction extends Action {
 	protected $lang;
 	private function setLang() {
 		$this->lang = L('lang');
+        $this->assign('lang', $this->lang);
 	}
 	
 	//近期活动

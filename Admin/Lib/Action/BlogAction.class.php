@@ -27,7 +27,7 @@ class BlogAction extends AuthAction {
 		if($this->isPost()){
 			$tBlog = M('blog');
 			$tBlog->create();
-			$tBlog->createtime = $this->date2timestamp($_POST['createtime']);
+			$tBlog->createtime = time();
 			$tBlog->add();
 			$this->success('添加成功！', U('Blog/index'));
 		}
@@ -48,6 +48,7 @@ class BlogAction extends AuthAction {
 		if($this->isPost()){
 			$tBlog = M('blog');
 			$tBlog->create();
+            $tBlog->createtime = $this->date2timestamp($_POST['createtime']);
 			$tBlog->save();
 			$this->success('更新成功！', U('Blog/index'));	
 		}

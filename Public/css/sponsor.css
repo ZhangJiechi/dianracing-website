@@ -12,8 +12,7 @@
 	margin-top: .8em;
 }
 .general {
-	font-size: .95em;
-	line-height: 1.5em;
+	line-height: 22px;
 }
 .general ul{
 	list-style-position: inside;
@@ -27,8 +26,20 @@
 
 .brochure {
 	margin-top: 2.6em;
+	background: url(sponsor-border.png) repeat-x 0 center;
 }
-.brochure .hr {
+.brochure a {
+    display: block;
+    margin: 0 auto;
+    width: 106px;
+    height: 84px;
+    background: #1c1b1b url(become-en.png) no-repeat center center;
+    text-indent: -9999em;
+}
+.brochure a.zh-cn {
+    background-image: url(become-cn.png);
+}
+/*.brochure .hr {
 	width: 265px;
 }
 .brochure .hr div {
@@ -59,7 +70,7 @@
 	line-height: 1.5em;
 	top: 22px;
 	left: 16px;
-}
+}*/
 
 
 #slist {

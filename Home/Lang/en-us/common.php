@@ -33,13 +33,13 @@ return array(
 	'download' => 'DOWNLOAD',
 	'contact-us' => 'CONTACT US',
 	'contact-notice' => 'Please feel free to contact our team if you have any questions or concerns.',
-	'address-detail' => '<p>Aalto-Tongji Design Factory<br/>No.100 Zhangwu Road, Yangpu District, Shanghai</p>',
+	'address-detail' => '<p>School of Automotive Studies<br/>No.4800 Cao\'an Road, Jiading District, Shanghai</p><p>Aalto-Tongji Design Factory<br/>No.100 Zhangwu Road, Yangpu District, Shanghai</p>',
 	'tongji-uni' => 'Tongji University',
 	'sfc' => 'Sino-Finnish Centre',
 	'renren' => 'Renren',
 	'weibo' => 'Weibo',
 	'fromtheblog' => 'From The Blog',
-	'become' => 'Become<br/>a<br/>Sponsor!',
+	'become' => 'Become a Sponsor!',
 	'oursponsors' => 'our sponsors',
 	'ori-size' => 'Original Size',
 	'back-to-gallery' => 'Back to Gallery',
@@ -48,4 +48,5 @@ return array(
 	'prev-page' => 'Previous Page',
 	'next-page' => 'Next Page',
 	'ourstar' => 'OUR STAR',
+	'auto-institut' => 'School of Automotive Studies'
 );

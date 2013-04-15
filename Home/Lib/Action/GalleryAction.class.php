@@ -5,7 +5,7 @@ class GalleryAction extends GlobalAction {
 	
     public function index(){
 		$tGallery = M('album');
-		$galleries = $tGallery->order('createtime DESC')->select();
+		$galleries = $tGallery->where('hide=0')->order('createtime DESC')->select();
 		unset($tGallery);
 		
 		$albums = array();
@@ -53,6 +53,7 @@ class GalleryAction extends GlobalAction {
 		}
 		$this->assign('photos', $photos);
 		
+        $this->assign('selectedTab', 'gallery');
 		$this->display();
 	}
 	
@@ -78,6 +79,7 @@ class GalleryAction extends GlobalAction {
 			$this->assign('next_page', U('Gallery/view', array('id' => $ret['id'])));
 		}
 		
+        $this->assign('selectedTab', 'gallery');
 		$this->display();
 	}
 	

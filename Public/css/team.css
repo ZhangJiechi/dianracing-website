@@ -3,18 +3,21 @@
 	padding-bottom: 50px;
 }
 
+.bbww .bd {
+    line-height: 22px;
+}
+
 .bbww h2{
 	color: #ff0014;
 	text-indent: .8em;
-	font-size: 1em;
+	font-size: 1.1em;
 	background: url(triangle.png) no-repeat 0 .3em;
 	color: #ff0014;
 	text-transform: uppercase;
 	margin-top: .6em;
 }
 .general {
-	font-size: .95em;
-	line-height: 1.2em;
+	lin-height: 22px;
 }
 .general ul{
 	list-style-position: inside;
@@ -30,12 +33,19 @@
 .advisor, .team {
 	margin-bottom: 2em;
 }
-.advisor td img {
-	width: 115px;
-	border: 3px solid white;
+.advisor .left {
+    width: 20%;
 }
 .advisor .right {
-	padding-left: 1em;
+    padding-left: 1.5%;
+    line-height: 22px;
+}
+.advisor .center {
+    width: 5%;
+}
+.advisor .face {
+    width: 95%;
+    border: 3px solid white;
 }
 
 #team-general h2 {
@@ -49,8 +59,7 @@
 }
 .member {
 	display: inline-block;
-	margin-right: 10px;
-	margin-bottom: 14px;
+	margin: 7px 5px;
 	width: 115px;
 }
 .member .face {
