@@ -4,11 +4,11 @@ include(APP_PATH.'/Lib/Action/GlobalAction.class.php');
 class FseAction extends GlobalAction {
     public function index(){
 		//Fse
-		$tContent = M('content');
-		$ret = $tContent->field('value')->where("key=\"fse_{$this->lang}\"")->find();
-		$this->assign('fse', $ret['value']);
-		unset($tContent);
-		unset($ret);
+		$tFse = M('fse');
+        $fses = $tFse->where("lang=\"{$this->lang}\"")->select();
+		$this->assign('fses', $fses);
+		unset($tFse);
+		unset($fses);
 		
 		//显示
 		$this->assign('selectedTab', 'fse');

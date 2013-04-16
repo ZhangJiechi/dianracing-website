@@ -5,7 +5,15 @@
 		<h1>FSE</h1>
 	</hgroup>
 	<div class="bd">
-		{$fse}
+		<volist name="fses" id="fse">
+		    <div class="fse">
+                <h4>{$fse.name}</h4>
+                <if condition="$fse.img neq ''">
+                    <div><img src="{$fse.img}" alt="{$fse.name}" /></div>
+                </if>
+                <div>{$fse.content}</div>
+            </div>
+	    </volist>
 	</div>
 </section>
 

@@ -1,0 +1,39 @@
+<include file="../header" />
+<div id="left-sider"><include file="../left-sider" /></div>
+<div id="main">
+	<div class="main-hd">
+		<h2>FSE-编辑</h2>
+	</div>
+	<div class="main-bd">
+		<form action="{:U('Fse/do_edit')}" method="post" name="fse-new" target="_self" class="new-form">
+			<p>
+				<label for="name">名称</label>
+				<input type="text" name="name" id="name" required value="{$fse.name}"/>
+			</p>
+			<p>
+				<label for="img">LOGO</label>
+				<input type="text" name="img" id="img" style="width: 80%;" value="{$fse.img}"/>
+			</p>
+			<p>
+				<label for="content">介绍</label>
+				<textarea name="content" id="content">{$fse.content}</textarea>
+			</p>
+			<p>
+				<label for="lang">语言</label>
+				<select name="lang" id="lang">
+                  <option value="zh-cn" <if condition="$fse.lang eq 'zh-cn'">selected="selected"</if> >简体中文</option>
+                  <option value="en-us" <if condition="$fse.lang eq 'en-us'">selected="selected"</if> >English</option>
+                </select>
+			</p>
+			<p>
+				<input id="submit" type="submit" value="更新" />
+                <input type="hidden" name="id" value="{$fse.id}"/>
+			</p>
+		</form>
+</div>
+<include file="../footer" />
+<import type="js" file="js.jquery"/>
+<import type="js" file="js.xheditor"/>
+<script type="text/javascript">
+$('textarea').xheditor({tools:'Bold,Italic,Underline,|,List,Fontface,FontSize,FontColor,|,Removeformat,Source,|,Fullscreen', width:'100%', height:'500px;'});
+</script>

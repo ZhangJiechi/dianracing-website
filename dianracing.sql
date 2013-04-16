@@ -103,3 +103,11 @@ CREATE TABLE think_group (
 	children TEXT,
 	lang CHAR(5)
 );
+
+CREATE TABLE think_fse (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    content TEXT,
+    img TEXT,
+    lang CHAR(5)
+);
