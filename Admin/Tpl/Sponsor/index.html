@@ -47,7 +47,7 @@ textarea {
 				<p>
 					<label for="brochure">Brochure:</label>
 					<input type="text" name="brochure" value="{$brochure}" id="filepath" readonly="readonly"/>
-					<input type="button" id="uploadBtn" value="上传"/>
+					<input type="button" class="uploadBtn" value="上传" lang="filepath"/>
 					<input type="submit" value="更新"/>
 				</p>
 			</form>
@@ -112,4 +112,8 @@ document.getElementById('sponsorToDelForm').addEventListener('submit',function(e
 				return false;
 		}
 }, false);
+
+$('.uploadBtn').click(function(){
+    window.open("{:U('Upload/brochure')}?prefix=&cbi="+this.lang);
+});
 </script>

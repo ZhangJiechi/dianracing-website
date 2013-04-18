@@ -25,11 +25,20 @@
                         <p><img class="face" src="/Uploads/faces/{$advisor[1]['face']}" alt="{:L('faculty-advisor')}--{$advisor[1]['name']}" /></p>
                     </td>
                     <td class="right">{$advisor[1]['text']}</td>
-                    <td class="center"> </td>
+                </tr>
+                <tr>
                     <td class="left">
                         <p><img class="face" src="/Uploads/faces/{$advisor[0]['face']}" alt="{:L('faculty-advisor')}--{$advisor[0]['name']}" /></p>
                     </td>
                     <td class="right">{$advisor[0]['text']}</td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <p><img class="face" src="/Uploads/faces/{$advisor[2]['face']}" alt="{:L('faculty-advisor')}--{$advisor[2]['name']}" /></p>
+                    </td>
+                    <td class="right">
+                        {$advisor[2]['text']}
+                    </td>
                 </tr>
             </table>
 		</div>

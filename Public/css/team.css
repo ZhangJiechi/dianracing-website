@@ -33,15 +33,15 @@
 .advisor, .team {
 	margin-bottom: 2em;
 }
+.advisor td {
+    padding-bottom: 1.2em;
+}
 .advisor .left {
     width: 20%;
 }
 .advisor .right {
     padding-left: 1.5%;
     line-height: 22px;
-}
-.advisor .center {
-    width: 5%;
 }
 .advisor .face {
     width: 95%;
