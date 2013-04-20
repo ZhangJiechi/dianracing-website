@@ -52,7 +52,7 @@ class AboutAction extends GlobalAction {
 			}
 			if(!empty($value['children'])) {
 				$teams[$key]['child'] = array();
-				$gg = $tTeam->where("lang=\"{$this->lang}\" AND gtype in ({$value['children']})")->order('gtype ASC')->select();
+				$gg = $tTeam->where("lang=\"{$this->lang}\" AND gtype in ({$value['children']})")->order('sort ASC')->select();
 				foreach($gg as $k => $g) {
 					$teams[$key]['child'][$k] = array(
 						'name' => $g['name'],

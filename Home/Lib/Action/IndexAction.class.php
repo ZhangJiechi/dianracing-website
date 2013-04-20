@@ -26,7 +26,7 @@ class IndexAction extends GlobalAction {
 				'group' => $value['gtype']
 			);
 			if(!empty($value['children'])) {
-				$gg = $tTeam->where("lang=\"{$this->lang}\" AND gtype in ({$value['children']})")->order('gtype ASC')->select();
+				$gg = $tTeam->where("lang=\"{$this->lang}\" AND gtype in ({$value['children']})")->order('sort ASC')->select();
 				$teams[$key]['child'] = array();
 				foreach($gg as $g) {
 					$teams[$key]['child'][] = array(

@@ -101,7 +101,8 @@ CREATE TABLE think_group (
     gtype INTEGER,
 	name TEXT,
 	children TEXT,
-	lang CHAR(5)
+	lang CHAR(5),
+	sort INTEGER DEFAULT 0
 );
 
 CREATE TABLE think_fse (

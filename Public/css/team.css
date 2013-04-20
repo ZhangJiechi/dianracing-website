@@ -11,7 +11,7 @@
 	color: #ff0014;
 	text-indent: .8em;
 	font-size: 1.1em;
-	background: url(triangle.png) no-repeat 0 .3em;
+	background: url(triangle.png) no-repeat 0 .55em;
 	color: #ff0014;
 	text-transform: uppercase;
 	margin-top: .6em;
@@ -84,7 +84,7 @@
 }
 h3 {
 	text-indent: .8em;
-	background: url(pink-triangle.png) no-repeat 0 .2em;
+	background: url(pink-triangle.png) no-repeat 0 .55em;
 	color: #fe9c9c;
 	font-size: 1em;
 	text-transform: uppercase;
