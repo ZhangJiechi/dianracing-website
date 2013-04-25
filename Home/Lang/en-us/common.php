@@ -2,7 +2,7 @@
 return array(
 	'lang' => 'en-us',
 	'home' => 'HOME',
-	'upcoming-events' => 'Upcoming Events',
+	'upcoming-events' => 'News',
 	'see-more' => 'See more',
 	'read-more' => 'Read More',
 	'more-blog' => 'More blog posts',
@@ -48,5 +48,6 @@ return array(
 	'prev-page' => 'Previous Page',
 	'next-page' => 'Next Page',
 	'ourstar' => 'OUR STAR',
-	'auto-institut' => 'School of Automotive Studies'
+	'auto-institut' => 'School of Automotive Studies',
+	'sponsors' => 'SPONSORS',
 );

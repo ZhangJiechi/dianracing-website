@@ -237,12 +237,17 @@ body {
 }
 
 #footer .sponsor {
-	border-bottom: 1px solid rgba(132, 131, 131, .35);
+	border-top: 1px solid rgba(132, 131, 131, .35);
 	text-align: center;
+	margin-bottom: .6em;
 }
 #footer .sponsor img {
     height: 40px;
     margin: .8em 1.5em;
+}
+#footer .sponsor .title {
+    margin-top: -.5em;
+    color: #ff0014;
 }
 
 #footer .contact {

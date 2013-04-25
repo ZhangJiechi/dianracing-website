@@ -1,5 +1,15 @@
 <div id="footer-wrap">
 	<footer id="footer">
+	    
+	    <div class="sponsor">
+            <div class="title">{:L('sponsors')}</div>
+            <div class="body">
+                <volist name="sponsorslogo" id="sponsor">
+                    <img src="{$sponsor}"/>
+                </volist>
+            </div>
+        </div>
+	    
 		<div class="upper">
 			<table>
 				<tr>
@@ -41,11 +51,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="sponsor">
-			<volist name="sponsorslogo" id="sponsor">
-                <img src="{$sponsor}"/>
-            </volist>
-		</div>
+		
 		<div class="contact">
 			<div class="left">
 				<div class="hd">

@@ -48,5 +48,6 @@ return array(
 	'prev-page' => '上一页',
 	'next-page' => '下一页',
 	'ourstar' => '每月之星',
-	'auto-institut' => '同济大学汽车学院'
+	'auto-institut' => '同济大学汽车学院',
+	'sponsors' => '赞助商'
 );

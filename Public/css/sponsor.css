@@ -92,6 +92,9 @@
 	margin-bottom: 1.1em;
 	padding-left: .8em;
 }
+#slist .sponsor a {
+    color: #FE9C9C;
+}
 #slist .sponsor ul {
 	list-style-position: inside;
 	color: #fe9c9c;
