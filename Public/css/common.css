@@ -55,12 +55,15 @@ body {
 	line-height: 1.7em;
 	width: 340px;
 }
-.upcoming-event-name {
+.upcoming-event-name, .upcoming-event-name a {
 	color: #F00;
 	font-size: 30px;
 	padding-bottom: 14px;
 	font-weight: bold;
 	line-height: 1em;
+}
+.upcoming-event-name a {
+    text-decoration: none;   
 }
 #events-switchs {
 	padding-top: 15px;

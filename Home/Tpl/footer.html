@@ -5,7 +5,9 @@
             <div class="title">{:L('sponsors')}</div>
             <div class="body">
                 <volist name="sponsorslogo" id="sponsor">
-                    <img src="{$sponsor}"/>
+                    <a href="{$sponsor.href}" target="_blank">
+                        <img src="{$sponsor.img}"/>
+                    </a>
                 </volist>
             </div>
         </div>

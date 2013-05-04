@@ -41,7 +41,7 @@ class IndexAction extends GlobalAction {
 		unset($teams);
 		//News
 		$tBlog = M('blog');
-		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->limit($n)->select();
+		$ret = $tBlog->where("lang=\"{$this->lang}\"")->order('createtime DESC')->limit(5)->select();
 		foreach($ret as $a => $b) {
 			$ret[$a]['url'] = U('Blog/view', array(
 				'id' => $b['id']

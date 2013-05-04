@@ -27,17 +27,13 @@
             <volist name="activities" id="activity">
                 <div id="event-{$i}" class="event-detail" <if condition="$i eq 1">style="display:block;"</if>>
                     <p>
-                        <if condition="$activity['date_start'] eq $activity['date_end']">
-                            {$activity.date_start|date="d F, Y",###}
-                        <else />
-                            {$activity.date_start|date="d F, Y",###} - {$activity.date_end|date="d F, Y",###}
-                        </if>
+                        {$activity.createtime|date="d F, Y",###}
                     </p>
-                    <p class="upcoming-event-addr">{$activity.place}</p>
-                    <p class="upcoming-event-name">{$activity.title}</p>
+                    <p class="upcoming-event-name">
+                        <a href="{$activity.url}">{$activity.title}</a>
+                    </p>
                 </div>
             </volist>
-            <!--p><a href="###" class="seemore">{:L('see-more')} >></a></p-->
         </div>
     </div>
     <div id="navi-bar-wrap">

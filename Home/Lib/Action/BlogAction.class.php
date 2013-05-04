@@ -5,7 +5,7 @@ class BlogAction extends GlobalAction {
     public function index(){
 		//参数
 		$currentPage = isset($_GET['p'])?intval($_GET['p']):1;
-		$numPerPage = 5;
+		$numPerPage = 10;
 		
 		//读取数据
 		$tBlog = M('blog');
