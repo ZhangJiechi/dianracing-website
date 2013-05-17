@@ -47,7 +47,10 @@ return array(
 	'back-to-album' => '回到相册',
 	'prev-page' => '上一页',
 	'next-page' => '下一页',
-	'ourstar' => '每月之星',
+	'ourstar' => 'DR之星',
 	'auto-institut' => '同济大学汽车学院',
-	'sponsors' => '赞助商'
+	'sponsors' => '赞助商',
+	'email-address' => '电子邮件地址',
+    'subscribe' => '订阅',
+    'newsletter' => '订阅新闻',
 );

@@ -74,9 +74,6 @@
 #blog .content {
 	line-height: 22px;
 }
-#blog .content.zh-cn p{
-	text-indent: 2em;
-}
 #blog .content a {
 	color: #fe9c9c;
 }

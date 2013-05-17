@@ -9,6 +9,17 @@ class IndexAction extends AuthAction {
 		));
 		$this->display();
     }
-	
+    
+	public function useradd() {
+	    return false;
+        
+        $tAc = M('account');
+        
+        $tAc->data(array(
+            'account' => 'account',
+            'password' => 'password'    //Password with MD5 encrypted
+        ))->add();
+        
+	}
 	
 }

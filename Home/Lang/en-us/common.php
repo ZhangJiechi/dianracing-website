@@ -50,4 +50,7 @@ return array(
 	'ourstar' => 'OUR STAR',
 	'auto-institut' => 'School of Automotive Studies',
 	'sponsors' => 'SPONSORS',
+	'email-address' => 'Email Address',
+	'subscribe' => 'Subscribe',
+	'newsletter' => 'Newsletter',
 );
